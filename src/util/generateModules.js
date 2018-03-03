@@ -3,6 +3,8 @@ const generators = require('../modules');
 
 module.exports = config => {
   const {
+    config: { prefix = '' },
+    config: globalConfig,
     modules = [],
   } = config
 
@@ -11,12 +13,23 @@ module.exports = config => {
       type,
     } = module;
 
-    const moduleNodes = generators[type](module);
+    const moduleConfig = Object.assign({}, globalConfig, module);
+    const moduleNodes = generators[type](moduleConfig);
     return prev.concat(moduleNodes);
   }, []);
 
-  return postcss.root({
+  const root = postcss.root({
     nodes,
   });
+
+  if (prefix !== '') {
+    root.walkRules(rule => {
+      rule.selectors = rule.selectors.map(selector =>
+        selector.replace(/\./g, `.${prefix}`)
+      );
+    });
+  }
+
+  return root;
 };
 
