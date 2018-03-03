@@ -10,7 +10,7 @@ module.exports = config => {
 
   const nodes = modules.reduce((prev, module) => {
     const {
-      type,
+      type = 'single',
     } = module;
 
     const moduleConfig = Object.assign({}, globalConfig, module);

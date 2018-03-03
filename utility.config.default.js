@@ -30,7 +30,16 @@ const lineHeight = {
     isResponsive: true,
 };
 
-const modules = [fontSize, lineHeight]
+const error = {
+    className: 'error',
+    props: {
+        color: 'red',
+        'font-weight': 'bold',
+    },
+    isResponsive: true,
+}
+
+const modules = [fontSize, lineHeight, error]
     .map(module => Object.assign({}, module, { breakPoints }));
 
 module.exports = {
