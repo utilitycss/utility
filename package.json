@@ -1,0 +1,18 @@
+{
+  "name": "utilitycss",
+  "version": "0.0.1",
+  "description": "Generator for Utility CSS frameworks",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "utilitycss": "src/cli.js"
+  },
+  "dependencies": {
+    "commander": "^2.14.1",
+    "postcss": "^6.0.19"
+  }
+}
