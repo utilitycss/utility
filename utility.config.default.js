@@ -4,6 +4,7 @@ const {
         prefix,
     },
     modules: {
+      single,
       series,
       spacing,
     },
@@ -53,14 +54,14 @@ const modules = [
         isResponsive: true,
     }),
 
-    {
+    single({
         className: 'error',
         props: {
             color: 'red',
             'font-weight': 'bold',
         },
         isResponsive: true,
-    },
+    }),
 
     spacing({
         autoClassName: 'a',
