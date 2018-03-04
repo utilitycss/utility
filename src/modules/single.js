@@ -1,15 +1,18 @@
 const defineClass = require('../util/defineClass');
 const responsive = require('../util/responsive');
 
-module.exports = config => {
+module.exports = config => globalConfig => {
   const {
     className,
     props,
     isResponsive = false,
-    breakPoints = {},
+  } = config || {};
+
+  const {
     seriesSeparator = '',
     breakPointSeparator = '',
-  } = config;
+    breakPoints = {},
+  } = globalConfig || {};
 
   const single = [defineClass(className, props)];
 

@@ -3,35 +3,21 @@ const generators = require('../modules');
 
 module.exports = config => {
   const {
-    config: { prefix = '' },
     config: globalConfig,
     modules = [],
   } = config
 
   const nodes = modules.reduce((prev, module) => {
-    const {
-      type = 'single',
-    } = module;
-
-    const moduleConfig = Object.assign({}, globalConfig, module);
-    const generator = typeof type === 'function'
-      ? type
-      : generators[type];
-    const moduleNodes = generator(moduleConfig);
+    const generator = typeof module !== 'function'
+      ? generators['single'](module)
+      : module;
+    const moduleNodes = generator(globalConfig);
     return prev.concat(moduleNodes);
   }, []);
 
   const root = postcss.root({
     nodes,
   });
-
-  if (prefix !== '') {
-    root.walkRules(rule => {
-      rule.selectors = rule.selectors.map(selector =>
-        selector.replace(/\./g, `.${prefix}`)
-      );
-    });
-  }
 
   return root;
 };

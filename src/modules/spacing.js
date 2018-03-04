@@ -2,7 +2,7 @@ const defineClass = require('../util/defineClass');
 const defineSeries = require('../util/defineSeries');
 const responsive = require('../util/responsive');
 
-module.exports = config => {
+module.exports = config => globalConfig => {
   const {
     autoClassName = 'a',
     margin: {
@@ -21,11 +21,14 @@ module.exports = config => {
       values: paddingValues = [],
       isResponsive: isPaddingResponsive = false,
     } = {},
+  } = config || {};
+
+  const {
     seriesSeparator = '',
     variantSeparator = '',
     breakPointSeparator = '',
     breakPoints = {},
-  } = config || {};
+  } = globalConfig || {};
 
   let result = [];
 

@@ -4,6 +4,7 @@ const postcss = require('postcss');
 const path = require('path');
 const fs = require('fs');
 const utility = require('..');
+const { builder } = utility;
 
 const packageJson = require(path.resolve(__dirname, '../package.json'));
 
@@ -49,7 +50,7 @@ program
       : require(path.resolve(__dirname, '../utility.config.default.js'));
 
     console.log('Building CSS bundle...');
-    postcss([utility(config)])
+    postcss([builder(config)])
       .process(input)
       .then(result => {
           write(result.css);
