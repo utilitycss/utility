@@ -1,3 +1,9 @@
+const defineClass = require('./src/util/defineClass');
+
+const customModule = () => {
+    return [defineClass('custom', { foo: 'bar' })];
+};
+
 const breakPoints = {
     ns: 'screen and (min-width: 30em)',
     m: 'screen and (min-width: 30em) and (max-width: 60em)',
@@ -69,7 +75,11 @@ const spacing = {
     }
 };
 
-const modules = [fontSize, lineHeight, error, spacing]
+const custom = {
+    type: customModule,
+};
+
+const modules = [fontSize, lineHeight, error, spacing, custom]
     .map(module => Object.assign({}, module, { breakPoints }));
 
 module.exports = {

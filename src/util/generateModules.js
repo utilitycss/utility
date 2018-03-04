@@ -14,7 +14,10 @@ module.exports = config => {
     } = module;
 
     const moduleConfig = Object.assign({}, globalConfig, module);
-    const moduleNodes = generators[type](moduleConfig);
+    const generator = typeof type === 'function'
+      ? type
+      : generators[type];
+    const moduleNodes = generator(moduleConfig);
     return prev.concat(moduleNodes);
   }, []);
 
