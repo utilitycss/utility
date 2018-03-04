@@ -37,9 +37,39 @@ const error = {
         'font-weight': 'bold',
     },
     isResponsive: true,
-}
+};
 
-const modules = [fontSize, lineHeight, error]
+const spacingScale = ['1rem', '2rem', '3rem', '4rem'];
+const directions = {
+    '': '',
+    't': '-top',
+    'r': '-right',
+    'b': '-bottom',
+    'l': '-left'
+};
+
+const spacing = {
+    type: 'spacing',
+    autoClassName: 'a',
+    margin: {
+        enabled: true,
+        auto: true,
+        variants: directions,
+        className: 'm',
+        values: spacingScale,
+        isResponsive: true,
+    },
+    padding: {
+        enabled: true,
+        auto: true,
+        variants: directions,
+        className: 'p',
+        values: spacingScale,
+        isResponsive: true,
+    }
+};
+
+const modules = [fontSize, lineHeight, error, spacing]
     .map(module => Object.assign({}, module, { breakPoints }));
 
 module.exports = {
@@ -47,6 +77,7 @@ module.exports = {
         prefix: '',
         breakPointSeparator: '-',
         seriesSeparator: '',
+        variantSeparator: '',
     },
     modules,
 };

@@ -8,15 +8,11 @@ module.exports = config => {
     values,
     isResponsive = false,
     breakPoints = {},
-    suffix = '',
-    suffixSeparator = '',
     seriesSeparator = '',
     breakPointSeparator = '',
   } = config;
 
   const series = defineSeries(className, property, values, {
-    suffix,
-    suffixSeparator,
     seriesSeparator,
   });
 

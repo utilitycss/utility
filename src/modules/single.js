@@ -7,8 +7,6 @@ module.exports = config => {
     props,
     isResponsive = false,
     breakPoints = {},
-    suffix = '',
-    suffixSeparator = '',
     seriesSeparator = '',
     breakPointSeparator = '',
   } = config;
