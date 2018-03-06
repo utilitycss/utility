@@ -7,6 +7,11 @@ const {
       single,
       series,
       spacing,
+      position,
+      zIndex,
+      float,
+      clear,
+      display,
     },
 } = require('@utilitycss/utility');
 
@@ -41,7 +46,6 @@ const modules = [
         ],
         isResponsive: true,
     }),
-
     series({
         property: 'line-height',
         className: 'lh',
@@ -53,7 +57,6 @@ const modules = [
         ],
         isResponsive: true,
     }),
-
     single({
         className: 'error',
         props: {
@@ -62,28 +65,42 @@ const modules = [
         },
         isResponsive: true,
     }),
-
     spacing({
-        autoClassName: 'a',
-        margin: {
-            enabled: true,
-            auto: true,
-            variants: directions,
-            className: 'm',
-            values: spacingScale,
-            isResponsive: true,
-        },
-        padding: {
-            enabled: true,
-            auto: true,
-            variants: directions,
-            className: 'p',
-            values: spacingScale,
-            isResponsive: true,
+        marginValues: spacingScale,
+        paddingValues: spacingScale,
+        isResponsive: true,
+    }),
+    customModule(),
+    position(),
+    zIndex({
+        values: {
+            0: 0,
+            1: 1,
+            2: 2,
+            3: 3,
+            4: 4,
+            5: 5,
+            999: 999,
+            9999: 9999,
+            max: 2147483647,
+            initial: 'initial',
+            inherit: 'inherit',
+            unset: 'unset',
         }
     }),
-
-    customModule(),
+    float(),
+    clear(),
+    display({
+        whitelist: [
+            'd:n',
+            'd:b',
+            'd:f',
+            'd:if',
+            'd:i',
+            'd:ib',
+            'd:tb',
+        ]
+    }),
 ];
 
 const plugins = [

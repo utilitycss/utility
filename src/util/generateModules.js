@@ -2,9 +2,9 @@ const postcss = require('postcss');
 
 module.exports = config => {
   const {
-    config: globalConfig,
+    config: globalConfig = {},
     modules = [],
-  } = config
+  } = config || {};
 
   const nodes = modules.reduce((prev, module) => {
     const moduleNodes = module(globalConfig);
