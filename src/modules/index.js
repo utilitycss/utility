@@ -9,6 +9,7 @@ const clear = require('./clear');
 const display = require('./display');
 const visibility = require('./visibility');
 const overflow = require('./overflow');
+const resize = require('./resize');
 
 module.exports = {
   single,
@@ -22,4 +23,5 @@ module.exports = {
   display,
   visibility,
   overflow,
+  resize,
 };
