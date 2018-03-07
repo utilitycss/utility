@@ -7,15 +7,19 @@ const zIndex = require('./z-index');
 const float = require('./float');
 const clear = require('./clear');
 const display = require('./display');
+const visibility = require('./visibility');
+const overflow = require('./overflow');
 
 module.exports = {
-    single,
-    series,
+  single,
+  series,
 
-    spacing,
-    position,
-    zIndex,
-    float,
-    clear,
-    display,
+  spacing,
+  position,
+  zIndex,
+  float,
+  clear,
+  display,
+  visibility,
+  overflow,
 };

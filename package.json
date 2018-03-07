@@ -7,7 +7,9 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format":
+      "git ls-files --directory src | xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
   },
   "bin": {
     "utility": "src/cli.js"
@@ -15,5 +17,10 @@
   "dependencies": {
     "commander": "2.14.1",
     "postcss": "6.0.19"
-  }
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.11.1"
+  },
+  "pre-commit": ["format"]
 }

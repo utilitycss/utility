@@ -3,9 +3,9 @@ module.exports = config => root => {
 
   root.walkRules(rule => {
     rule.selectors = rule.selectors.map(selector =>
-      selector.replace(/\./g, `.${prefix}`)
+      selector.replace(/\./g, `.${prefix}`),
     );
   });
 
   return root;
-}
+};

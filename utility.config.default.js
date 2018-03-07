@@ -12,6 +12,8 @@ const {
       float,
       clear,
       display,
+      visibility,
+      overflow,
     },
 } = require('@utilitycss/utility');
 
@@ -101,6 +103,8 @@ const modules = [
             'd:tb',
         ]
     }),
+    visibility(),
+    overflow(),
 ];
 
 const plugins = [

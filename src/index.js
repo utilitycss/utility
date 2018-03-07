@@ -4,13 +4,11 @@ const plugins = require('./plugins');
 const modules = require('./modules');
 
 const builder = postcss.plugin('utility', config => {
-  return postcss(
-    resolveUtility(config)
-  );
+  return postcss(resolveUtility(config));
 });
 
 module.exports = {
   builder,
   plugins,
   modules,
-}
+};

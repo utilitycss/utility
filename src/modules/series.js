@@ -15,7 +15,8 @@ module.exports = config => globalConfig => {
     variantSeparator = '',
     breakPointSeparator = '',
     breakPoints = {},
-  } = globalConfig || {};
+  } =
+    globalConfig || {};
 
   const series = defineSeries(className, property, values, {
     seriesSeparator,
@@ -24,10 +25,12 @@ module.exports = config => globalConfig => {
   });
 
   if (isResponsive) {
-    return series.concat(responsive(series, breakPoints, {
+    return series.concat(
+      responsive(series, breakPoints, {
         breakPointSeparator,
-    }));
+      }),
+    );
   }
 
   return series;
-}
+};

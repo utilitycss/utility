@@ -8,17 +8,16 @@ const { builder } = utility;
 
 const packageJson = require(path.resolve(__dirname, '../package.json'));
 
-program
-  .version(packageJson.version)
-  .usage('<command> [<args>]');
+program.version(packageJson.version).usage('<command> [<args>]');
 
-program.command('init [filename]')
+program
+  .command('init [filename]')
   .usage('[options] [filename]')
   .action((fileName = 'utility.config.js') => {
-    let configFile= path.resolve(fileName);
+    let configFile = path.resolve(fileName);
 
     if (!path.extname(fileName).includes('.js')) {
-      configFile += '.js'
+      configFile += '.js';
     }
 
     if (fs.existsSync(configFile)) {
@@ -26,7 +25,10 @@ program.command('init [filename]')
       process.exit(1);
     }
 
-    const output = fs.readFileSync(path.resolve(__dirname, '../utility.config.default.js'), 'utf8');
+    const output = fs.readFileSync(
+      path.resolve(__dirname, '../utility.config.default.js'),
+      'utf8',
+    );
     fs.writeFileSync(configFile, output);
     console.log(`Generated config file: ${configFile}`);
   });
@@ -60,16 +62,15 @@ program
     postcss([builder(config)])
       .process(input)
       .then(result => {
-          write(result.css);
-          console.log('Success!');
+        write(result.css);
+        console.log('Success!');
       })
       .catch(e => console.log(e));
   });
 
-program.command('*', null, { noHelp: true })
-  .action(() => {
-    program.help()
-  });
+program.command('*', null, { noHelp: true }).action(() => {
+  program.help();
+});
 
 program.parse(process.argv);
 

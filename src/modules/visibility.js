@@ -1,13 +1,15 @@
 const applyRules = require('../util/applyRules');
 
 const defaultNames = {
-  z: 'z',
-  'z:a': 'za',
+  'v:v': 'vv',
+  'v:h': 'vh',
+  'v:c': 'vc',
 };
 
 const getRules = (names, cfg) => ({
-  z: { n: names['z'], k: 'z-index', v: cfg.values },
-  'z:a': { n: names['z:a'], k: 'z-index', v: 'auto' },
+  'v:v': { n: names['v:v'], k: 'visibility', v: 'visible' },
+  'v:h': { n: names['v:h'], k: 'visibility', v: 'hidden' },
+  'v:c': { n: names['v:c'], k: 'visibility', v: 'collapse' },
 });
 
 module.exports = config => globalConfig => {
