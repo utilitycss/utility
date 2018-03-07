@@ -45,9 +45,16 @@ program
       ? data => fs.writeFileSync(options.output, data)
       : data => process.stdout.write(data);
 
-    const config = options.config
-      ? require(path.resolve(options.config))
-      : require(path.resolve(__dirname, '../utility.config.default.js'));
+    let config;
+    const localConfig = path.resolve('utility.config.js');
+
+    if (options.config) {
+      config = require(path.resolve(options.config));
+    } else if (fs.existsSync(localConfig)) {
+      config = require(localConfig);
+    } else {
+      config = require(path.resolve(__dirname, '../utility.config.default.js'));
+    }
 
     console.log('Building CSS bundle...');
     postcss([builder(config)])
