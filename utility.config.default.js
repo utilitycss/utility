@@ -13,6 +13,11 @@ const {
     visibility,
     overflow,
     resize,
+    cursor,
+    boxSizing,
+    width,
+    height,
+    font,
   },
 } = require('@utilitycss/utility');
 
@@ -87,6 +92,19 @@ const modules = [
   visibility(),
   overflow(),
   resize(),
+  cursor(),
+  boxSizing(),
+  width({
+    widthValues: { 100: '100%', 75: '75%', 50: '50%', 25: '25%' },
+    maxWidthValues: { 100: '100%' },
+    isResponsive: true,
+  }),
+  height({
+    heightValues: { 100: '100%', 75: '75%', 50: '50%', 25: '25%' },
+    maxHeightValues: { 100: '100%' },
+    isResponsive: true,
+  }),
+  font({ fontSizeValues: ['1rem', '1.25rem', '1.5rem', '2rem', '3rem'] }),
 ];
 
 const plugins = [prefix({ prefix: 'x-' })];

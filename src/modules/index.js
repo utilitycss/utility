@@ -10,6 +10,11 @@ const display = require('./display');
 const visibility = require('./visibility');
 const overflow = require('./overflow');
 const resize = require('./resize');
+const cursor = require('./cursor');
+const boxSizing = require('./box-sizing');
+const width = require('./width');
+const height = require('./height');
+const font = require('./font');
 
 module.exports = {
   single,
@@ -24,4 +29,9 @@ module.exports = {
   visibility,
   overflow,
   resize,
+  cursor,
+  boxSizing,
+  width,
+  height,
+  font,
 };
