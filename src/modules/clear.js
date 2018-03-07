@@ -14,6 +14,10 @@ const getRules = (names, cfg) => ({
   'cl:b': { n: names['cl:b'], k: 'clear', v: 'both' },
 });
 
+const meta = {
+  module: 'clear',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

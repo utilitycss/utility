@@ -16,7 +16,7 @@ const getRules = (names, cfg) => ({
   'pos:f': { n: names['pos:f'], k: 'position', v: 'fixed' },
 });
 
-module.exports = (config, globalConfig, defaultNames, getRules) => {
+module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
   const { names = {}, whitelist = [], blacklist = [], isResponsive = false } =
     config || {};
 
@@ -45,10 +45,11 @@ module.exports = (config, globalConfig, defaultNames, getRules) => {
         defineSeries(rule.n, rule.k, rule.v, {
           seriesSeparator,
           variantSeparator,
+          meta,
         }),
       );
     } else if (typeof rule.v === 'string' || typeof rule.v === 'number') {
-      p = p.concat(defineClass(rule.n, { [`${rule.k}`]: rule.v }));
+      p = p.concat(defineClass(rule.n, { [`${rule.k}`]: rule.v }, meta));
     }
     return p;
   }, []);

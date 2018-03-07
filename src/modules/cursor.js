@@ -22,6 +22,10 @@ const getRules = (names, cfg) => ({
   'cur:t': { n: names['cur:t'], k: 'cursor', v: 'text' },
 });
 
+const meta = {
+  module: 'cursor',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

@@ -40,6 +40,10 @@ const getRules = (names, cfg) => ({
   'ovs:mq': { n: names['ovs:mq'], k: 'overflow-style', v: 'marquee' },
 });
 
+const meta = {
+  module: 'overflow',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

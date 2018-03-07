@@ -54,6 +54,10 @@ const getRules = (names, cfg) => ({
   'd:rbtg': { n: names['d:rbtg'], k: 'display', v: 'ruby-text-group' },
 });
 
+const meta = {
+  module: 'display',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

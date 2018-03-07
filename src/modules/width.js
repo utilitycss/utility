@@ -16,6 +16,10 @@ const getRules = (names, cfg) => ({
   miw: { n: names['miw'], k: 'max-width', v: cfg.minWidthValues },
 });
 
+const meta = {
+  module: 'width',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

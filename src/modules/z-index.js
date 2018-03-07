@@ -10,6 +10,10 @@ const getRules = (names, cfg) => ({
   'z:a': { n: names['z:a'], k: 'z-index', v: 'auto' },
 });
 
+const meta = {
+  module: 'z-index',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

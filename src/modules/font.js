@@ -88,6 +88,10 @@ const getRules = (names, cfg) => ({
   'fst:ue': { n: names['fst:ue'], k: 'font-stretch', v: 'ultra-expanded' },
 });
 
+const meta = {
+  module: 'font',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

@@ -1,6 +1,6 @@
 const defineClass = require('./src/util/defineClass');
 const {
-  plugins: { prefix },
+  plugins: { prefix, docs },
   modules: {
     single,
     series,
@@ -107,7 +107,7 @@ const modules = [
   font({ fontSizeValues: ['1rem', '1.25rem', '1.5rem', '2rem', '3rem'] }),
 ];
 
-const plugins = [prefix({ prefix: 'x-' })];
+const plugins = [prefix({ prefix: 'x-' }), docs({ output: 'docs.html' })];
 
 module.exports = {
   config: {

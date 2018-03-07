@@ -12,6 +12,10 @@ const getRules = (names, cfg) => ({
   'fl:r': { n: names['fl:r'], k: 'float', v: 'right' },
 });
 
+const meta = {
+  module: 'float',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

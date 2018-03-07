@@ -14,6 +14,10 @@ const getRules = (names, cfg) => ({
   'rsz:v': { n: names['rsz:v'], k: 'resize', v: 'vertical' },
 });
 
+const meta = {
+  module: 'resize',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

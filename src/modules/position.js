@@ -30,6 +30,10 @@ const getRules = (names, cfg) => ({
   'l:a': { n: names['l:a'], k: 'left', v: 'auto' },
 });
 
+const meta = {
+  module: 'position',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

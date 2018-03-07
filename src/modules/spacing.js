@@ -36,6 +36,10 @@ const getRules = (names, cfg) => ({
   pl: { n: names['pl'], k: 'padding-left', v: cfg.paddingValues },
 });
 
+const meta = {
+  module: 'spacing',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

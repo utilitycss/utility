@@ -10,6 +10,10 @@ const getRules = (names, cfg) => ({
   'bxz:bb': { n: names['bxz:bb'], k: 'box-sizing', v: 'border-box' },
 });
 
+const meta = {
+  module: 'box-sizing',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };

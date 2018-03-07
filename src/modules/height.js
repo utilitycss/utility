@@ -16,6 +16,10 @@ const getRules = (names, cfg) => ({
   mih: { n: names['mih'], k: 'max-height', v: cfg.minHeightValues },
 });
 
+const meta = {
+  module: 'height',
+};
+
 module.exports = config => globalConfig => {
-  return applyRules(config, globalConfig, defaultNames, getRules);
+  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
 };
