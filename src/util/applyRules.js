@@ -2,20 +2,6 @@ const defineClass = require('./defineClass');
 const defineSeries = require('./defineSeries');
 const responsive = require('./responsive');
 
-const defaultNames = {
-  'pos:s': 'poss',
-  'pos:a': 'posa',
-  'pos:r': 'posr',
-  'pos:f': 'posf',
-};
-
-const getRules = (names, cfg) => ({
-  'pos:s': { n: names['pos:s'], k: 'postion', v: 'static' },
-  'pos:a': { n: names['pos:a'], k: 'position', v: 'absolute' },
-  'pos:r': { n: names['pos:r'], k: 'position', v: 'relative' },
-  'pos:f': { n: names['pos:f'], k: 'position', v: 'fixed' },
-});
-
 module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
   const { names = {}, whitelist = [], blacklist = [], isResponsive = false } =
     config || {};
