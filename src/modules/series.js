@@ -1,6 +1,10 @@
 const defineSeries = require('../util/defineSeries');
 const responsive = require('../util/responsive');
 
+const meta = {
+  module: 'series',
+};
+
 module.exports = config => globalConfig => {
   const {
     property,
@@ -22,6 +26,7 @@ module.exports = config => globalConfig => {
     seriesSeparator,
     variantSeparator,
     variants,
+    meta,
   });
 
   if (isResponsive) {

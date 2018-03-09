@@ -15,6 +15,10 @@ const boxSizing = require('./box-sizing');
 const width = require('./width');
 const height = require('./height');
 const font = require('./font');
+const verticalAlign = require('./vertical-align');
+const textAlign = require('./text-align');
+const textDecoration = require('./text-decoration');
+const textTransform = require('./text-transform');
 
 module.exports = {
   single,
@@ -34,4 +38,8 @@ module.exports = {
   width,
   height,
   font,
+  verticalAlign,
+  textAlign,
+  textDecoration,
+  textTransform,
 };

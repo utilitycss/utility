@@ -6,14 +6,14 @@ const defaultNames = {
   'fw:b': 'fwb',
   'fw:br': 'fwbr',
   'fw:lr': 'fwlr',
-  'fs:n': 'fs:n',
-  'fs:i': 'fs:i',
-  'fs:o': 'fs:o',
+  'fs:n': 'fsn',
+  'fs:i': 'fsi',
+  'fs:o': 'fso',
   'fv:n': 'fvn',
   'fv:sc': 'fvsc',
   fz: 'fz',
   fza: 'fza',
-  'fza:n': 'fza:n',
+  'fza:n': 'fzan',
   ff: 'ff',
   'ff:s': 'ffs',
   'ff:ss': 'ffss',
@@ -93,5 +93,11 @@ const meta = {
 };
 
 module.exports = config => globalConfig => {
-  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
+  return applyRules({
+    config,
+    globalConfig,
+    defaultNames,
+    getRules,
+    meta: Object.assign({}, meta, config && config.meta),
+  });
 };

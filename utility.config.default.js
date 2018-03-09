@@ -1,6 +1,6 @@
-const defineClass = require('./src/util/defineClass');
 const {
   plugins: { prefix, docs },
+  util: { defineClass },
   modules: {
     single,
     series,
@@ -18,11 +18,15 @@ const {
     width,
     height,
     font,
+    verticalAlign,
+    textAlign,
+    textDecoration,
+    textTransform,
   },
 } = require('@utilitycss/utility');
 
 const customModule = () => () => {
-  return [defineClass('custom', { foo: 'bar' })];
+  return [defineClass('custom', { foo: 'bar' }, { module: 'custom module' })];
 };
 
 const breakPoints = {
@@ -104,7 +108,15 @@ const modules = [
     maxHeightValues: { 100: '100%' },
     isResponsive: true,
   }),
-  font({ fontSizeValues: ['1rem', '1.25rem', '1.5rem', '2rem', '3rem'] }),
+  font({
+    names: { fz: 'f' },
+    fontSizeValues: ['1rem', '1.25rem', '1.5rem', '2rem', '3rem'],
+    meta: { module: 'typography' },
+  }),
+  verticalAlign(),
+  textAlign(),
+  textDecoration(),
+  textTransform(),
 ];
 
 const plugins = [prefix({ prefix: 'x-' }), docs({ output: 'docs.html' })];

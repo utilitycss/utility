@@ -17,5 +17,11 @@ const meta = {
 };
 
 module.exports = config => globalConfig => {
-  return applyRules({ config, globalConfig, defaultNames, getRules, meta });
+  return applyRules({
+    config,
+    globalConfig,
+    defaultNames,
+    getRules,
+    meta: Object.assign({}, meta, config && config.meta),
+  });
 };
