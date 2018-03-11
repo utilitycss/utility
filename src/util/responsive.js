@@ -11,7 +11,8 @@ module.exports = (rules, breakpoints = {}, options = {}) => {
     });
 
     return postcss.atRule({
-      name: `media (${breakpoints[bp]})`,
+      name: 'media',
+      params: breakpoints[bp],
       nodes,
     });
   });

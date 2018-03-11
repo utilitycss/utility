@@ -1,7 +1,7 @@
 const generateModules = require('../util/generateModules');
 
 const resolveUtility = config => css => {
-  const { plugins = [] } = config;
+  const { plugins = [] } = config || {};
 
   css.walkAtRules('utility', atRule => {
     const modules = generateModules(config);

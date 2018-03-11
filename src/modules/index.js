@@ -6,6 +6,7 @@ const position = require('./position');
 const zIndex = require('./z-index');
 const float = require('./float');
 const clear = require('./clear');
+const colors = require('./colors');
 const display = require('./display');
 const visibility = require('./visibility');
 const overflow = require('./overflow');
@@ -29,6 +30,7 @@ module.exports = {
   zIndex,
   float,
   clear,
+  colors,
   display,
   visibility,
   overflow,
