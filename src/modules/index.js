@@ -15,6 +15,7 @@ const cursor = require('./cursor');
 const boxSizing = require('./box-sizing');
 const width = require('./width');
 const height = require('./height');
+const flexbox = require('./flexbox');
 const font = require('./font');
 const verticalAlign = require('./vertical-align');
 const textAlign = require('./text-align');
@@ -39,6 +40,7 @@ module.exports = {
   boxSizing,
   width,
   height,
+  flexbox,
   font,
   verticalAlign,
   textAlign,
