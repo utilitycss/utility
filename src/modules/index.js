@@ -11,6 +11,8 @@ const clear = require('./clear');
 const colors = require('./colors');
 const display = require('./display');
 const visibility = require('./visibility');
+const opacity = require('./opacity');
+const outline = require('./outline');
 const overflow = require('./overflow');
 const resize = require('./resize');
 const cursor = require('./cursor');
@@ -23,6 +25,8 @@ const verticalAlign = require('./vertical-align');
 const textAlign = require('./text-align');
 const textDecoration = require('./text-decoration');
 const textTransform = require('./text-transform');
+const transform = require('./transform');
+const transition = require('./transition');
 
 module.exports = {
   single,
@@ -38,6 +42,8 @@ module.exports = {
   colors,
   display,
   visibility,
+  opacity,
+  outline,
   overflow,
   resize,
   cursor,
@@ -50,4 +56,6 @@ module.exports = {
   textAlign,
   textDecoration,
   textTransform,
+  transform,
+  transition,
 };
