@@ -1,6 +1,8 @@
 const single = require('./single');
 const series = require('./series');
 
+const backgroundImage = require('./background-image');
+const border = require('./border');
 const spacing = require('./spacing');
 const position = require('./position');
 const zIndex = require('./z-index');
@@ -26,6 +28,8 @@ module.exports = {
   single,
   series,
 
+  backgroundImage,
+  border,
   spacing,
   position,
   zIndex,
