@@ -1,6 +1,6 @@
 {
   "name": "@utilitycss/utility",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Generator for Utility CSS frameworks",
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",

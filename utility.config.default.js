@@ -125,7 +125,7 @@ module.exports = {
   config: {
     breakPointSeparator: '-',
     seriesSeparator: '',
-    variantSeparator: '',
+    pseudoClassesSeparator: '',
     breakPoints,
   },
   modules,
