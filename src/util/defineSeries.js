@@ -3,22 +3,23 @@ const defineClass = require('./defineClass');
 module.exports = (name, prop, values, options = {}) => {
   const {
     seriesSeparator = '',
-    variantSeparator = '',
-    variants = { '': '' },
+    pseudoClassesSeparator = '',
+    pseudoClasses = [],
     meta = {},
   } = options;
 
-  return Object.keys(variants).reduce((prev, variant) => {
-    const separator = variant !== '' ? variantSeparator : '';
-    const varianNodes = Object.keys(values).map(value =>
+  return [''].concat(pseudoClasses).reduce((prev, pseudo) => {
+    const separator = pseudo !== '' ? pseudoClassesSeparator : '';
+    const pseudoClass = pseudo.replace(/:/g, '');
+    const nodes = Object.keys(values).map(value =>
       defineClass(
-        `${name}${separator}${variant}${seriesSeparator}${value}`,
+        `${name}${seriesSeparator}${value}${separator}${pseudoClass}${pseudo}`,
         {
-          [`${prop}${variants[variant]}`]: values[value],
+          [`${prop}`]: values[value],
         },
         meta,
       ),
     );
-    return prev.concat(varianNodes);
+    return prev.concat(nodes);
   }, []);
 };

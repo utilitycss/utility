@@ -11,12 +11,12 @@ module.exports = config => globalConfig => {
     className,
     values,
     isResponsive = false,
-    variants = { '': '' },
+    pseudoClasses = [],
   } = config;
 
   const {
     seriesSeparator = '',
-    variantSeparator = '',
+    pseudoClassesSeparator = '',
     breakPointSeparator = '',
     breakPoints = {},
   } =
@@ -24,8 +24,8 @@ module.exports = config => globalConfig => {
 
   const series = defineSeries(className, property, values, {
     seriesSeparator,
-    variantSeparator,
-    variants,
+    pseudoClassesSeparator,
+    pseudoClasses,
     meta,
   });
 
