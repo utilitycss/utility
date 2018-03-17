@@ -19,8 +19,12 @@
     "postcss": "6.0.19"
   },
   "devDependencies": {
+    "chalk": "^2.3.2",
+    "postcss-cli": "^5.0.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.11.1"
   },
-  "pre-commit": ["format"]
+  "pre-commit": [
+    "format"
+  ]
 }

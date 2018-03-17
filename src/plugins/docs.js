@@ -1,4 +1,6 @@
 const fs = require('fs');
+const path = require('path');
+const saveFile = require('../helpers/save-file');
 
 module.exports = config => root => {
   const { output } = config || {};
@@ -39,7 +41,12 @@ module.exports = config => root => {
   defs.forEach(d => (content += d));
 
   if (output) {
-    fs.writeFileSync(output, content);
+    const { dir: dirPath } = path.parse(output);
+    saveFile({
+      content,
+      filePath: output,
+      dirPath
+    });
   } else {
     process.stdout.write(content);
   }
