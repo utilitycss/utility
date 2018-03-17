@@ -1,0 +1,42 @@
+<h1 class="uk-h1">
+  <a href="#<%= module %>">
+    <%= module %>
+  </a>
+</h1>
+<h2 class="uk-h3">
+  Usage
+</h2>
+<div class="uk-overflow-auto">
+  <table class="uk-table uk-table-divider">
+    <thead>
+      <tr>
+        <th style="text-align:left">Class</th>
+        <th style="text-align:left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% _.forEach(rules, function(rule) { %>
+        <tr>
+          <td style="text-align:left">
+            <code>
+              <%= rule.selector %>
+            </code>
+          </td>
+          <td style="text-align:left">
+            <div class="<%= rule.class %>">
+              Lorem Ipsum
+            </div>
+            <% if (typeof(rule.media) !== "undefined") { %>
+              <div class="uk-text-bold uk-text-small">
+                <%= rule.media %>
+              </div>
+              <% } %>
+                <code>
+                <%= rule.nodes %>
+              </code>
+          </td>
+        </tr>
+        <% }); %>
+    </tbody>
+  </table>
+</div>
