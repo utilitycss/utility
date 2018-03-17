@@ -1,13 +1,13 @@
-const fs = require('fs');
-const path = require('path');
-const saveFile = require('../helpers/save-file');
+const fs = require("fs");
+const path = require("path");
+const saveFile = require("../helpers/save-file");
 
 module.exports = config => root => {
-  const { output } = config || {};
+  const { output, openFile } = config || {};
 
   const modules = {};
 
-  let content = '';
+  let content = "";
 
   root.walkRules(rule => {
     const { meta: { module } } = rule;
@@ -23,19 +23,19 @@ module.exports = config => root => {
   });
 
   const index = `<div class=index><ul class="index-list">${links.join(
-    '',
+    ""
   )}</ul></div>`;
 
   content += index;
 
   const defs = Object.keys(modules).map(m => {
     const rules = modules[m].map(r => {
-      return `<div class="rule ${r.selector.replace('.', '')}">${
+      return `<div class="rule ${r.selector.replace(".", "")}">${
         r.selector
       }</div><div class="code">{ ${r.nodes}; }</div>`;
     });
 
-    return `<h1><a name="${m}">${m}</a></h1>${rules.join('')}`;
+    return `<h1><a name="${m}">${m}</a></h1>${rules.join("")}`;
   });
 
   defs.forEach(d => (content += d));
@@ -45,7 +45,8 @@ module.exports = config => root => {
     saveFile({
       content,
       filePath: output,
-      dirPath
+      dirPath,
+      openFile
     });
   } else {
     process.stdout.write(content);
