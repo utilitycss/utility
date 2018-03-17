@@ -7,15 +7,16 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
+    "build-example": "yarn postcss example/example.css -o example/dist/example.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format":
-      "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
+    "format": "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
   },
   "bin": {
     "utility": "src/cli.js"
   },
   "dependencies": {
     "commander": "2.14.1",
+    "lodash": "^4.17.5",
     "opn": "^5.3.0",
     "postcss": "6.0.19"
   },
