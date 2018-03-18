@@ -2,6 +2,7 @@ const buildCss = require("./build-css");
 const buildNav = require("./build-nav");
 const buildSidebar = require("./build-sidebar");
 const buildSections = require("./build-sections");
+const buildStats = require("./build-stats");
 const buildIndex = require("./build-index");
 
 module.exports = function({ packageName, modules, atomCss }) {
@@ -19,10 +20,15 @@ module.exports = function({ packageName, modules, atomCss }) {
     modules
   });
 
+  const statsHtml = buildStats({
+    atomCss
+  });
+
   return {
     headHtml,
     navHtml,
     sidebarHtml,
-    sectionsHtml
+    sectionsHtml,
+    statsHtml
   };
 };

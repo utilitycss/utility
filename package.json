@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "commander": "2.14.1",
+    "cssstats": "^3.2.0",
     "lodash": "^4.17.5",
     "opn": "^5.3.0",
     "postcss": "6.0.19"

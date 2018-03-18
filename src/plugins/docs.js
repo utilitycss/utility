@@ -10,7 +10,6 @@ const buildIndex = require("../helpers/build-index");
 module.exports = config => root => {
   const { output, openFile } = config || {};
   const { nodes } = root;
-
   const modules = {};
 
   const traverseObject = (node, media) => {
@@ -49,7 +48,13 @@ module.exports = config => root => {
     const packageName = "Utility";
     const templateFolder = path.join(__dirname, "..", "helpers", "templates");
 
-    const { headHtml, navHtml, sidebarHtml, sectionsHtml } = buildDocPartials({
+    const {
+      headHtml,
+      navHtml,
+      sidebarHtml,
+      sectionsHtml,
+      statsHtml
+    } = buildDocPartials({
       packageName,
       modules,
       atomCss: root.toString()
@@ -60,7 +65,8 @@ module.exports = config => root => {
       headHtml,
       navHtml,
       sidebarHtml,
-      sectionsHtml
+      sectionsHtml,
+      statsHtml
     });
 
     saveFile({

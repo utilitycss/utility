@@ -7,6 +7,7 @@ module.exports = function({
   navHtml,
   sidebarHtml,
   sectionsHtml,
+  statsHtml,
   packageName
 }) {
   const indexTemplate = _.template(
@@ -17,7 +18,8 @@ module.exports = function({
     head: headHtml,
     nav: navHtml,
     sidebar: sidebarHtml,
-    sections: sectionsHtml
+    sections: sectionsHtml,
+    stats: statsHtml
   });
 
   return indexHtml;

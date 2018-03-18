@@ -1,0 +1,129 @@
+<a name="Stats"></a>
+<h1 class="uk-heading-bullet">
+  Stats
+</h1>
+<h2 class="uk-h3">
+  Overview
+</h2>
+<div class="uk-overflow-auto">
+  <table class="uk-table uk-table-divider">
+    <thead>
+      <tr>
+        <th style="text-align:left">Size</th>
+        <th style="text-align:left">Gzipped Size</th>
+        <th style="text-align:left">Rules</th>
+        <th style="text-align:left">Declarations</th>
+        <th style="text-align:left">Media queries</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p class="uk-text-lead">
+            <%= overview.size %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= overview.gzippedSize %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= overview.totalRules %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= overview.totalDecls %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= overview.totalMedia %>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="uk-h3">
+  Selectors
+</h2>
+<div class="uk-overflow-auto">
+  <table class="uk-table uk-table-divider">
+    <thead>
+      <tr>
+        <th style="text-align:left">Total</th>
+        <th style="text-align:left">Class</th>
+        <th style="text-align:left">id</th>
+        <th style="text-align:left">Pseudo Class</th>
+        <th style="text-align:left">Pseudo Element</th>
+        <th style="text-align:left">Specificity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p class="uk-text-lead">
+            <%= selectors.total %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= selectors.class %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= selectors.id %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= selectors.pClass %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= selectors.pElement %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= selectors.specificity %>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="uk-h3">
+  Declarations
+</h2>
+<div class="uk-overflow-auto">
+  <table class="uk-table uk-table-divider">
+    <thead>
+      <tr>
+        <th style="text-align:left">Total</th>
+        <th style="text-align:left">Unique</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p class="uk-text-lead">
+            <%= declarations.total %>
+          </p>
+        </td>
+        <td>
+          <p class="uk-text-lead">
+            <%= declarations.unique %>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
