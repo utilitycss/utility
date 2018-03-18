@@ -51,7 +51,8 @@ module.exports = config => root => {
 
     const { headHtml, navHtml, sidebarHtml, sectionsHtml } = buildDocPartials({
       packageName,
-      modules
+      modules,
+      atomCss: root.toString()
     });
 
     const indexHtml = buildIndex({

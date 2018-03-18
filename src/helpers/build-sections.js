@@ -2,6 +2,13 @@ const path = require("path");
 const _ = require("lodash");
 const fs = require("fs");
 
+const selectorReplace = selector => {
+  return selector
+    .replace(".", "")
+    .replace(":active", "")
+    .replace(":hover", "");
+};
+
 module.exports = function({ modules }) {
   const sectionTemplate = _.template(
     fs.readFileSync(path.join(__dirname, "templates", "section.html"), "utf8")
@@ -17,7 +24,7 @@ module.exports = function({ modules }) {
         selector,
         nodes,
         media,
-        class: selector.replace(".", "")
+        class: selectorReplace(selector)
       });
     });
     const sectionHtml = sectionTemplate({

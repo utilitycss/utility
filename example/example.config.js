@@ -2,7 +2,7 @@ const path = require("path");
 const {
   plugins: { docs },
   util: { defineClass },
-  modules: { font }
+  modules: { font, colors }
 } = require("../src/index");
 
 const breakPoints = {
@@ -35,6 +35,34 @@ const modules = [
       "2rem"
     ],
     isResponsive: true
+  }),
+  colors({
+    whitelist: ["c", "bgc", "bdc"],
+    pseudoClasses: { c: [":hover"], bgc: [":hover", ":active"] },
+    colorValues: {
+      orange: "#ff6900",
+      black: "#1a1a1a",
+      grey: "#777777",
+      grey2: "#a5a5a5",
+      grey3: "#dddddd",
+      red: "#ce3535",
+      green: "#0f7e4a",
+      blue: "#0062b4"
+    },
+    backgroundColorValues: {
+      white: "#f3f3f3",
+      pink: "#fde5e5",
+      green: "#e0f3ea",
+      yellow: "#fffdc0"
+    },
+    borderColorValues: {
+      orange: "#ff6900",
+      black: "#1a1a1a",
+      white: "#ffffff",
+      grey: "#a5a5a5",
+      green: "#0f7e4a",
+      red: "#ce3535"
+    }
   })
 ];
 

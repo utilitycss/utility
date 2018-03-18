@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const _ = require("lodash");
-module.exports = function({ packageName }) {
+module.exports = function({ packageName, atomCss }) {
   const cssFile = fs.readFileSync(
     path.join(__dirname, "templates", "theme.css"),
     "utf8"
@@ -11,7 +11,8 @@ module.exports = function({ packageName }) {
   );
   const headHtml = headTemplate({
     packageName,
-    cssFile
+    cssFile,
+    atomCss
   });
 
   return headHtml;
