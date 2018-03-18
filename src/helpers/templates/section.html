@@ -1,7 +1,6 @@
+<a name="<%= module %>"></a>
 <h1 class="uk-h1">
-  <a name="<%= module %>">
-    <%= module %>
-  </a>
+  <%= module %>
 </h1>
 <h2 class="uk-h3">
   Usage
@@ -27,9 +26,12 @@
               Lorem Ipsum
             </div>
             <% if (typeof(rule.media) !== "undefined") { %>
-              <div class="uk-text-bold uk-text-small">
+              <p>
+                <span class="uk-text-small uk-label">
+                  Breakpoint
+                </span>
                 <%= rule.media %>
-              </div>
+              </p>
               <% } %>
                 <code>
                 <%= rule.nodes %>
