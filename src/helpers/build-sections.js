@@ -1,17 +1,17 @@
-const path = require("path");
-const _ = require("lodash");
-const fs = require("fs");
+const path = require('path');
+const _ = require('lodash');
+const fs = require('fs');
 
 const selectorReplace = selector => {
   return selector
-    .replace(".", "")
-    .replace(":active", "")
-    .replace(":hover", "");
+    .replace('.', '')
+    .replace(':active', '')
+    .replace(':hover', '');
 };
 
 module.exports = function({ modules }) {
   const sectionTemplate = _.template(
-    fs.readFileSync(path.join(__dirname, "templates", "section.html"), "utf8")
+    fs.readFileSync(path.join(__dirname, 'templates', 'section.html'), 'utf8'),
   );
   const sectionsHtml = [];
   Object.keys(modules).forEach(module => {
@@ -24,12 +24,12 @@ module.exports = function({ modules }) {
         selector,
         nodes,
         media,
-        class: selectorReplace(selector)
+        class: selectorReplace(selector),
       });
     });
     const sectionHtml = sectionTemplate({
       module: moduleName,
-      rules
+      rules,
     });
     sectionsHtml.push(sectionHtml);
   });

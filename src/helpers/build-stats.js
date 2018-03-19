@@ -1,7 +1,7 @@
-const path = require("path");
-const fs = require("fs");
-const _ = require("lodash");
-const cssstats = require("cssstats");
+const path = require('path');
+const fs = require('fs');
+const _ = require('lodash');
+const cssstats = require('cssstats');
 
 module.exports = function({ atomCss }) {
   const {
@@ -14,14 +14,14 @@ module.exports = function({ atomCss }) {
       id: selectorsId,
       pseudoClass: selectorsPseudoClass,
       pseudoElement: selectorsPseudoElement,
-      specificity: { average: selectorsSpecificity } = {}
+      specificity: { average: selectorsSpecificity } = {},
     } = {},
     declarations: { total: totalDecls, unique: uniqueDecls } = {},
-    mediaQueries: { total: totalMedia } = {}
+    mediaQueries: { total: totalMedia } = {},
   } = cssstats(atomCss);
 
   const statsTemplate = _.template(
-    fs.readFileSync(path.join(__dirname, "templates", "stats.html"), "utf8")
+    fs.readFileSync(path.join(__dirname, 'templates', 'stats.html'), 'utf8'),
   );
   const statsHtml = statsTemplate({
     overview: {
@@ -29,7 +29,7 @@ module.exports = function({ atomCss }) {
       gzippedSize,
       totalRules,
       totalDecls,
-      totalMedia
+      totalMedia,
     },
     selectors: {
       total: totalSelectors,
@@ -37,12 +37,12 @@ module.exports = function({ atomCss }) {
       id: selectorsId,
       pClass: selectorsPseudoClass,
       pElement: selectorsPseudoElement,
-      specificity: Math.round(selectorsSpecificity)
+      specificity: Math.round(selectorsSpecificity),
     },
     declarations: {
       total: totalDecls,
-      unique: uniqueDecls
-    }
+      unique: uniqueDecls,
+    },
   });
   return statsHtml;
 };

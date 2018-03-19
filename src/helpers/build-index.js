@@ -1,6 +1,6 @@
-const path = require("path");
-const _ = require("lodash");
-const fs = require("fs");
+const path = require('path');
+const _ = require('lodash');
+const fs = require('fs');
 
 module.exports = function({
   headHtml,
@@ -8,10 +8,10 @@ module.exports = function({
   sidebarHtml,
   sectionsHtml,
   statsHtml,
-  packageName
+  packageName,
 }) {
   const indexTemplate = _.template(
-    fs.readFileSync(path.join(__dirname, "templates", "index.html"), "utf8")
+    fs.readFileSync(path.join(__dirname, 'templates', 'index.html'), 'utf8'),
   );
   const indexHtml = indexTemplate({
     packageName,
@@ -19,7 +19,7 @@ module.exports = function({
     nav: navHtml,
     sidebar: sidebarHtml,
     sections: sectionsHtml,
-    stats: statsHtml
+    stats: statsHtml,
   });
 
   return indexHtml;
