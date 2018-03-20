@@ -14,12 +14,12 @@ const breakPoints = {
 const plugins = [
   docs({
     output: path.join(__dirname, "/dist/docs.html"),
-    openFile: false
+    openFile: true
   })
 ];
 
 const modules = [
-  font({
+  /* font({
     names: { fz: "f" },
     whitelist: ["fw:b", "fz", "ff"],
     fontSizeValues: [
@@ -35,7 +35,7 @@ const modules = [
       "2rem"
     ],
     isResponsive: true
-  }),
+  }), */
   colors({
     whitelist: ["c", "bgc", "bdc"],
     pseudoClasses: { c: [":hover"], bgc: [":hover", ":active"] },
