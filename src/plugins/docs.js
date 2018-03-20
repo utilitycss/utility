@@ -1,11 +1,11 @@
-const fs = require('fs');
-const path = require('path');
-const saveFile = require('../helpers/save-file');
+const fs = require("fs");
+const path = require("path");
+const saveFile = require("../helpers/save-file");
 
-const _ = require('lodash');
+const _ = require("lodash");
 
-const buildDocPartials = require('../helpers/build-doc-partials');
-const buildIndex = require('../helpers/build-index');
+const buildDocPartials = require("../helpers/build-doc-partials");
+const buildIndex = require("../helpers/build-index");
 
 module.exports = config => root => {
   const { output, openFile } = config || {};
@@ -19,9 +19,9 @@ module.exports = config => root => {
       { selector, nodes, type },
       media !== undefined
         ? {
-            media: media,
+            media: media
           }
-        : {},
+        : {}
     );
     if (Array.isArray(modules[module])) {
       modules[module].push(nodeToPush);
@@ -31,7 +31,7 @@ module.exports = config => root => {
   };
   const traverseNodes = (nodes, media) => {
     nodes.forEach(node => {
-      if (node.hasOwnProperty('name') && node.name === 'media') {
+      if (node.hasOwnProperty("name") && node.name === "media") {
         const { params: media, nodes } = node;
         traverseNodes(nodes, media);
       } else {
@@ -45,19 +45,19 @@ module.exports = config => root => {
     const { dir: dirPath } = path.parse(output);
 
     // LODASH Template
-    const packageName = 'Utility';
-    const templateFolder = path.join(__dirname, '..', 'helpers', 'templates');
+    const packageName = "Utility";
+    const templateFolder = path.join(__dirname, "..", "helpers", "templates");
 
     const {
       headHtml,
       navHtml,
       sidebarHtml,
       sectionsHtml,
-      statsHtml,
+      statsHtml
     } = buildDocPartials({
       packageName,
       modules,
-      atomCss: root.toString(),
+      atomCss: root.toString()
     });
 
     const indexHtml = buildIndex({
@@ -66,14 +66,14 @@ module.exports = config => root => {
       navHtml,
       sidebarHtml,
       sectionsHtml,
-      statsHtml,
+      statsHtml
     });
 
     saveFile({
       content: indexHtml,
       filePath: output,
       dirPath,
-      openFile,
+      openFile
     });
   } else {
     process.stdout.write(content);

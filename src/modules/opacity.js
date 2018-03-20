@@ -1,15 +1,15 @@
-const applyRules = require('../util/applyRules');
+const applyRules = require("../util/applyRules");
 
 const defaultNames = {
-  op: 'op',
+  op: "op"
 };
 
 const getRules = (names, cfg) => ({
-  op: { n: names['op'], k: 'opacity', v: cfg.values },
+  op: { n: names["op"], k: "opacity", v: cfg.values }
 });
 
 const meta = {
-  module: 'opacity',
+  module: "opacity"
 };
 
 module.exports = config => globalConfig => {
@@ -18,6 +18,6 @@ module.exports = config => globalConfig => {
     globalConfig,
     defaultNames,
     getRules,
-    meta: Object.assign({}, meta, config && config.meta),
+    meta: Object.assign({}, meta, config && config.meta)
   });
 };

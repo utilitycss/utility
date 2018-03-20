@@ -1,9 +1,9 @@
 module.exports = config => root => {
-  const { prefix = '' } = config;
+  const { prefix = "" } = config;
 
   root.walkRules(rule => {
     rule.selectors = rule.selectors.map(selector =>
-      selector.replace(/\./g, `.${prefix}`),
+      selector.replace(/\./g, `.${prefix}`)
     );
   });
 

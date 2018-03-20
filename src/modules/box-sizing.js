@@ -1,17 +1,17 @@
-const applyRules = require('../util/applyRules');
+const applyRules = require("../util/applyRules");
 
 const defaultNames = {
-  'bxz:cb': 'bxzcb',
-  'bxz:bb': 'bxzbb',
+  "bxz:cb": "bxzcb",
+  "bxz:bb": "bxzbb"
 };
 
 const getRules = (names, cfg) => ({
-  'bxz:cb': { n: names['bxz:cb'], k: 'box-sizing', v: 'content-box' },
-  'bxz:bb': { n: names['bxz:bb'], k: 'box-sizing', v: 'border-box' },
+  "bxz:cb": { n: names["bxz:cb"], k: "box-sizing", v: "content-box" },
+  "bxz:bb": { n: names["bxz:bb"], k: "box-sizing", v: "border-box" }
 });
 
 const meta = {
-  module: 'box-sizing',
+  module: "box-sizing"
 };
 
 module.exports = config => globalConfig => {
@@ -20,6 +20,6 @@ module.exports = config => globalConfig => {
     globalConfig,
     defaultNames,
     getRules,
-    meta: Object.assign({}, meta, config && config.meta),
+    meta: Object.assign({}, meta, config && config.meta)
   });
 };

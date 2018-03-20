@@ -1,21 +1,21 @@
-const applyRules = require('../util/applyRules');
+const applyRules = require("../util/applyRules");
 
 const defaultNames = {
-  'cl:n': 'cln',
-  'cl:l': 'cll',
-  'cl:r': 'clr',
-  'cl:b': 'clb',
+  "cl:n": "cln",
+  "cl:l": "cll",
+  "cl:r": "clr",
+  "cl:b": "clb"
 };
 
 const getRules = (names, cfg) => ({
-  'cl:n': { n: names['cl:n'], k: 'clear', v: 'none' },
-  'cl:l': { n: names['cl:l'], k: 'clear', v: 'left' },
-  'cl:r': { n: names['cl:r'], k: 'clear', v: 'right' },
-  'cl:b': { n: names['cl:b'], k: 'clear', v: 'both' },
+  "cl:n": { n: names["cl:n"], k: "clear", v: "none" },
+  "cl:l": { n: names["cl:l"], k: "clear", v: "left" },
+  "cl:r": { n: names["cl:r"], k: "clear", v: "right" },
+  "cl:b": { n: names["cl:b"], k: "clear", v: "both" }
 });
 
 const meta = {
-  module: 'clear',
+  module: "clear"
 };
 
 module.exports = config => globalConfig => {
@@ -24,6 +24,6 @@ module.exports = config => globalConfig => {
     globalConfig,
     defaultNames,
     getRules,
-    meta: Object.assign({}, meta, config && config.meta),
+    meta: Object.assign({}, meta, config && config.meta)
   });
 };

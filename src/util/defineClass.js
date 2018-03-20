@@ -1,20 +1,20 @@
-const postcss = require('postcss');
+const postcss = require("postcss");
 
 const escapeClassName = className =>
-  className.replace(/([^A-Za-z0-9\-\:])/g, '\\$1');
+  className.replace(/([^A-Za-z0-9\-\:])/g, "\\$1");
 
 module.exports = (name, props, meta = {}) => {
   const decls = Object.keys(props).map(prop =>
     postcss.decl({
       prop,
-      value: props[prop],
-    }),
+      value: props[prop]
+    })
   );
 
   return postcss
     .rule({
       selector: `.${escapeClassName(name)}`,
-      meta,
+      meta
     })
     .append(decls);
 };

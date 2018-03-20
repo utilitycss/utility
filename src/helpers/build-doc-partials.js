@@ -1,27 +1,27 @@
-const buildCss = require('./build-css');
-const buildNav = require('./build-nav');
-const buildSidebar = require('./build-sidebar');
-const buildSections = require('./build-sections');
-const buildStats = require('./build-stats');
-const buildIndex = require('./build-index');
+const buildCss = require("./build-css");
+const buildNav = require("./build-nav");
+const buildSidebar = require("./build-sidebar");
+const buildSections = require("./build-sections");
+const buildStats = require("./build-stats");
+const buildIndex = require("./build-index");
 
 module.exports = function({ packageName, modules, atomCss }) {
   const headHtml = buildCss({
     packageName,
-    atomCss,
+    atomCss
   });
   const navHtml = buildNav({
-    packageName,
+    packageName
   });
   const sidebarHtml = buildSidebar({
-    modules,
+    modules
   });
   const sectionsHtml = buildSections({
-    modules,
+    modules
   });
 
   const statsHtml = buildStats({
-    atomCss,
+    atomCss
   });
 
   return {
@@ -29,6 +29,6 @@ module.exports = function({ packageName, modules, atomCss }) {
     navHtml,
     sidebarHtml,
     sectionsHtml,
-    statsHtml,
+    statsHtml
   };
 };

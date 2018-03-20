@@ -1,23 +1,23 @@
 #!/usr/bin/env node
-const program = require('commander');
-const postcss = require('postcss');
-const path = require('path');
-const fs = require('fs');
-const utility = require('..');
+const program = require("commander");
+const postcss = require("postcss");
+const path = require("path");
+const fs = require("fs");
+const utility = require("..");
 const { builder } = utility;
 
-const packageJson = require(path.resolve(__dirname, '../package.json'));
+const packageJson = require(path.resolve(__dirname, "../package.json"));
 
-program.version(packageJson.version).usage('<command> [<args>]');
+program.version(packageJson.version).usage("<command> [<args>]");
 
 program
-  .command('init [filename]')
-  .usage('[options] [filename]')
-  .action((fileName = 'utility.config.js') => {
+  .command("init [filename]")
+  .usage("[options] [filename]")
+  .action((fileName = "utility.config.js") => {
     let configFile = path.resolve(fileName);
 
-    if (!path.extname(fileName).includes('.js')) {
-      configFile += '.js';
+    if (!path.extname(fileName).includes(".js")) {
+      configFile += ".js";
     }
 
     if (fs.existsSync(configFile)) {
@@ -26,49 +26,49 @@ program
     }
 
     const output = fs.readFileSync(
-      path.resolve(__dirname, '../utility.config.default.js'),
-      'utf8',
+      path.resolve(__dirname, "../utility.config.default.js"),
+      "utf8"
     );
     fs.writeFileSync(configFile, output);
     console.log(`Generated config file: ${configFile}`);
   });
 
 program
-  .command('build [filename]')
-  .usage('[options] [filename]')
-  .option('-c, --config [path]', 'Path to config file')
-  .option('-o, --output [path]', 'Output file')
+  .command("build [filename]")
+  .usage("[options] [filename]")
+  .option("-c, --config [path]", "Path to config file")
+  .option("-o, --output [path]", "Output file")
   .action((fileName, options) => {
     const input = fileName
-      ? fs.readFileSync(path.resolve(fileName), 'utf-8')
-      : fs.readFileSync(path.resolve(__dirname, '../bootstrap.css'), 'utf-8');
+      ? fs.readFileSync(path.resolve(fileName), "utf-8")
+      : fs.readFileSync(path.resolve(__dirname, "../bootstrap.css"), "utf-8");
 
     const write = options.output
       ? data => fs.writeFileSync(options.output, data)
       : data => process.stdout.write(data);
 
     let config;
-    const localConfig = path.resolve('utility.config.js');
+    const localConfig = path.resolve("utility.config.js");
 
     if (options.config) {
       config = require(path.resolve(options.config));
     } else if (fs.existsSync(localConfig)) {
       config = require(localConfig);
     } else {
-      config = require(path.resolve(__dirname, '../utility.config.default.js'));
+      config = require(path.resolve(__dirname, "../utility.config.default.js"));
     }
 
-    console.log('Building CSS bundle...');
+    console.log("Building CSS bundle...");
     postcss([builder(config)])
       .process(input)
       .then(result => {
         write(result.css);
-        console.log('Success!');
+        console.log("Success!");
       })
       .catch(e => console.log(e));
   });
 
-program.command('*', null, { noHelp: true }).action(() => {
+program.command("*", null, { noHelp: true }).action(() => {
   program.help();
 });
 
