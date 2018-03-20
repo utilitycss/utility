@@ -1,7 +1,7 @@
-const postcss = require('postcss');
+const postcss = require("postcss");
 
 module.exports = (rules, breakpoints = {}, options = {}) => {
-  const { breakPointSeparator = '' } = options;
+  const { breakPointSeparator = "" } = options;
 
   return Object.keys(breakpoints).map(bp => {
     const nodes = rules.map(rule => {
@@ -10,10 +10,17 @@ module.exports = (rules, breakpoints = {}, options = {}) => {
       return newRule;
     });
 
-    return postcss.atRule({
-      name: 'media',
+    const mediaRule = postcss.atRule({
+      name: "media",
+
       params: breakpoints[bp],
-      nodes,
+      nodes
     });
+
+    for (const node of mediaRule.nodes) {
+      node.parent = mediaRule;
+    }
+
+    return mediaRule;
   });
 };

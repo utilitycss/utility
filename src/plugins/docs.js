@@ -1,45 +1,80 @@
-const fs = require('fs');
+const fs = require("fs");
+const path = require("path");
+const saveFile = require("../helpers/save-file");
+
+const _ = require("lodash");
+
+const buildDocPartials = require("../helpers/build-doc-partials");
+const buildIndex = require("../helpers/build-index");
 
 module.exports = config => root => {
-  const { output } = config || {};
-
+  const { output, openFile } = config || {};
+  const { nodes } = root;
   const modules = {};
 
-  let content = '';
-
-  root.walkRules(rule => {
-    const { meta: { module } } = rule;
+  const traverseObject = (node, media) => {
+    const { meta: { module } = {}, selector, nodes, type } = node;
+    const nodeToPush = Object.assign(
+      {},
+      { selector, nodes, type },
+      media !== undefined
+        ? {
+            media: media
+          }
+        : {}
+    );
     if (Array.isArray(modules[module])) {
-      modules[module].push(rule);
+      modules[module].push(nodeToPush);
     } else {
-      modules[module] = [rule];
+      modules[module] = [nodeToPush];
     }
-  });
-
-  const links = Object.keys(modules).map(m => {
-    return `<li class="index-item"><a href="#${m}">${m}</a></li>`;
-  });
-
-  const index = `<div class=index><ul class="index-list">${links.join(
-    '',
-  )}</ul></div>`;
-
-  content += index;
-
-  const defs = Object.keys(modules).map(m => {
-    const rules = modules[m].map(r => {
-      return `<div class="rule ${r.selector.replace('.', '')}">${
-        r.selector
-      }</div><div class="code">{ ${r.nodes}; }</div>`;
+  };
+  const traverseNodes = (nodes, media) => {
+    nodes.forEach(node => {
+      if (node.hasOwnProperty("name") && node.name === "media") {
+        const { params: media, nodes } = node;
+        traverseNodes(nodes, media);
+      } else {
+        traverseObject(node, media);
+      }
     });
-
-    return `<h1><a name="${m}">${m}</a></h1>${rules.join('')}`;
-  });
-
-  defs.forEach(d => (content += d));
+  };
+  traverseNodes(nodes);
 
   if (output) {
-    fs.writeFileSync(output, content);
+    const { dir: dirPath } = path.parse(output);
+
+    // LODASH Template
+    const packageName = "Utility";
+    const templateFolder = path.join(__dirname, "..", "helpers", "templates");
+
+    const {
+      headHtml,
+      navHtml,
+      sidebarHtml,
+      sectionsHtml,
+      statsHtml
+    } = buildDocPartials({
+      packageName,
+      modules,
+      atomCss: root.toString()
+    });
+
+    const indexHtml = buildIndex({
+      packageName,
+      headHtml,
+      navHtml,
+      sidebarHtml,
+      sectionsHtml,
+      statsHtml
+    });
+
+    saveFile({
+      content: indexHtml,
+      filePath: output,
+      dirPath,
+      openFile
+    });
   } else {
     process.stdout.write(content);
   }

@@ -1,26 +1,34 @@
 {
   "name": "@utilitycss/utility",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Generator for Utility CSS frameworks",
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
+    "build-example": "yarn postcss example/example.css -o example/dist/example.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format":
-      "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
+    "format": "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
   },
   "bin": {
     "utility": "src/cli.js"
   },
   "dependencies": {
     "commander": "2.14.1",
+    "cssstats": "^3.2.0",
+    "deepmerge": "^2.1.0",
+    "lodash": "^4.17.5",
+    "opn": "^5.3.0",
     "postcss": "6.0.19"
   },
   "devDependencies": {
+    "chalk": "^2.3.2",
+    "postcss-cli": "^5.0.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.11.1"
   },
-  "pre-commit": ["format"]
+  "pre-commit": [
+    "format"
+  ]
 }

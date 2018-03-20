@@ -1,7 +1,7 @@
-const prefix = require('./prefix');
-const docs = require('./docs');
+const prefix = require("./prefix");
+const docs = require("./docs");
 
 module.exports = {
   prefix,
-  docs,
+  docs
 };

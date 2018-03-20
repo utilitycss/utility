@@ -1,8 +1,8 @@
-const defineSeries = require('../util/defineSeries');
-const responsive = require('../util/responsive');
+const defineSeries = require("../util/defineSeries");
+const responsive = require("../util/responsive");
 
 const meta = {
-  module: 'series',
+  module: "series"
 };
 
 module.exports = config => globalConfig => {
@@ -11,14 +11,14 @@ module.exports = config => globalConfig => {
     className,
     values,
     isResponsive = false,
-    pseudoClasses = [],
+    pseudoClasses = []
   } = config;
 
   const {
-    seriesSeparator = '',
-    pseudoClassesSeparator = '',
-    breakPointSeparator = '',
-    breakPoints = {},
+    seriesSeparator = "",
+    pseudoClassesSeparator = "",
+    breakPointSeparator = "",
+    breakPoints = {}
   } =
     globalConfig || {};
 
@@ -26,14 +26,14 @@ module.exports = config => globalConfig => {
     seriesSeparator,
     pseudoClassesSeparator,
     pseudoClasses,
-    meta,
+    meta
   });
 
   if (isResponsive) {
     return series.concat(
       responsive(series, breakPoints, {
-        breakPointSeparator,
-      }),
+        breakPointSeparator
+      })
     );
   }
 
