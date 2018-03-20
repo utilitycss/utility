@@ -10,10 +10,17 @@ module.exports = (rules, breakpoints = {}, options = {}) => {
       return newRule;
     });
 
-    return postcss.atRule({
+    const mediaRule = postcss.atRule({
       name: "media",
+
       params: breakpoints[bp],
       nodes
     });
+
+    for (const node of mediaRule.nodes) {
+      node.parent = mediaRule;
+    }
+
+    return mediaRule;
   });
 };

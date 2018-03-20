@@ -11,14 +11,14 @@ module.exports = ({ modules = [], config = {}, plugins = [] }) => {
     return acc.concat(curr(config));
   }, []);
   // Createt he root node for the styles
-  const rootNode = postcss.root({
+  const rootNodes = postcss.root({
     nodes
   });
-  // Run all the plugins in the above rootNode
-  const computedStyles = plugins.map(plugin => {
-    // Pass the rootNode here since
+  // Run all the plugins in the above rootNodes
+  const computedStyles = plugins.reduce((nodes, plugin) => {
+    // Pass the rootNodes here since
     // plugins always have to run on the entire tree
-    return plugin(rootNode);
-  });
+    return plugin(rootNodes);
+  }, rootNodes);
   return computedStyles;
 };

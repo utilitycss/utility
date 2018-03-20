@@ -17,6 +17,7 @@ const builder = postcss.plugin("utility", config => (styles, results) => {
     forceInsert = false
   } =
     config || defaultConfig;
+  const toRemove = [];
 
   styles.walkAtRules("utility", rule => {
     if (rule.name !== AT_RULE_NAME) {
@@ -80,7 +81,7 @@ const builder = postcss.plugin("utility", config => (styles, results) => {
       config: globalConfig
     });
     rule.before(computedStyles);
-    rule.remove();
+    toRemove.push(rule);
   });
 
   if (forceInsert) {
@@ -91,6 +92,10 @@ const builder = postcss.plugin("utility", config => (styles, results) => {
     });
     styles.prepend(computedStyles);
   }
+  // remove @utility
+  toRemove.forEach(function(rule) {
+    rule.remove();
+  });
 });
 
 module.exports = builder;
