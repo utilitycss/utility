@@ -8,7 +8,7 @@ const deepmerge = require("deepmerge");
 const AT_RULE_NAME = "utility";
 const DEFAULT_CONFIG_PATH = "./utility.config.default.js";
 
-const builder = postcss.plugin("utility", config => (styles, results) => {
+const builder = postcss.plugin("utility", config => styles => {
   const defaultConfig = require(DEFAULT_CONFIG_PATH);
   const {
     plugins = [],
@@ -56,6 +56,7 @@ const builder = postcss.plugin("utility", config => (styles, results) => {
       // Exit if the module name or
       // the provided module name is not supported
       if (moduleName && !fs.existsSync(modulePath)) {
+        // eslint-disable-next-line no-console
         console.log(chalk.red(`Module => ${moduleName} : is not supported`));
         process.exit(-1);
       }

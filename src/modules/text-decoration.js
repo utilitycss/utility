@@ -7,7 +7,7 @@ const defaultNames = {
   "td:l": "tdl"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "td:n": { n: names["td:n"], k: "text-decoration", v: "none" },
   "td:u": { n: names["td:u"], k: "text-decoration", v: "underline" },
   "td:o": { n: names["td:o"], k: "text-decoration", v: "overline" },

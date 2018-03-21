@@ -20,7 +20,7 @@ const defaultNames = {
   "ovs:mq": "ovsmq"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "ov:v": { n: names["ov:v"], k: "overflow", v: "visible" },
   "ov:h": { n: names["ov:h"], k: "overflow", v: "hidden" },
   "ov:s": { n: names["ov:s"], k: "overflow", v: "scroll" },

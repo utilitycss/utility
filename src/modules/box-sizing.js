@@ -5,7 +5,7 @@ const defaultNames = {
   "bxz:bb": "bxzbb"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "bxz:cb": { n: names["bxz:cb"], k: "box-sizing", v: "content-box" },
   "bxz:bb": { n: names["bxz:bb"], k: "box-sizing", v: "border-box" }
 });

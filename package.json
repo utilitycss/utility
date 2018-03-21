@@ -7,9 +7,13 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "build-example": "yarn postcss example/example.css -o example/dist/example.css",
+    "precommit": "lint-staged",
+    "lint": "eslint src/* --ext .js",
+    "build-example":
+      "yarn postcss example/example.css -o example/dist/example.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
+    "format":
+      "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
   },
   "bin": {
     "utility": "src/cli.js"
@@ -23,12 +27,19 @@
     "postcss": "6.0.19"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
     "chalk": "^2.3.2",
+    "eslint": "^4.19.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
     "postcss-cli": "^5.0.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.11.1"
   },
-  "pre-commit": [
-    "format"
-  ]
+  "lint-staged": {
+    "*.js": ["prettier --write", "git add"],
+    "*.css": ["prettier --write", "git add"]
+  }
 }

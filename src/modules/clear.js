@@ -7,7 +7,7 @@ const defaultNames = {
   "cl:b": "clb"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "cl:n": { n: names["cl:n"], k: "clear", v: "none" },
   "cl:l": { n: names["cl:l"], k: "clear", v: "left" },
   "cl:r": { n: names["cl:r"], k: "clear", v: "right" },

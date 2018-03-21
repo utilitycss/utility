@@ -3,6 +3,7 @@ const opn = require("opn");
 const chalk = require("chalk");
 module.exports = function({ content, filePath, dirPath, openFile = false }) {
   if (content === undefined) {
+    // eslint-disable-next-line no-console
     console.error(chalk.red("The content of the file should not be empty"));
     process.exit(0);
   }
@@ -10,7 +11,8 @@ module.exports = function({ content, filePath, dirPath, openFile = false }) {
     fs.mkdirSync(dirPath);
   }
   fs.writeFileSync(filePath, content);
-  console.error(chalk.blue(`Document was created : ${filePath}`));
+  // eslint-disable-next-line no-console
+  console.log(chalk.blue(`Document was created : ${filePath}`));
   if (openFile) {
     opn(filePath, { app: ["google chrome", "--incognito"] });
   }

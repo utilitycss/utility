@@ -6,7 +6,7 @@ const defaultNames = {
   "fl:r": "flr"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "fl:n": { n: names["fl:n"], k: "float", v: "none" },
   "fl:l": { n: names["fl:l"], k: "float", v: "left" },
   "fl:r": { n: names["fl:r"], k: "float", v: "right" }

@@ -11,7 +11,7 @@ const defaultNames = {
   "cur:t": "curt"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "cur:a": { n: names["cur:a"], k: "cursor", v: "auto" },
   "cur:d": { n: names["cur:d"], k: "cursor", v: "default" },
   "cur:c": { n: names["cur:c"], k: "cursor", v: "crosshair" },

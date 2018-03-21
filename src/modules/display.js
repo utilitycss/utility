@@ -28,7 +28,7 @@ const defaultNames = {
   "d:rbtg": "drbtg"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "d:n": { n: names["d:n"], k: "display", v: "none" },
   "d:b": { n: names["d:b"], k: "display", v: "block" },
   "d:f": { n: names["d:f"], k: "display", v: "flex" },

@@ -11,7 +11,7 @@ const defaultNames = {
   "va:sub": "vasub"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "va:sup": { n: names["va:sup"], k: "vertical-align", v: "super" },
   "va:t": { n: names["va:t"], k: "vertical-align", v: "top" },
   "va:tt": { n: names["va:tt"], k: "vertical-align", v: "text-top" },

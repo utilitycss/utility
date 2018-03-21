@@ -11,7 +11,7 @@ const defaultNames = {
   "tal:r": "talr"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "ta:l": { n: names["ta:l"], k: "text-align", v: "left" },
   "ta:c": { n: names["ta:c"], k: "text-align", v: "center" },
   "ta:r": { n: names["ta:r"], k: "text-align", v: "right" },

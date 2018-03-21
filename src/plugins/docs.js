@@ -1,8 +1,5 @@
-const fs = require("fs");
 const path = require("path");
 const saveFile = require("../helpers/save-file");
-
-const _ = require("lodash");
 
 const buildDocPartials = require("../helpers/build-doc-partials");
 const buildIndex = require("../helpers/build-index");
@@ -46,7 +43,7 @@ module.exports = config => root => {
 
     // LODASH Template
     const packageName = "Utility";
-    const templateFolder = path.join(__dirname, "..", "helpers", "templates");
+    // const templateFolder = path.join(__dirname, "..", "helpers", "templates");
 
     const {
       headHtml,
@@ -75,9 +72,9 @@ module.exports = config => root => {
       dirPath,
       openFile
     });
-  } else {
+  } /*  else {
     process.stdout.write(content);
-  }
+  } */
 
   return root;
 };

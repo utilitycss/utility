@@ -7,7 +7,7 @@ const defaultNames = {
   "rsz:v": "rszv"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "rsz:n": { n: names["rsz:n"], k: "resize", v: "none" },
   "rsz:b": { n: names["rsz:b"], k: "resize", v: "both" },
   "rsz:h": { n: names["rsz:h"], k: "resize", v: "horizontal" },

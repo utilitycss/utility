@@ -8,8 +8,7 @@ const meta = {
 module.exports = config => globalConfig => {
   const { className, props, isResponsive = false } = config || {};
 
-  const { seriesSeparator = "", breakPointSeparator = "", breakPoints = {} } =
-    globalConfig || {};
+  const { breakPointSeparator = "", breakPoints = {} } = globalConfig || {};
 
   const single = [defineClass(className, props, meta)];
 

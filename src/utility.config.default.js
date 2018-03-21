@@ -36,13 +36,6 @@ const breakPoints = {
 };
 
 const spacingScale = ["1rem", "2rem", "3rem", "4rem"];
-const directions = {
-  "": "",
-  t: "-top",
-  r: "-right",
-  b: "-bottom",
-  l: "-left"
-};
 
 const modules = [
   series({

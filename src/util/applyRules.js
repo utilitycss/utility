@@ -43,6 +43,8 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
         })
       );
     } else if (typeof rule.v === "string" || typeof rule.v === "number") {
+      // FIX ME: WHAT IS this for?
+      // eslint-disable-next-line
       const singles = [""].concat(modifiers).reduce((prev, pseudo) => {
         const separator = pseudo !== "" ? pseudoClassesSeparator : "";
         const pseudoClass = pseudo.replace(/:/g, "");

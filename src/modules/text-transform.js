@@ -7,7 +7,7 @@ const defaultNames = {
   "tt:l": "ttl"
 };
 
-const getRules = (names, cfg) => ({
+const getRules = names => ({
   "tt:n": { n: names["tt:n"], k: "text-transform", v: "none" },
   "tt:c": { n: names["tt:c"], k: "text-transform", v: "capitalize" },
   "tt:u": { n: names["tt:u"], k: "text-transform", v: "uppercase" },

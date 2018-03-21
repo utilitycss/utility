@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const program = require("commander");
 const postcss = require("postcss");
+const chalk = require("chalk");
 const path = require("path");
 const fs = require("fs");
 const utility = require("..");
@@ -21,7 +22,10 @@ program
     }
 
     if (fs.existsSync(configFile)) {
-      console.log(`Destination ${configFile} already exists, aborting.`);
+      // eslint-disable-next-line no-console
+      console.error(
+        chalk.red(`Destination ${configFile} already exists, aborting.`)
+      );
       process.exit(1);
     }
 
@@ -30,7 +34,8 @@ program
       "utf8"
     );
     fs.writeFileSync(configFile, output);
-    console.log(`Generated config file: ${configFile}`);
+    // eslint-disable-next-line no-console
+    console.log(chalk.green(`Generated config file: ${configFile}`));
   });
 
 program
@@ -58,14 +63,17 @@ program
       config = require(path.resolve(__dirname, "../utility.config.default.js"));
     }
 
-    console.log("Building CSS bundle...");
+    // eslint-disable-next-line no-console
+    console.log(chalk.blue("Building CSS bundle..."));
     postcss([builder(config)])
       .process(input)
       .then(result => {
         write(result.css);
-        console.log("Success!");
+        // eslint-disable-next-line no-console
+        console.log(console.green("Success!"));
       })
-      .catch(e => console.log(e));
+      // eslint-disable-next-line no-console
+      .catch(e => console.err(chalk.red(e)));
   });
 
 program.command("*", null, { noHelp: true }).action(() => {
