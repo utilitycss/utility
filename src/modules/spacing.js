@@ -19,21 +19,21 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  m: { n: names["m"], k: "margin", v: cfg.marginValues },
-  "m:a": { n: names["m:a"], k: "margin", v: "auto" },
-  mt: { n: names["mt"], k: "margin-top", v: cfg.marginValues },
-  "mt:a": { n: names["mt:a"], k: "margin-top", v: "auto" },
-  mr: { n: names["mr"], k: "margin-right", v: cfg.marginValues },
-  "mr:a": { n: names["mr:a"], k: "margin-right", v: "auto" },
-  mb: { n: names["mb"], k: "margin-bottom", v: cfg.marginValues },
-  "mb:a": { n: names["mb:a"], k: "margin-bottom", v: "auto" },
-  ml: { n: names["ml"], k: "margin-left", v: cfg.marginValues },
-  "ml:a": { n: names["ml:a"], k: "margin-left", v: "auto" },
-  p: { n: names["p"], k: "padding", v: cfg.paddingValues },
-  pt: { n: names["pt"], k: "padding-top", v: cfg.paddingValues },
-  pr: { n: names["pr"], k: "padding-right", v: cfg.paddingValues },
-  pb: { n: names["pb"], k: "padding-bottom", v: cfg.paddingValues },
-  pl: { n: names["pl"], k: "padding-left", v: cfg.paddingValues }
+  m: { name: names["m"], key: "margin", value: cfg.marginValues },
+  "m:a": { name: names["m:a"], key: "margin", value: "auto" },
+  mt: { name: names["mt"], key: "margin-top", value: cfg.marginValues },
+  "mt:a": { name: names["mt:a"], key: "margin-top", value: "auto" },
+  mr: { name: names["mr"], key: "margin-right", value: cfg.marginValues },
+  "mr:a": { name: names["mr:a"], key: "margin-right", value: "auto" },
+  mb: { name: names["mb"], key: "margin-bottom", value: cfg.marginValues },
+  "mb:a": { name: names["mb:a"], key: "margin-bottom", value: "auto" },
+  ml: { name: names["ml"], key: "margin-left", value: cfg.marginValues },
+  "ml:a": { name: names["ml:a"], key: "margin-left", value: "auto" },
+  p: { name: names["p"], key: "padding", value: cfg.paddingValues },
+  pt: { name: names["pt"], key: "padding-top", value: cfg.paddingValues },
+  pr: { name: names["pr"], key: "padding-right", value: cfg.paddingValues },
+  pb: { name: names["pb"], key: "padding-bottom", value: cfg.paddingValues },
+  pl: { name: names["pl"], key: "padding-left", value: cfg.paddingValues }
 });
 
 const meta = {

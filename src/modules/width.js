@@ -9,11 +9,11 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  w: { n: names["w"], k: "width", v: cfg.widthValues },
-  "w:a": { n: names["w:a"], k: "width", v: "auto" },
-  maw: { n: names["maw"], k: "max-width", v: cfg.maxWidthValues },
-  "maw:n": { n: names["maw:n"], k: "max-width", v: "none" },
-  miw: { n: names["miw"], k: "max-width", v: cfg.minWidthValues }
+  w: { name: names["w"], key: "width", value: cfg.widthValues },
+  "w:a": { name: names["w:a"], key: "width", value: "auto" },
+  maw: { name: names["maw"], key: "max-width", value: cfg.maxWidthValues },
+  "maw:n": { name: names["maw:n"], key: "max-width", value: "none" },
+  miw: { name: names["miw"], key: "max-width", value: cfg.minWidthValues }
 });
 
 const meta = {

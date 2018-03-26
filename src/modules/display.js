@@ -29,31 +29,43 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "d:n": { n: names["d:n"], k: "display", v: "none" },
-  "d:b": { n: names["d:b"], k: "display", v: "block" },
-  "d:f": { n: names["d:f"], k: "display", v: "flex" },
-  "d:g": { n: names["d:g"], k: "display", v: "grid" },
-  "d:if": { n: names["d:if"], k: "display", v: "inline-flex" },
-  "d:i": { n: names["d:i"], k: "display", v: "inline" },
-  "d:ib": { n: names["d:ib"], k: "display", v: "inline-block" },
-  "d:li": { n: names["d:li"], k: "display", v: "list-item" },
-  "d:ri": { n: names["d:ri"], k: "display", v: "run-in" },
-  "d:cp": { n: names["d:cp"], k: "display", v: "compact" },
-  "d:tb": { n: names["d:tb"], k: "display", v: "table" },
-  "d:itb": { n: names["d:itb"], k: "display", v: "inline-table" },
-  "d:tbcp": { n: names["d:tbcp"], k: "display", v: "table-caption" },
-  "d:tbcl": { n: names["d:tbcl"], k: "display", v: "table-column" },
-  "d:tbclg": { n: names["d:tbclg"], k: "display", v: "table-column-group" },
-  "d:tbhg": { n: names["d:tbhg"], k: "display", v: "table-header-group" },
-  "d:tbfg": { n: names["d:tbfg"], k: "display", v: "table-footer-group" },
-  "d:tbr": { n: names["d:tbr"], k: "display", v: "table-row" },
-  "d:tbrg": { n: names["d:tbrg"], k: "display", v: "table-row-group" },
-  "d:tbc": { n: names["d:tbc"], k: "display", v: "table-cell" },
-  "d:rb": { n: names["d:rb"], k: "display", v: "ruby" },
-  "d:rbb": { n: names["d:rbb"], k: "display", v: "ruby-base" },
-  "d:rbbg": { n: names["d:rbbg"], k: "display", v: "ruby-base-group" },
-  "d:rbt": { n: names["d:rbt"], k: "display", v: "ruby-text" },
-  "d:rbtg": { n: names["d:rbtg"], k: "display", v: "ruby-text-group" }
+  "d:n": { name: names["d:n"], key: "display", value: "none" },
+  "d:b": { name: names["d:b"], key: "display", value: "block" },
+  "d:f": { name: names["d:f"], key: "display", value: "flex" },
+  "d:g": { name: names["d:g"], key: "display", value: "grid" },
+  "d:if": { name: names["d:if"], key: "display", value: "inline-flex" },
+  "d:i": { name: names["d:i"], key: "display", value: "inline" },
+  "d:ib": { name: names["d:ib"], key: "display", value: "inline-block" },
+  "d:li": { name: names["d:li"], key: "display", value: "list-item" },
+  "d:ri": { name: names["d:ri"], key: "display", value: "run-in" },
+  "d:cp": { name: names["d:cp"], key: "display", value: "compact" },
+  "d:tb": { name: names["d:tb"], key: "display", value: "table" },
+  "d:itb": { name: names["d:itb"], key: "display", value: "inline-table" },
+  "d:tbcp": { name: names["d:tbcp"], key: "display", value: "table-caption" },
+  "d:tbcl": { name: names["d:tbcl"], key: "display", value: "table-column" },
+  "d:tbclg": {
+    name: names["d:tbclg"],
+    key: "display",
+    value: "table-column-group"
+  },
+  "d:tbhg": {
+    name: names["d:tbhg"],
+    key: "display",
+    value: "table-header-group"
+  },
+  "d:tbfg": {
+    name: names["d:tbfg"],
+    key: "display",
+    value: "table-footer-group"
+  },
+  "d:tbr": { name: names["d:tbr"], key: "display", value: "table-row" },
+  "d:tbrg": { name: names["d:tbrg"], key: "display", value: "table-row-group" },
+  "d:tbc": { name: names["d:tbc"], key: "display", value: "table-cell" },
+  "d:rb": { name: names["d:rb"], key: "display", value: "ruby" },
+  "d:rbb": { name: names["d:rbb"], key: "display", value: "ruby-base" },
+  "d:rbbg": { name: names["d:rbbg"], key: "display", value: "ruby-base-group" },
+  "d:rbt": { name: names["d:rbt"], key: "display", value: "ruby-text" },
+  "d:rbtg": { name: names["d:rbtg"], key: "display", value: "ruby-text-group" }
 });
 
 const meta = {

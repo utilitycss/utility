@@ -6,8 +6,8 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  z: { n: names["z"], k: "z-index", v: cfg.values },
-  "z:a": { n: names["z:a"], k: "z-index", v: "auto" }
+  z: { name: names["z"], key: "z-index", value: cfg.values },
+  "z:a": { name: names["z:a"], key: "z-index", value: "auto" }
 });
 
 const meta = {

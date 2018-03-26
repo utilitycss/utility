@@ -8,10 +8,10 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "cl:n": { n: names["cl:n"], k: "clear", v: "none" },
-  "cl:l": { n: names["cl:l"], k: "clear", v: "left" },
-  "cl:r": { n: names["cl:r"], k: "clear", v: "right" },
-  "cl:b": { n: names["cl:b"], k: "clear", v: "both" }
+  "cl:n": { name: names["cl:n"], key: "clear", value: "none" },
+  "cl:l": { name: names["cl:l"], key: "clear", value: "left" },
+  "cl:r": { name: names["cl:r"], key: "clear", value: "right" },
+  "cl:b": { name: names["cl:b"], key: "clear", value: "both" }
 });
 
 const meta = {

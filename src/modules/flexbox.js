@@ -43,45 +43,81 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  "fx:a": { n: names["fx:a"], k: "flex", v: "1 1 auto" },
-  "fx:n": { n: names["fx:n"], k: "flex", v: "none" },
-  fxb: { n: names["fxb"], k: "flex-basis", v: cfg.flexBasisValues },
-  "fxd:c": { n: names["fxd:c"], k: "flex-direction", v: "column" },
-  "fxd:cr": { n: names["fxd:cr"], k: "flex-direction", v: "column-reverse" },
-  "fxd:r": { n: names["fxd:r"], k: "flex-direction", v: "row" },
-  "fxd:rr": { n: names["fxd:rr"], k: "flex-direction", v: "row-reverse" },
-  "fxg:0": { n: names["fxg:0"], k: "flex-grow", v: "0" },
-  "fxg:1": { n: names["fxg:1"], k: "flex-grow", v: "1" },
-  "fxs:0": { n: names["fxs:0"], k: "flex-shrink", v: "0" },
-  "fxs:1": { n: names["fxs:1"], k: "flex-shrink", v: "1" },
-  "fxw:n": { n: names["fxw:n"], k: "flex-wrap", v: "nowrap" },
-  "fxw:w": { n: names["fxw:w"], k: "flex-wrap", v: "wrap" },
-  "fxw:wr": { n: names["fxw:wr"], k: "flex-wrap", v: "wrap-reverse" },
-  "ai:b": { n: names["ai:b"], k: "align-items", v: "baseline" },
-  "ai:c": { n: names["ai:c"], k: "align-items", v: "center" },
-  "ai:fe": { n: names["ai:fe"], k: "align-items", v: "flex-end" },
-  "ai:fs": { n: names["ai:fs"], k: "align-items", v: "flex-start" },
-  "ai:s": { n: names["ai:s"], k: "align-items", v: "stretch" },
-  "as:a": { n: names["as:a"], k: "align-self", v: "auto" },
-  "as:b": { n: names["as:b"], k: "align-self", v: "baseline" },
-  "as:c": { n: names["as:c"], k: "align-self", v: "center" },
-  "as:fe": { n: names["as:fe"], k: "align-self", v: "flex-end" },
-  "as:fs": { n: names["as:fs"], k: "align-self", v: "flex-start" },
-  "as:s": { n: names["as:s"], k: "align-self", v: "stretch" },
-  "jc:c": { n: names["jc:c"], k: "justify-content", v: "center" },
-  "jc:fe": { n: names["jc:fe"], k: "justify-content", v: "flex-end" },
-  "jc:fs": { n: names["jc:fs"], k: "justify-content", v: "flex-start" },
-  "jc:sa": { n: names["jc:sa"], k: "justify-content", v: "space-around" },
-  "jc:sb": { n: names["jc:sb"], k: "justify-content", v: "space-between" },
-  "jc:se": { n: names["jc:se"], k: "justify-content", v: "space-evenly" },
-  "ac:c": { n: names["ac:c"], k: "align-content", v: "center" },
-  "ac:s": { n: names["ac:s"], k: "align-content", v: "stretch" },
-  "ac:fe": { n: names["ac:fe"], k: "align-content", v: "flex-end" },
-  "ac:fs": { n: names["ac:fs"], k: "align-content", v: "flex-start" },
-  "ac:sa": { n: names["ac:sa"], k: "align-content", v: "space-around" },
-  "ac:sb": { n: names["ac:sb"], k: "align-content", v: "space-between" },
-  "ac:se": { n: names["ac:se"], k: "align-content", v: "space-evenly" },
-  ord: { n: names["ord"], k: "order", v: cfg.orderValues }
+  "fx:a": { name: names["fx:a"], key: "flex", value: "1 1 auto" },
+  "fx:n": { name: names["fx:n"], key: "flex", value: "none" },
+  fxb: { name: names["fxb"], key: "flex-basis", value: cfg.flexBasisValues },
+  "fxd:c": { name: names["fxd:c"], key: "flex-direction", value: "column" },
+  "fxd:cr": {
+    name: names["fxd:cr"],
+    key: "flex-direction",
+    value: "column-reverse"
+  },
+  "fxd:r": { name: names["fxd:r"], key: "flex-direction", value: "row" },
+  "fxd:rr": {
+    name: names["fxd:rr"],
+    key: "flex-direction",
+    value: "row-reverse"
+  },
+  "fxg:0": { name: names["fxg:0"], key: "flex-grow", value: "0" },
+  "fxg:1": { name: names["fxg:1"], key: "flex-grow", value: "1" },
+  "fxs:0": { name: names["fxs:0"], key: "flex-shrink", value: "0" },
+  "fxs:1": { name: names["fxs:1"], key: "flex-shrink", value: "1" },
+  "fxw:n": { name: names["fxw:n"], key: "flex-wrap", value: "nowrap" },
+  "fxw:w": { name: names["fxw:w"], key: "flex-wrap", value: "wrap" },
+  "fxw:wr": { name: names["fxw:wr"], key: "flex-wrap", value: "wrap-reverse" },
+  "ai:b": { name: names["ai:b"], key: "align-items", value: "baseline" },
+  "ai:c": { name: names["ai:c"], key: "align-items", value: "center" },
+  "ai:fe": { name: names["ai:fe"], key: "align-items", value: "flex-end" },
+  "ai:fs": { name: names["ai:fs"], key: "align-items", value: "flex-start" },
+  "ai:s": { name: names["ai:s"], key: "align-items", value: "stretch" },
+  "as:a": { name: names["as:a"], key: "align-self", value: "auto" },
+  "as:b": { name: names["as:b"], key: "align-self", value: "baseline" },
+  "as:c": { name: names["as:c"], key: "align-self", value: "center" },
+  "as:fe": { name: names["as:fe"], key: "align-self", value: "flex-end" },
+  "as:fs": { name: names["as:fs"], key: "align-self", value: "flex-start" },
+  "as:s": { name: names["as:s"], key: "align-self", value: "stretch" },
+  "jc:c": { name: names["jc:c"], key: "justify-content", value: "center" },
+  "jc:fe": { name: names["jc:fe"], key: "justify-content", value: "flex-end" },
+  "jc:fs": {
+    name: names["jc:fs"],
+    key: "justify-content",
+    value: "flex-start"
+  },
+  "jc:sa": {
+    name: names["jc:sa"],
+    key: "justify-content",
+    value: "space-around"
+  },
+  "jc:sb": {
+    name: names["jc:sb"],
+    key: "justify-content",
+    value: "space-between"
+  },
+  "jc:se": {
+    name: names["jc:se"],
+    key: "justify-content",
+    value: "space-evenly"
+  },
+  "ac:c": { name: names["ac:c"], key: "align-content", value: "center" },
+  "ac:s": { name: names["ac:s"], key: "align-content", value: "stretch" },
+  "ac:fe": { name: names["ac:fe"], key: "align-content", value: "flex-end" },
+  "ac:fs": { name: names["ac:fs"], key: "align-content", value: "flex-start" },
+  "ac:sa": {
+    name: names["ac:sa"],
+    key: "align-content",
+    value: "space-around"
+  },
+  "ac:sb": {
+    name: names["ac:sb"],
+    key: "align-content",
+    value: "space-between"
+  },
+  "ac:se": {
+    name: names["ac:se"],
+    key: "align-content",
+    value: "space-evenly"
+  },
+  ord: { name: names["ord"], key: "order", value: cfg.orderValues }
 });
 
 const meta = {

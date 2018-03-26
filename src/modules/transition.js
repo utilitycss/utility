@@ -11,36 +11,36 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  trs: { n: names["trs"], k: "transition", v: cfg.transitionValues },
+  trs: { name: names["trs"], key: "transition", value: cfg.transitionValues },
   trsde: {
-    n: names["trsde"],
-    k: "transition-delay",
-    v: cfg.transitionDelayValues
+    name: names["trsde"],
+    key: "transition-delay",
+    value: cfg.transitionDelayValues
   },
   trsdu: {
-    n: names["trsdu"],
-    k: "transition-duration",
-    v: cfg.transitionDurationValues
+    name: names["trsdu"],
+    key: "transition-duration",
+    value: cfg.transitionDurationValues
   },
   trsp: {
-    n: names["trsp"],
-    k: "transition-property",
-    v: cfg.transitionPropertyValues
+    name: names["trsp"],
+    key: "transition-property",
+    value: cfg.transitionPropertyValues
   },
   "trsp:n": {
-    n: names["trsp:n"],
-    k: "transition-property",
-    v: "none"
+    name: names["trsp:n"],
+    key: "transition-property",
+    value: "none"
   },
   "trsp:a": {
-    n: names["trsp:a"],
-    k: "transition-property",
-    v: "all"
+    name: names["trsp:a"],
+    key: "transition-property",
+    value: "all"
   },
   trstf: {
-    n: names["trstf"],
-    k: "transition-timing-function",
-    v: cfg.transitionTimingFunctionValues
+    name: names["trstf"],
+    key: "transition-timing-function",
+    value: cfg.transitionTimingFunctionValues
   }
 });
 

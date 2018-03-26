@@ -12,14 +12,14 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "cur:a": { n: names["cur:a"], k: "cursor", v: "auto" },
-  "cur:d": { n: names["cur:d"], k: "cursor", v: "default" },
-  "cur:c": { n: names["cur:c"], k: "cursor", v: "crosshair" },
-  "cur:ha": { n: names["cur:ha"], k: "cursor", v: "hand" },
-  "cur:he": { n: names["cur:he"], k: "cursor", v: "help" },
-  "cur:m": { n: names["cur:m"], k: "cursor", v: "move" },
-  "cur:p": { n: names["cur:p"], k: "cursor", v: "pointer" },
-  "cur:t": { n: names["cur:t"], k: "cursor", v: "text" }
+  "cur:a": { name: names["cur:a"], key: "cursor", value: "auto" },
+  "cur:d": { name: names["cur:d"], key: "cursor", value: "default" },
+  "cur:c": { name: names["cur:c"], key: "cursor", value: "crosshair" },
+  "cur:ha": { name: names["cur:ha"], key: "cursor", value: "hand" },
+  "cur:he": { name: names["cur:he"], key: "cursor", value: "help" },
+  "cur:m": { name: names["cur:m"], key: "cursor", value: "move" },
+  "cur:p": { name: names["cur:p"], key: "cursor", value: "pointer" },
+  "cur:t": { name: names["cur:t"], key: "cursor", value: "text" }
 });
 
 const meta = {

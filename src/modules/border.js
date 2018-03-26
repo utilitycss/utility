@@ -23,40 +23,64 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  bd: { n: names["bd"], k: "border", v: cfg.borderValues },
-  "bd:n": { n: names["bd:n"], k: "border", v: "none" },
-  "bdcl:c": { n: names["bdcl:c"], k: "border-collapse", v: "collapse" },
-  "bdcl:s": { n: names["bdcl:s"], k: "border-collapse", v: "separate" },
-  bdi: { n: names["bdi"], k: "border-image", v: cfg.borderImageValues },
-  "bdi:n": { n: names["bdi:n"], k: "border-image", v: "none" },
-  bdt: { n: names["bdt"], k: "border-top", v: cfg.borderTopValues },
-  "bdt:n": { n: names["bdt:n"], k: "border-top", v: "none" },
-  bdr: { n: names["bdr"], k: "border-right", v: cfg.borderRightValues },
-  "bdr:n": { n: names["bdr:n"], k: "border-right", v: "none" },
-  bdb: { n: names["bdb"], k: "border-bottom", v: cfg.borderBottomValues },
-  "bdb:n": { n: names["bdb:n"], k: "border-bottom", v: "none" },
-  bdl: { n: names["bdl"], k: "border-left", v: cfg.borderLeftValues },
-  "bdl:n": { n: names["bdl:n"], k: "border-left", v: "none" },
-  bdrs: { n: names["bdrs"], k: "border-radius", v: cfg.borderRadiusValues },
+  bd: { name: names["bd"], key: "border", value: cfg.borderValues },
+  "bd:n": { name: names["bd:n"], key: "border", value: "none" },
+  "bdcl:c": {
+    name: names["bdcl:c"],
+    key: "border-collapse",
+    value: "collapse"
+  },
+  "bdcl:s": {
+    name: names["bdcl:s"],
+    key: "border-collapse",
+    value: "separate"
+  },
+  bdi: {
+    name: names["bdi"],
+    key: "border-image",
+    value: cfg.borderImageValues
+  },
+  "bdi:n": { name: names["bdi:n"], key: "border-image", value: "none" },
+  bdt: { name: names["bdt"], key: "border-top", value: cfg.borderTopValues },
+  "bdt:n": { name: names["bdt:n"], key: "border-top", value: "none" },
+  bdr: {
+    name: names["bdr"],
+    key: "border-right",
+    value: cfg.borderRightValues
+  },
+  "bdr:n": { name: names["bdr:n"], key: "border-right", value: "none" },
+  bdb: {
+    name: names["bdb"],
+    key: "border-bottom",
+    value: cfg.borderBottomValues
+  },
+  "bdb:n": { name: names["bdb:n"], key: "border-bottom", value: "none" },
+  bdl: { name: names["bdl"], key: "border-left", value: cfg.borderLeftValues },
+  "bdl:n": { name: names["bdl:n"], key: "border-left", value: "none" },
+  bdrs: {
+    name: names["bdrs"],
+    key: "border-radius",
+    value: cfg.borderRadiusValues
+  },
   bdtrrs: {
-    n: names["bdtrrs"],
-    k: "border-top-right-radius",
-    v: cfg.borderTopRightRadiusValues
+    name: names["bdtrrs"],
+    key: "border-top-right-radius",
+    value: cfg.borderTopRightRadiusValues
   },
   bdtlrs: {
-    n: names["bdtlrs"],
-    k: "border-top-left-radius",
-    v: cfg.borderTopLeftRadiusValues
+    name: names["bdtlrs"],
+    key: "border-top-left-radius",
+    value: cfg.borderTopLeftRadiusValues
   },
   bdbrrs: {
-    n: names["bdbrrs"],
-    k: "border-bottom-right-radius",
-    v: cfg.borderBottomRightRadiusValues
+    name: names["bdbrrs"],
+    key: "border-bottom-right-radius",
+    value: cfg.borderBottomRightRadiusValues
   },
   bdblrs: {
-    n: names["bdblrs"],
-    k: "border-bottom-left-radius",
-    v: cfg.borderBottomLeftRadiusValues
+    name: names["bdblrs"],
+    key: "border-bottom-left-radius",
+    value: cfg.borderBottomLeftRadiusValues
   }
 });
 

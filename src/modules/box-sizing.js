@@ -6,8 +6,8 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "bxz:cb": { n: names["bxz:cb"], k: "box-sizing", v: "content-box" },
-  "bxz:bb": { n: names["bxz:bb"], k: "box-sizing", v: "border-box" }
+  "bxz:cb": { name: names["bxz:cb"], key: "box-sizing", value: "content-box" },
+  "bxz:bb": { name: names["bxz:bb"], key: "box-sizing", value: "border-box" }
 });
 
 const meta = {

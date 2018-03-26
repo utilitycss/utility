@@ -8,10 +8,10 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "td:n": { n: names["td:n"], k: "text-decoration", v: "none" },
-  "td:u": { n: names["td:u"], k: "text-decoration", v: "underline" },
-  "td:o": { n: names["td:o"], k: "text-decoration", v: "overline" },
-  "td:l": { n: names["td:l"], k: "text-decoration", v: "line-through" }
+  "td:n": { name: names["td:n"], key: "text-decoration", value: "none" },
+  "td:u": { name: names["td:u"], key: "text-decoration", value: "underline" },
+  "td:o": { name: names["td:o"], key: "text-decoration", value: "overline" },
+  "td:l": { name: names["td:l"], key: "text-decoration", value: "line-through" }
 });
 
 const meta = {

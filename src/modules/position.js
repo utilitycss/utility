@@ -16,18 +16,18 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  "pos:s": { n: names["pos:s"], k: "postion", v: "static" },
-  "pos:a": { n: names["pos:a"], k: "position", v: "absolute" },
-  "pos:r": { n: names["pos:r"], k: "position", v: "relative" },
-  "pos:f": { n: names["pos:f"], k: "position", v: "fixed" },
-  t: { n: names["t"], k: "top", v: cfg.topValues },
-  "t:a": { n: names["t:a"], k: "top", v: "auto" },
-  r: { n: names["r"], k: "right", v: cfg.rightValues },
-  "r:a": { n: names["r:a"], k: "right", v: "auto" },
-  b: { n: names["b"], k: "bottom", v: cfg.bottomValues },
-  "b:a": { n: names["b:a"], k: "bottom", v: "auto" },
-  l: { n: names["l"], k: "left", v: cfg.leftValues },
-  "l:a": { n: names["l:a"], k: "left", v: "auto" }
+  "pos:s": { name: names["pos:s"], key: "postion", value: "static" },
+  "pos:a": { name: names["pos:a"], key: "position", value: "absolute" },
+  "pos:r": { name: names["pos:r"], key: "position", value: "relative" },
+  "pos:f": { name: names["pos:f"], key: "position", value: "fixed" },
+  t: { name: names["t"], key: "top", value: cfg.topValues },
+  "t:a": { name: names["t:a"], key: "top", value: "auto" },
+  r: { name: names["r"], key: "right", value: cfg.rightValues },
+  "r:a": { name: names["r:a"], key: "right", value: "auto" },
+  b: { name: names["b"], key: "bottom", value: cfg.bottomValues },
+  "b:a": { name: names["b:a"], key: "bottom", value: "auto" },
+  l: { name: names["l"], key: "left", value: cfg.leftValues },
+  "l:a": { name: names["l:a"], key: "left", value: "auto" }
 });
 
 const meta = {

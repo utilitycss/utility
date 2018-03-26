@@ -7,9 +7,9 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "fl:n": { n: names["fl:n"], k: "float", v: "none" },
-  "fl:l": { n: names["fl:l"], k: "float", v: "left" },
-  "fl:r": { n: names["fl:r"], k: "float", v: "right" }
+  "fl:n": { name: names["fl:n"], key: "float", value: "none" },
+  "fl:l": { name: names["fl:l"], key: "float", value: "left" },
+  "fl:r": { name: names["fl:r"], key: "float", value: "right" }
 });
 
 const meta = {

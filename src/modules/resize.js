@@ -8,10 +8,10 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "rsz:n": { n: names["rsz:n"], k: "resize", v: "none" },
-  "rsz:b": { n: names["rsz:b"], k: "resize", v: "both" },
-  "rsz:h": { n: names["rsz:h"], k: "resize", v: "horizontal" },
-  "rsz:v": { n: names["rsz:v"], k: "resize", v: "vertical" }
+  "rsz:n": { name: names["rsz:n"], key: "resize", value: "none" },
+  "rsz:b": { name: names["rsz:b"], key: "resize", value: "both" },
+  "rsz:h": { name: names["rsz:h"], key: "resize", value: "horizontal" },
+  "rsz:v": { name: names["rsz:v"], key: "resize", value: "vertical" }
 });
 
 const meta = {

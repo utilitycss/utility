@@ -13,15 +13,27 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  ol: { n: names["ol"], k: "outline", v: cfg.outlineValues },
-  "ol:n": { n: names["ol:n"], k: "outline", v: "none" },
-  olo: { n: names["olo"], k: "outline-offset", v: cfg.outlineOffsetValues },
-  olw: { n: names["olw"], k: "outline-width", v: cfg.outlineWidthValues },
-  "olw:tn": { n: names["olw:tn"], k: "outline-width", v: "thin" },
-  "olw:m": { n: names["olw:m"], k: "outline-width", v: "medium" },
-  "olw:tk": { n: names["olw:tk"], k: "outline-width", v: "thick" },
-  olc: { n: names["olc"], k: "outline-color", v: cfg.outlineColorValues },
-  "olc:i": { n: names["olc:i"], k: "outline-color", v: "invert" }
+  ol: { name: names["ol"], key: "outline", value: cfg.outlineValues },
+  "ol:n": { name: names["ol:n"], key: "outline", value: "none" },
+  olo: {
+    name: names["olo"],
+    key: "outline-offset",
+    value: cfg.outlineOffsetValues
+  },
+  olw: {
+    name: names["olw"],
+    key: "outline-width",
+    value: cfg.outlineWidthValues
+  },
+  "olw:tn": { name: names["olw:tn"], key: "outline-width", value: "thin" },
+  "olw:m": { name: names["olw:m"], key: "outline-width", value: "medium" },
+  "olw:tk": { name: names["olw:tk"], key: "outline-width", value: "thick" },
+  olc: {
+    name: names["olc"],
+    key: "outline-color",
+    value: cfg.outlineColorValues
+  },
+  "olc:i": { name: names["olc:i"], key: "outline-color", value: "invert" }
 });
 
 const meta = {

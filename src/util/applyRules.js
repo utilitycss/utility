@@ -23,26 +23,30 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
   const customNames = Object.assign({}, defaultNames, names);
   const customRules = getRules(customNames, config || {});
 
-  const enabledRules =
-    whitelist.length > 0
-      ? Object.keys(customRules)
-          .filter(r => whitelist.includes(r))
-          .filter(r => !blacklist.includes(r))
-      : Object.keys(customRules).filter(r => !blacklist.includes(r));
+  const enabledRules = Object.keys(customRules)
+    .filter(name => {
+      if (Array.isArray(whitelist) && whitelist.length > 0) {
+        // Then filter
+        return whitelist.includes(name);
+      }
+      return true;
+    })
+    // Blacklist what you dont need
+    .filter(name => !blacklist.includes(name));
 
-  let result = enabledRules.reduce((p, r) => {
-    const rule = customRules[r];
-    const { [`${rule.n}`]: modifiers = [] } = pseudoClasses;
-    if (Array.isArray(rule.v) || typeof rule.v === "object") {
-      p = p.concat(
-        defineSeries(rule.n, rule.k, rule.v, {
+  let result = enabledRules.reduce((acc, curr) => {
+    const { name, key, value } = customRules[curr];
+    const { [`${name}`]: modifiers = [] } = pseudoClasses;
+    if (Array.isArray(value) || typeof value === "object") {
+      acc = acc.concat(
+        defineSeries(name, key, value, {
           seriesSeparator,
           pseudoClasses: modifiers,
           pseudoClassesSeparator,
           meta
         })
       );
-    } else if (typeof rule.v === "string" || typeof rule.v === "number") {
+    } else if (typeof value === "string" || typeof value === "number") {
       // FIX ME: WHAT IS this for?
       // eslint-disable-next-line
       const singles = [""].concat(modifiers).reduce((prev, pseudo) => {
@@ -50,14 +54,14 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
         const pseudoClass = pseudo.replace(/:/g, "");
 
         return defineClass(
-          `${rule.n}${separator}${pseudoClass}${pseudo}`,
-          { [`${rule.k}`]: rule.v },
+          `${name}${separator}${pseudoClass}${pseudo}`,
+          { [`${key}`]: value },
           meta
         );
       }, []);
-      p = p.concat(defineClass(rule.n, { [`${rule.k}`]: rule.v }, meta));
+      acc = acc.concat(defineClass(name, { [`${key}`]: value }, meta));
     }
-    return p;
+    return acc;
   }, []);
 
   if (isResponsive) {

@@ -9,15 +9,19 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  trf: { n: names["trf"], k: "transform", v: cfg.transformValues },
-  "trf:n": { n: names["trf:n"], k: "transform", v: "none" },
+  trf: { name: names["trf"], key: "transform", value: cfg.transformValues },
+  "trf:n": { name: names["trf:n"], key: "transform", value: "none" },
   trfo: {
-    n: names["trfo"],
-    k: "transform-origin",
-    v: cfg.transformOriginValues
+    name: names["trfo"],
+    key: "transform-origin",
+    value: cfg.transformOriginValues
   },
-  "trfs:f": { n: names["trfs:f"], k: "transform-style", v: "flat" },
-  "trfs:p": { n: names["trfs:p"], k: "transform-style", v: "preserve-3d" }
+  "trfs:f": { name: names["trfs:f"], key: "transform-style", value: "flat" },
+  "trfs:p": {
+    name: names["trfs:p"],
+    key: "transform-style",
+    value: "preserve-3d"
+  }
 });
 
 const meta = {

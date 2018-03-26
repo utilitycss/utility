@@ -7,9 +7,9 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "v:v": { n: names["v:v"], k: "visibility", v: "visible" },
-  "v:h": { n: names["v:h"], k: "visibility", v: "hidden" },
-  "v:c": { n: names["v:c"], k: "visibility", v: "collapse" }
+  "v:v": { name: names["v:v"], key: "visibility", value: "visible" },
+  "v:h": { name: names["v:h"], key: "visibility", value: "hidden" },
+  "v:c": { name: names["v:c"], key: "visibility", value: "collapse" }
 });
 
 const meta = {

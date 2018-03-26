@@ -12,14 +12,18 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "va:sup": { n: names["va:sup"], k: "vertical-align", v: "super" },
-  "va:t": { n: names["va:t"], k: "vertical-align", v: "top" },
-  "va:tt": { n: names["va:tt"], k: "vertical-align", v: "text-top" },
-  "va:m": { n: names["va:m"], k: "vertical-align", v: "middle" },
-  "va:bl": { n: names["va:bl"], k: "vertical-align", v: "baseline" },
-  "va:b": { n: names["va:b"], k: "vertical-align", v: "bottom" },
-  "va:tb": { n: names["va:tb"], k: "vertical-align", v: "text-bottom" },
-  "va:sub": { n: names["va:sub"], k: "vertical-align", v: "sub" }
+  "va:sup": { name: names["va:sup"], key: "vertical-align", value: "super" },
+  "va:t": { name: names["va:t"], key: "vertical-align", value: "top" },
+  "va:tt": { name: names["va:tt"], key: "vertical-align", value: "text-top" },
+  "va:m": { name: names["va:m"], key: "vertical-align", value: "middle" },
+  "va:bl": { name: names["va:bl"], key: "vertical-align", value: "baseline" },
+  "va:b": { name: names["va:b"], key: "vertical-align", value: "bottom" },
+  "va:tb": {
+    name: names["va:tb"],
+    key: "vertical-align",
+    value: "text-bottom"
+  },
+  "va:sub": { name: names["va:sub"], key: "vertical-align", value: "sub" }
 });
 
 const meta = {

@@ -5,7 +5,7 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  op: { n: names["op"], k: "opacity", v: cfg.values }
+  op: { name: names["op"], key: "opacity", value: cfg.values }
 });
 
 const meta = {

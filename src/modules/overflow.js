@@ -21,23 +21,23 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "ov:v": { n: names["ov:v"], k: "overflow", v: "visible" },
-  "ov:h": { n: names["ov:h"], k: "overflow", v: "hidden" },
-  "ov:s": { n: names["ov:s"], k: "overflow", v: "scroll" },
-  "ov:a": { n: names["ov:a"], k: "overflow", v: "auto" },
-  "ovx:v": { n: names["ovx:v"], k: "overflow-x", v: "visible" },
-  "ovx:h": { n: names["ovx:h"], k: "overflow-x", v: "hidden" },
-  "ovx:s": { n: names["ovx:s"], k: "overflow-x", v: "scroll" },
-  "ovx:a": { n: names["ovx:a"], k: "overflow-x", v: "auto" },
-  "ovy:v": { n: names["ovy:v"], k: "overflow-y", v: "visible" },
-  "ovy:h": { n: names["ovy:h"], k: "overflow-y", v: "hidden" },
-  "ovy:s": { n: names["ovy:s"], k: "overflow-y", v: "scroll" },
-  "ovy:a": { n: names["ovy:a"], k: "overflow-y", v: "auto" },
-  "ovs:a": { n: names["ovs:a"], k: "overflow-style", v: "auto" },
-  "ovs:s": { n: names["ovs:s"], k: "overflow-style", v: "scrollbar" },
-  "ovs:p": { n: names["ovs:p"], k: "overflow-style", v: "panner" },
-  "ovs:m": { n: names["ovs:m"], k: "overflow-style", v: "move" },
-  "ovs:mq": { n: names["ovs:mq"], k: "overflow-style", v: "marquee" }
+  "ov:v": { name: names["ov:v"], key: "overflow", value: "visible" },
+  "ov:h": { name: names["ov:h"], key: "overflow", value: "hidden" },
+  "ov:s": { name: names["ov:s"], key: "overflow", value: "scroll" },
+  "ov:a": { name: names["ov:a"], key: "overflow", value: "auto" },
+  "ovx:v": { name: names["ovx:v"], key: "overflow-x", value: "visible" },
+  "ovx:h": { name: names["ovx:h"], key: "overflow-x", value: "hidden" },
+  "ovx:s": { name: names["ovx:s"], key: "overflow-x", value: "scroll" },
+  "ovx:a": { name: names["ovx:a"], key: "overflow-x", value: "auto" },
+  "ovy:v": { name: names["ovy:v"], key: "overflow-y", value: "visible" },
+  "ovy:h": { name: names["ovy:h"], key: "overflow-y", value: "hidden" },
+  "ovy:s": { name: names["ovy:s"], key: "overflow-y", value: "scroll" },
+  "ovy:a": { name: names["ovy:a"], key: "overflow-y", value: "auto" },
+  "ovs:a": { name: names["ovs:a"], key: "overflow-style", value: "auto" },
+  "ovs:s": { name: names["ovs:s"], key: "overflow-style", value: "scrollbar" },
+  "ovs:p": { name: names["ovs:p"], key: "overflow-style", value: "panner" },
+  "ovs:m": { name: names["ovs:m"], key: "overflow-style", value: "move" },
+  "ovs:mq": { name: names["ovs:mq"], key: "overflow-style", value: "marquee" }
 });
 
 const meta = {

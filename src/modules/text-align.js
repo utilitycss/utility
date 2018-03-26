@@ -12,14 +12,14 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "ta:l": { n: names["ta:l"], k: "text-align", v: "left" },
-  "ta:c": { n: names["ta:c"], k: "text-align", v: "center" },
-  "ta:r": { n: names["ta:r"], k: "text-align", v: "right" },
-  "ta:j": { n: names["ta:j"], k: "text-align", v: "justify" },
-  "tal:a": { n: names["tal:a"], k: "text-align-last", v: "auto" },
-  "tal:l": { n: names["tal:l"], k: "text-align-last", v: "left" },
-  "tal:c": { n: names["tal:c"], k: "text-align-last", v: "center" },
-  "tal:r": { n: names["tal:r"], k: "text-align-last", v: "right" }
+  "ta:l": { name: names["ta:l"], key: "text-align", value: "left" },
+  "ta:c": { name: names["ta:c"], key: "text-align", value: "center" },
+  "ta:r": { name: names["ta:r"], key: "text-align", value: "right" },
+  "ta:j": { name: names["ta:j"], key: "text-align", value: "justify" },
+  "tal:a": { name: names["tal:a"], key: "text-align-last", value: "auto" },
+  "tal:l": { name: names["tal:l"], key: "text-align-last", value: "left" },
+  "tal:c": { name: names["tal:c"], key: "text-align-last", value: "center" },
+  "tal:r": { name: names["tal:r"], key: "text-align-last", value: "right" }
 });
 
 const meta = {

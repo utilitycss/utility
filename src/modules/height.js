@@ -9,11 +9,11 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  h: { n: names["h"], k: "height", v: cfg.heightValues },
-  "h:a": { n: names["h:a"], k: "height", v: "auto" },
-  mah: { n: names["mah"], k: "max-height", v: cfg.maxHeightValues },
-  "mah:n": { n: names["mah:n"], k: "max-height", v: "none" },
-  mih: { n: names["mih"], k: "max-height", v: cfg.minHeightValues }
+  h: { name: names["h"], key: "height", value: cfg.heightValues },
+  "h:a": { name: names["h:a"], key: "height", value: "auto" },
+  mah: { name: names["mah"], key: "max-height", value: cfg.maxHeightValues },
+  "mah:n": { name: names["mah:n"], key: "max-height", value: "none" },
+  mih: { name: names["mih"], key: "max-height", value: cfg.minHeightValues }
 });
 
 const meta = {

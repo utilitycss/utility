@@ -8,10 +8,10 @@ const defaultNames = {
 };
 
 const getRules = names => ({
-  "tt:n": { n: names["tt:n"], k: "text-transform", v: "none" },
-  "tt:c": { n: names["tt:c"], k: "text-transform", v: "capitalize" },
-  "tt:u": { n: names["tt:u"], k: "text-transform", v: "uppercase" },
-  "tt:l": { n: names["tt:l"], k: "text-transform", v: "lowercase" }
+  "tt:n": { name: names["tt:n"], key: "text-transform", value: "none" },
+  "tt:c": { name: names["tt:c"], key: "text-transform", value: "capitalize" },
+  "tt:u": { name: names["tt:u"], key: "text-transform", value: "uppercase" },
+  "tt:l": { name: names["tt:l"], key: "text-transform", value: "lowercase" }
 });
 
 const meta = {

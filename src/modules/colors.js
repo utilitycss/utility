@@ -11,17 +11,37 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  c: { n: names["c"], k: "color", v: cfg.colorValues },
-  bgc: { n: names["bgc"], k: "background-color", v: cfg.backgroundColorValues },
-  bdc: { n: names["bdc"], k: "border-color", v: cfg.borderColorValues },
-  bdtc: { n: names["bdtc"], k: "border-top-color", v: cfg.borderColorValues },
-  bdrc: { n: names["bdrc"], k: "border-right-color", v: cfg.borderColorValues },
-  bdbc: {
-    n: names["bdbc"],
-    k: "border-bottom-color",
-    v: cfg.borderColorValues
+  c: { name: names["c"], key: "color", value: cfg.colorValues },
+  bgc: {
+    name: names["bgc"],
+    key: "background-color",
+    value: cfg.backgroundColorValues
   },
-  bdlc: { n: names["bdlc"], k: "border-left-color", v: cfg.borderColorValues }
+  bdc: {
+    name: names["bdc"],
+    key: "border-color",
+    value: cfg.borderColorValues
+  },
+  bdtc: {
+    name: names["bdtc"],
+    key: "border-top-color",
+    value: cfg.borderColorValues
+  },
+  bdrc: {
+    name: names["bdrc"],
+    key: "border-right-color",
+    value: cfg.borderColorValues
+  },
+  bdbc: {
+    name: names["bdbc"],
+    key: "border-bottom-color",
+    value: cfg.borderColorValues
+  },
+  bdlc: {
+    name: names["bdlc"],
+    key: "border-left-color",
+    value: cfg.borderColorValues
+  }
 });
 
 const meta = {

@@ -25,38 +25,94 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  bgi: { n: names["bgi"], k: "background-image", v: cfg.backgroundImageValues },
-  "bgi:n": { n: names["bgi:n"], k: "background-image", v: "none" },
-  "bgr:n": { n: names["bgr:n"], k: "background-repeat", v: "no-repeat" },
-  "bgr:x": { n: names["bgr:x"], k: "background-repeat", v: "repeat-x" },
-  "bgr:y": { n: names["bgr:y"], k: "background-repeat", v: "repeat-y" },
-  "bgr:rd": { n: names["bgr:rd"], k: "background-repeat", v: "round" },
-  "bga:f": { n: names["bga:f"], k: "background-attachment", v: "fixed" },
-  "bga:s": { n: names["bga:s"], k: "background-attachment", v: "scroll" },
+  bgi: {
+    name: names["bgi"],
+    key: "background-image",
+    values: cfg.backgroundImageValues
+  },
+  "bgi:n": { name: names["bgi:n"], key: "background-image", values: "none" },
+  "bgr:n": {
+    name: names["bgr:n"],
+    key: "background-repeat",
+    values: "no-repeat"
+  },
+  "bgr:x": {
+    name: names["bgr:x"],
+    key: "background-repeat",
+    values: "repeat-x"
+  },
+  "bgr:y": {
+    name: names["bgr:y"],
+    key: "background-repeat",
+    values: "repeat-y"
+  },
+  "bgr:rd": {
+    name: names["bgr:rd"],
+    key: "background-repeat",
+    values: "round"
+  },
+  "bga:f": {
+    name: names["bga:f"],
+    key: "background-attachment",
+    values: "fixed"
+  },
+  "bga:s": {
+    name: names["bga:s"],
+    key: "background-attachment",
+    values: "scroll"
+  },
   bgp: {
-    n: names["bgp"],
-    k: "background-position",
-    v: cfg.backgroundPostionValues
+    name: names["bgp"],
+    key: "background-position",
+    values: cfg.backgroundPostionValues
   },
   bgpx: {
-    n: names["bgpx"],
-    k: "background-position-x",
-    v: cfg.backgroundPostionXValues
+    name: names["bgpx"],
+    key: "background-position-x",
+    values: cfg.backgroundPostionXValues
   },
   bgpy: {
-    n: names["bgpy"],
-    k: "background-position-y",
-    v: cfg.backgroundPostionYValues
+    name: names["bgpy"],
+    key: "background-position-y",
+    values: cfg.backgroundPostionYValues
   },
-  "bgcp:bb": { n: names["bgcp:bb"], k: "background-clip", v: "border-box" },
-  "bgcp:pb": { n: names["bgcp:pb"], k: "background-clip", v: "padding-box" },
-  "bgcp:cb": { n: names["bgcp:cb"], k: "background-clip", v: "content-box" },
-  "bgo:bb": { n: names["bgo:bb"], k: "background-origin", v: "border-box" },
-  "bgo:pb": { n: names["bgo:pb"], k: "background-origin", v: "padding-box" },
-  "bgo:cb": { n: names["bgo:cb"], k: "background-origin", v: "content-box" },
-  "bgsz:a": { n: names["bgsz:a"], k: "background-size", v: "auto" },
-  "bgsz:ct": { n: names["bgsz:ct"], k: "background-size", v: "contain" },
-  "bgsz:cv": { n: names["bgsz:cv"], k: "background-size", v: "cover" }
+  "bgcp:bb": {
+    name: names["bgcp:bb"],
+    key: "background-clip",
+    values: "border-box"
+  },
+  "bgcp:pb": {
+    name: names["bgcp:pb"],
+    key: "background-clip",
+    values: "padding-box"
+  },
+  "bgcp:cb": {
+    name: names["bgcp:cb"],
+    key: "background-clip",
+    values: "content-box"
+  },
+  "bgo:bb": {
+    name: names["bgo:bb"],
+    key: "background-origin",
+    values: "border-box"
+  },
+  "bgo:pb": {
+    name: names["bgo:pb"],
+    key: "background-origin",
+    values: "padding-box"
+  },
+  "bgo:cb": {
+    name: names["bgo:cb"],
+    key: "background-origin",
+    values: "content-box"
+  },
+  "bgsz:a": { name: names["bgsz:a"], key: "background-size", values: "auto" },
+  "bgsz:ct": {
+    name: names["bgsz:ct"],
+    key: "background-size",
+    values: "contain"
+  },
+  "bgsz:cv": { name: names["bgsz:cv"], key: "background-size", values: "cover" }
 });
 
 const meta = {
