@@ -13,7 +13,7 @@ const getRules = (names, cfg) => ({
   "w:a": { name: names["w:a"], key: "width", value: "auto" },
   maw: { name: names["maw"], key: "max-width", value: cfg.maxWidthValues },
   "maw:n": { name: names["maw:n"], key: "max-width", value: "none" },
-  miw: { name: names["miw"], key: "max-width", value: cfg.minWidthValues }
+  miw: { name: names["miw"], key: "min-width", value: cfg.minWidthValues }
 });
 
 const meta = {

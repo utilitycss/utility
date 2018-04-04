@@ -13,7 +13,7 @@ const getRules = (names, cfg) => ({
   "h:a": { name: names["h:a"], key: "height", value: "auto" },
   mah: { name: names["mah"], key: "max-height", value: cfg.maxHeightValues },
   "mah:n": { name: names["mah:n"], key: "max-height", value: "none" },
-  mih: { name: names["mih"], key: "max-height", value: cfg.minHeightValues }
+  mih: { name: names["mih"], key: "min-height", value: cfg.minHeightValues }
 });
 
 const meta = {

@@ -1,6 +1,7 @@
 const applyRules = require("../util/applyRules");
 
 const defaultNames = {
+  "fx:r": "fx:r",
   "fx:a": "fxa",
   "fx:n": "fxn",
   fxb: "fxb",
@@ -43,6 +44,7 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
+  "fx:r": { name: names["fx:r"], key: "flex", value: "0 0 auto" },
   "fx:a": { name: names["fx:a"], key: "flex", value: "1 1 auto" },
   "fx:n": { name: names["fx:n"], key: "flex", value: "none" },
   fxb: { name: names["fxb"], key: "flex-basis", value: cfg.flexBasisValues },
