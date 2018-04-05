@@ -9,11 +9,12 @@ module.exports = (name, prop, values, options = {}) => {
   } = options;
 
   return [""].concat(pseudoClasses).reduce((prev, pseudo) => {
-    const separator = pseudo !== "" ? pseudoClassesSeparator : "";
+    const pseudoSeparator = pseudo !== "" ? pseudoClassesSeparator : "";
+    const separator = name !== "" ? seriesSeparator : "";
     const pseudoClass = pseudo.replace(/:/g, "");
     const nodes = Object.keys(values).map(value =>
       defineClass(
-        `${name}${seriesSeparator}${value}${separator}${pseudoClass}${pseudo}`,
+        `${name}${separator}${value}${pseudoSeparator}${pseudoClass}${pseudo}`,
         {
           [`${prop}`]: values[value]
         },
