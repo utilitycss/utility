@@ -3,6 +3,8 @@ const applyRules = require("../util/applyRules");
 const defaultNames = {
   bd: "bd",
   "bd:n": "bdn",
+  "bd:w": "bdw",
+  "bd:s": "bds",
   "bdcl:c": "bdclc",
   "bdcl:s": "bdcls",
   bdi: "bdi",
@@ -25,6 +27,16 @@ const defaultNames = {
 const getRules = (names, cfg) => ({
   bd: { name: names["bd"], key: "border", value: cfg.borderValues },
   "bd:n": { name: names["bd:n"], key: "border", value: "none" },
+  "bd:w": {
+    name: names["bd:w"],
+    key: "border-width",
+    value: cfg.borderWidthValues
+  },
+  "bd:s": {
+    name: names["bd:s"],
+    key: "border-style",
+    value: cfg.borderStyleValues
+  },
   "bdcl:c": {
     name: names["bdcl:c"],
     key: "border-collapse",

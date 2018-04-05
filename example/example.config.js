@@ -2,7 +2,7 @@ const path = require("path");
 const {
   plugins: { docs },
   util: { defineClass },
-  modules: { font, colors }
+  modules: { font, colors, border }
 } = require("../src/index");
 
 const breakPoints = {
@@ -19,6 +19,15 @@ const plugins = [
 ];
 
 const modules = [
+  border({
+    name: {
+      "bd:w": "borderWidth",
+      "bd:s": "borderStyle"
+    },
+    whitelist: ["bd:w", "bd:s"],
+    borderStyleValues: ["solid", "dotted"],
+    borderWidthValues: ["1px", "2px"]
+  }),
   /* font({
     names: { fz: "f" },
     whitelist: ["fw:b", "fz", "ff"],
