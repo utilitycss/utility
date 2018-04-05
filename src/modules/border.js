@@ -58,7 +58,7 @@ const getRules = (names, cfg) => ({
   bdr: {
     name: names["bdr"],
     key: "border-right",
-    value: cfg.borderRadiusValues
+    value: cfg.borderRightValues
   },
   "bdr:n": { name: names["bdr:n"], key: "border-right", value: "none" },
   bdb: {
