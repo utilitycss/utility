@@ -7,7 +7,6 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "precommit": "lint-staged",
     "lint": "eslint src/* --ext .js",
     "build-example":
       "yarn postcss example/example.css -o example/dist/example.css",
@@ -32,10 +31,15 @@
     "eslint": "^4.19.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "husky": "^0.14.3",
+    "husky": "^0.15.0-rc.13",
     "lint-staged": "^7.0.0",
     "postcss-cli": "^5.0.0",
     "prettier": "^1.11.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": ["prettier --write", "git add"],
