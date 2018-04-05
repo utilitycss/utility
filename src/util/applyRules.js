@@ -36,7 +36,7 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
 
   let result = enabledRules.reduce((acc, curr) => {
     const { name, key, value } = customRules[curr];
-    const { [`${name}`]: modifiers = [] } = pseudoClasses;
+    const { [curr]: modifiers = [] } = pseudoClasses;
     if (Array.isArray(value) || typeof value === "object") {
       acc = acc.concat(
         defineSeries(name, key, value, {
