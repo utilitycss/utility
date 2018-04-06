@@ -53,13 +53,15 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
         const separator = pseudo !== "" ? pseudoClassesSeparator : "";
         const pseudoClass = pseudo.replace(/:/g, "");
 
-        return defineClass(
-          `${name}${separator}${pseudoClass}${pseudo}`,
-          { [`${key}`]: value },
-          meta
+        return prev.concat(
+          defineClass(
+            `${name}${separator}${pseudoClass}${pseudo}`,
+            { [`${key}`]: value },
+            meta
+          )
         );
       }, []);
-      acc = acc.concat(defineClass(name, { [`${key}`]: value }, meta));
+      acc = acc.concat(singles);
     }
     return acc;
   }, []);
