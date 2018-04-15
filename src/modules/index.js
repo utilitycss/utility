@@ -27,6 +27,7 @@ const textDecoration = require("./text-decoration");
 const textTransform = require("./text-transform");
 const transform = require("./transform");
 const transition = require("./transition");
+const whiteSpace = require("./white-space");
 
 module.exports = {
   single,
@@ -57,5 +58,6 @@ module.exports = {
   textDecoration,
   textTransform,
   transform,
-  transition
+  transition,
+  whiteSpace
 };
