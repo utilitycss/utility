@@ -22,13 +22,16 @@ const modules = [
   border({
     name: {
       "bd:w": "borderWidth",
-      "bd:s": "borderStyle"
+      "bd:s": "borderStyle",
+      "bd:n": "borderNone"
     },
-    whitelist: ["bd:w", "bd:s"],
+    whitelist: ["bd:w", "bd:s", "bd:n"],
     borderStyleValues: ["solid", "dotted"],
-    borderWidthValues: ["1px", "2px"]
+    borderWidthValues: ["1px", "2px"],
+    isResponsive: true,
+    responsiveWhiteList: ["bd:n"]
   }),
-  /* font({
+  font({
     names: { fz: "f" },
     whitelist: ["fw:b", "fz", "ff"],
     fontSizeValues: [
@@ -44,7 +47,7 @@ const modules = [
       "2rem"
     ],
     isResponsive: true
-  }), */
+  }),
   colors({
     whitelist: ["c", "bgc", "bdc"],
     pseudoClasses: { c: [":hover"], bgc: [":hover", ":active"] },

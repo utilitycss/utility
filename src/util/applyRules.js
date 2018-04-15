@@ -8,6 +8,8 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
     whitelist = [],
     blacklist = [],
     isResponsive = false,
+    responsiveWhiteList = [],
+    responsiveBlackList = [],
     pseudoClasses = {}
   } =
     config || {};
@@ -43,7 +45,7 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
           seriesSeparator,
           pseudoClasses: modifiers,
           pseudoClassesSeparator,
-          meta
+          meta: { ...meta, id: curr }
         })
       );
     } else if (typeof value === "string" || typeof value === "number") {
@@ -57,7 +59,7 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
           defineClass(
             `${name}${separator}${pseudoClass}${pseudo}`,
             { [`${key}`]: value },
-            meta
+            { ...meta, id: curr }
           )
         );
       }, []);
@@ -67,8 +69,20 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
   }, []);
 
   if (isResponsive) {
+    const responsiveRules = result
+      .filter(({ meta: { id } }) => {
+        if (
+          Array.isArray(responsiveWhiteList) &&
+          responsiveWhiteList.length > 0
+        ) {
+          return responsiveWhiteList.includes(id);
+        }
+        return true;
+      })
+      .filter(({ meta: { id } }) => !responsiveBlackList.includes(id));
+
     result = result.concat(
-      responsive(result, breakPoints, {
+      responsive(responsiveRules, breakPoints, {
         breakPointSeparator
       })
     );
