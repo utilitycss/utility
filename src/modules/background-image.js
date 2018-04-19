@@ -30,36 +30,36 @@ const getRules = (names, cfg) => ({
     key: "background-image",
     values: cfg.backgroundImageValues
   },
-  "bgi:n": { name: names["bgi:n"], key: "background-image", values: "none" },
+  "bgi:n": { name: names["bgi:n"], key: "background-image", value: "none" },
   "bgr:n": {
     name: names["bgr:n"],
     key: "background-repeat",
-    values: "no-repeat"
+    value: "no-repeat"
   },
   "bgr:x": {
     name: names["bgr:x"],
     key: "background-repeat",
-    values: "repeat-x"
+    value: "repeat-x"
   },
   "bgr:y": {
     name: names["bgr:y"],
     key: "background-repeat",
-    values: "repeat-y"
+    value: "repeat-y"
   },
   "bgr:rd": {
     name: names["bgr:rd"],
     key: "background-repeat",
-    values: "round"
+    value: "round"
   },
   "bga:f": {
     name: names["bga:f"],
     key: "background-attachment",
-    values: "fixed"
+    value: "fixed"
   },
   "bga:s": {
     name: names["bga:s"],
     key: "background-attachment",
-    values: "scroll"
+    value: "scroll"
   },
   bgp: {
     name: names["bgp"],
@@ -79,40 +79,40 @@ const getRules = (names, cfg) => ({
   "bgcp:bb": {
     name: names["bgcp:bb"],
     key: "background-clip",
-    values: "border-box"
+    value: "border-box"
   },
   "bgcp:pb": {
     name: names["bgcp:pb"],
     key: "background-clip",
-    values: "padding-box"
+    value: "padding-box"
   },
   "bgcp:cb": {
     name: names["bgcp:cb"],
     key: "background-clip",
-    values: "content-box"
+    value: "content-box"
   },
   "bgo:bb": {
     name: names["bgo:bb"],
     key: "background-origin",
-    values: "border-box"
+    value: "border-box"
   },
   "bgo:pb": {
     name: names["bgo:pb"],
     key: "background-origin",
-    values: "padding-box"
+    value: "padding-box"
   },
   "bgo:cb": {
     name: names["bgo:cb"],
     key: "background-origin",
-    values: "content-box"
+    value: "content-box"
   },
-  "bgsz:a": { name: names["bgsz:a"], key: "background-size", values: "auto" },
+  "bgsz:a": { name: names["bgsz:a"], key: "background-size", value: "auto" },
   "bgsz:ct": {
     name: names["bgsz:ct"],
     key: "background-size",
-    values: "contain"
+    value: "contain"
   },
-  "bgsz:cv": { name: names["bgsz:cv"], key: "background-size", values: "cover" }
+  "bgsz:cv": { name: names["bgsz:cv"], key: "background-size", value: "cover" }
 });
 
 const meta = {
