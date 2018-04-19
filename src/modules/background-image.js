@@ -28,7 +28,7 @@ const getRules = (names, cfg) => ({
   bgi: {
     name: names["bgi"],
     key: "background-image",
-    values: cfg.backgroundImageValues
+    value: cfg.backgroundImageValues
   },
   "bgi:n": { name: names["bgi:n"], key: "background-image", value: "none" },
   "bgr:n": {
@@ -64,17 +64,17 @@ const getRules = (names, cfg) => ({
   bgp: {
     name: names["bgp"],
     key: "background-position",
-    values: cfg.backgroundPostionValues
+    value: cfg.backgroundPostionValues
   },
   bgpx: {
     name: names["bgpx"],
     key: "background-position-x",
-    values: cfg.backgroundPostionXValues
+    value: cfg.backgroundPostionXValues
   },
   bgpy: {
     name: names["bgpy"],
     key: "background-position-y",
-    values: cfg.backgroundPostionYValues
+    value: cfg.backgroundPostionYValues
   },
   "bgcp:bb": {
     name: names["bgcp:bb"],
