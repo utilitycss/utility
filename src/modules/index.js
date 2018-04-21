@@ -24,6 +24,7 @@ const font = require("./font");
 const verticalAlign = require("./vertical-align");
 const textAlign = require("./text-align");
 const textDecoration = require("./text-decoration");
+const textOverflow = require("./text-overflow");
 const textTransform = require("./text-transform");
 const transform = require("./transform");
 const transition = require("./transition");
@@ -56,6 +57,7 @@ module.exports = {
   verticalAlign,
   textAlign,
   textDecoration,
+  textOverflow,
   textTransform,
   transform,
   transition,
