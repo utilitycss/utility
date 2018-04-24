@@ -29,6 +29,7 @@ const textTransform = require("./text-transform");
 const transform = require("./transform");
 const transition = require("./transition");
 const whiteSpace = require("./white-space");
+const listStyle = require("./list-style");
 
 module.exports = {
   single,
@@ -61,5 +62,6 @@ module.exports = {
   textTransform,
   transform,
   transition,
-  whiteSpace
+  whiteSpace,
+  listStyle
 };
