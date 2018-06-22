@@ -1,6 +1,6 @@
 {
   "name": "@utilitycss/utility",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Generator for Utility CSS frameworks",
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",
@@ -8,9 +8,11 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src/* --ext .js",
-    "build-example": "yarn postcss example/example.css -o example/dist/example.css",
+    "build-example":
+      "yarn postcss example/example.css -o example/dist/example.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
+    "format":
+      "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
   },
   "bin": {
     "utility": "src/cli.js"
@@ -40,13 +42,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.css": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["prettier --write", "git add"],
+    "*.css": ["prettier --write", "git add"]
   }
 }
