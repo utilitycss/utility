@@ -14,6 +14,6 @@ module.exports = function({ content, filePath, dirPath, openFile = false }) {
   // eslint-disable-next-line no-console
   console.log(chalk.blue(`Document was created : ${filePath}`));
   if (openFile) {
-    opn(filePath, { app: ["google chrome", "--incognito"] });
+    opn(filePath, { app: ["google-chrome", "--incognito"] });
   }
 };
