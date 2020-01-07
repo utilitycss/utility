@@ -16,7 +16,7 @@ const defaultNames = {
 };
 
 const getRules = (names, cfg) => ({
-  "pos:s": { name: names["pos:s"], key: "postion", value: "static" },
+  "pos:s": { name: names["pos:s"], key: "position", value: "static" },
   "pos:a": { name: names["pos:a"], key: "position", value: "absolute" },
   "pos:r": { name: names["pos:r"], key: "position", value: "relative" },
   "pos:f": { name: names["pos:f"], key: "position", value: "fixed" },

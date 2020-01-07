@@ -29,7 +29,8 @@ const defaultNames = {
   bdtrrs: "bdtrrs",
   bdtlrs: "bdtlrs",
   bdbrrs: "bdbrrs",
-  bdblrs: "bdblrs"
+  bdblrs: "bdblrs",
+  bdsp: "bdsp"
 };
 
 const getRules = (names, cfg) => ({
@@ -141,6 +142,11 @@ const getRules = (names, cfg) => ({
     name: names["bdblrs"],
     key: "border-bottom-left-radius",
     value: cfg.borderBottomLeftRadiusValues
+  },
+  bdsp: {
+    name: names["bdsp"],
+    key: "border-spacing",
+    value: cfg.borderSpacingValues
   }
 });
 
