@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '12'
+cache:
+  yarn: true
+deploy:
+  provider: npm
+  email: axyzxp@gmail.com
+  api_key:
+    secure: ccRfVEvlr0pwhwYU0aKdXH350XVxv8QD9mNwx535zwFHIUE40R3WtL5ZfJ07JjflP9wQzz0zuwWGA4itNCk+tPBjGNVEfezTk3rpOVo07NIIkVftykJ4cIc6D5ghD3uZaozGnjNoh8KSXIoeSNW87+6aRTWJpaWuikoRYL5XW5RI8oPRyZu4IKWk9fNx2yrfH8Q3jQBLkGpk25IwR9722AdMgp8q7MtVZRRC0S9VE3hK6e+URHoaI4QYkmbHz/7IfW/DSle+wgKphU6KLQhh0LH1jdmDebUqLTXdVRqClL9OMTuIEiOTdcVxgmtXkHoFJXOZIxp83jfd2znV05HamNxbaZOrip5qYrvMogYtw4N3yNPB3GuafMhyHVyMF7g++IhE+5xceg1ukv/Qsu7/3cylWOxfIyOodUVP21aIb4Ii53T/guZgzsPD1P+VEnrsitwmVUqineybwjcnP+P9PEv0nYoH6/qAlT0Y8O8iGryJJQe6ENKjLQ8Z/4g2eKNwNVah9KCTb+90oEoGbS2KPK4wujNqqfRtv8B5KAM+4tPtWRRyZXHCP23j/20/jUB9gmvYaRfVnQZjSfsXfuY7wY+BQCJk77G+ipuwdnIHwV7E2vUXKk7qfok9Zy+M9i0/1M3M5Hl3jXA8tWgGPvUdYtNUXk/Yic/sD5ROOp4zX9w=
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: utilitycss/utility
