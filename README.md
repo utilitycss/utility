@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/utilitycss/utility.svg?branch=master)](https://travis-ci.com/utilitycss/atomic)
+
 # UtilityCSS
 
 ## Installation
