@@ -7,12 +7,14 @@ module.exports = config => root => {
   const modules = {};
   traverse(root, node => {
     const {
-      meta: { module }
+      meta,
+      meta: { module },
+      ...rest
     } = node;
-    if (Array.isArray(modules[module])) {
-      modules[module].push(node);
+    if (modules[module]) {
+      modules[module].nodes.push(rest);
     } else {
-      modules[module] = [node];
+      modules[module] = { meta, nodes: [rest] };
     }
   });
 
