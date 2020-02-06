@@ -4,6 +4,7 @@ node_js:
 cache:
   yarn: true
 deploy:
+  edge: true
   provider: npm
   email: axyzxp@gmail.com
   api_key:
