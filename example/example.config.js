@@ -1,6 +1,6 @@
 const path = require("path");
 const {
-  plugins: { docs },
+  plugins: { docs, json },
   util: { defineClass },
   modules: { font, colors, border }
 } = require("../src/index");
@@ -12,6 +12,9 @@ const breakPoints = {
 };
 
 const plugins = [
+  json({
+    output: path.join(__dirname, "/dist/example.json")
+  }),
   docs({
     output: path.join(__dirname, "/dist/docs.html"),
     openFile: true

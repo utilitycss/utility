@@ -3,47 +3,27 @@ const saveFile = require("../helpers/save-file");
 
 const buildDocPartials = require("../helpers/build-doc-partials");
 const buildIndex = require("../helpers/build-index");
+const traverse = require("../util/traverse");
 
 module.exports = config => root => {
   const { output, openFile } = config || {};
-  const { nodes } = root;
   const modules = {};
 
-  const traverseObject = (node, media) => {
-    const { meta: { module } = {}, selector, nodes, type } = node;
-    const nodeToPush = Object.assign(
-      {},
-      { selector, nodes, type },
-      media !== undefined
-        ? {
-            media: media
-          }
-        : {}
-    );
+  traverse(root, node => {
+    const {
+      meta: { module }
+    } = node;
     if (Array.isArray(modules[module])) {
-      modules[module].push(nodeToPush);
+      modules[module].push(node);
     } else {
-      modules[module] = [nodeToPush];
+      modules[module] = [node];
     }
-  };
-  const traverseNodes = (nodes, media) => {
-    nodes.forEach(node => {
-      if (node.hasOwnProperty("name") && node.name === "media") {
-        const { params: media, nodes } = node;
-        traverseNodes(nodes, media);
-      } else {
-        traverseObject(node, media);
-      }
-    });
-  };
-  traverseNodes(nodes);
+  });
 
   if (output) {
     const { dir: dirPath } = path.parse(output);
 
-    // LODASH Template
     const packageName = "Utility";
-    // const templateFolder = path.join(__dirname, "..", "helpers", "templates");
 
     const {
       headHtml,
@@ -72,9 +52,7 @@ module.exports = config => root => {
       dirPath,
       openFile
     });
-  } /*  else {
-    process.stdout.write(content);
-  } */
+  }
 
   return root;
 };
