@@ -27,4 +27,6 @@ module.exports = config => root => {
       dirPath
     });
   }
+
+  return root;
 };
