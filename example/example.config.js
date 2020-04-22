@@ -2,7 +2,7 @@ const path = require("path");
 const {
   plugins: { docs, json },
   util: { defineClass },
-  modules: { font, colors, border }
+  modules: { font, colors, border, boxShadow }
 } = require("../src/index");
 
 const breakPoints = {
@@ -22,8 +22,19 @@ const plugins = [
 ];
 
 const modules = [
+  boxShadow({
+    names: {
+      "bxsh:n": "boxShadowNone",
+      bxsh: "boxShadow"
+    },
+    boxShadowValues: {
+      xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
+      inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)"
+    },
+    whitelist: ["bxsh:n", "bxsh"]
+  }),
   border({
-    name: {
+    names: {
       "bd:w": "borderWidth",
       "bd:s": "borderStyle",
       "bd:n": "borderNone"
