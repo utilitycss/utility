@@ -11,7 +11,7 @@ const getRules = names => ({
 });
 
 const meta = {
-  module: "animation"
+  module: "pointer-events"
 };
 
 module.exports = config => globalConfig => {
