@@ -1,8 +1,17 @@
+const postcss = require("postcss");
 const defineClass = require("./defineClass");
 const defineSeries = require("./defineSeries");
 const responsive = require("./responsive");
+const template = require("./template");
 
-module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
+const applyRules = ({
+  config,
+  globalConfig,
+  defaultNames,
+  getRules,
+  meta,
+  classTemplate = "{}"
+}) => {
   const {
     names = {},
     whitelist = [],
@@ -10,17 +19,16 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
     isResponsive = false,
     responsiveWhiteList = [],
     responsiveBlackList = [],
-    pseudoClasses = {}
-  } =
-    config || {};
+    pseudoClasses = {},
+    nestedRules
+  } = config || {};
 
   const {
     breakPoints = {},
     breakPointSeparator = "",
     pseudoClassesSeparator = "",
     seriesSeparator = ""
-  } =
-    globalConfig || {};
+  } = globalConfig || {};
 
   const customNames = Object.assign({}, defaultNames, names);
   const customRules = getRules(customNames, config || {});
@@ -45,7 +53,8 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
           seriesSeparator,
           pseudoClasses: modifiers,
           pseudoClassesSeparator,
-          meta: { ...meta, id: curr }
+          meta: { ...meta, id: curr },
+          classTemplate
         })
       );
     } else if (typeof value === "string" || typeof value === "number") {
@@ -57,7 +66,10 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
 
         return prev.concat(
           defineClass(
-            `${name}${separator}${pseudoClass}${pseudo}`,
+            template(
+              classTemplate,
+              `${name}${separator}${pseudoClass}${pseudo}`
+            ),
             { [`${key}`]: value },
             { ...meta, id: curr }
           )
@@ -88,5 +100,41 @@ module.exports = ({ config, globalConfig, defaultNames, getRules, meta }) => {
     );
   }
 
+  if (nestedRules) {
+    Object.keys(nestedRules).forEach(nestedRule => {
+      const isAtRule = nestedRule[0] === "@";
+
+      if (isAtRule) {
+        const name = nestedRule.split(" ")[0].slice(1);
+        const nestedRuleNode = postcss.atRule({
+          name: name,
+          params: nestedRule.split(`${name} `)[1],
+          nodes: applyRules({
+            config: nestedRules[nestedRule],
+            globalConfig,
+            defaultNames,
+            getRules,
+            meta
+          })
+        });
+
+        result = result.concat(nestedRuleNode);
+      } else {
+        result = result.concat(
+          applyRules({
+            config: nestedRules[nestedRule],
+            globalConfig,
+            defaultNames,
+            getRules,
+            meta,
+            classTemplate: nestedRule
+          })
+        );
+      }
+    });
+  }
+
   return result;
 };
+
+module.exports = applyRules;

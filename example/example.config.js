@@ -63,11 +63,29 @@ const modules = [
     isResponsive: true
   }),
   colors({
+    nestedRules: {
+      ".dark {}": {
+        whitelist: ["c"],
+        isResponsive: true,
+        colorValues: {
+          black: "#ffffff",
+          white: "#1a1a1a"
+        }
+      },
+      "@media foo": {
+        whitelist: ["c"],
+        colorValues: {
+          black: "#ffffff",
+          white: "#1a1a1a"
+        }
+      }
+    },
     whitelist: ["c", "bgc", "bdc"],
     pseudoClasses: { c: [":hover"], bgc: [":hover", ":active"] },
     colorValues: {
       orange: "#ff6900",
       black: "#1a1a1a",
+      white: "#ffffff",
       grey: "#777777",
       grey2: "#a5a5a5",
       grey3: "#dddddd",
