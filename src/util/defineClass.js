@@ -13,7 +13,7 @@ module.exports = (name, props, meta = {}) => {
 
   return postcss
     .rule({
-      selectors: `.${escapeClassName(name)}`.split(" "),
+      selector: `.${escapeClassName(name)}`,
       meta
     })
     .append(decls);
