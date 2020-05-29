@@ -1,11 +1,13 @@
 const defineClass = require("./defineClass");
+const template = require("./template");
 
 module.exports = (name, prop, values, options = {}) => {
   const {
     seriesSeparator = "",
     pseudoClassesSeparator = "",
     pseudoClasses = [],
-    meta = {}
+    meta = {},
+    classTemplate = "{}"
   } = options;
 
   return [""].concat(pseudoClasses).reduce((prev, pseudo) => {
@@ -14,7 +16,10 @@ module.exports = (name, prop, values, options = {}) => {
     const pseudoClass = pseudo.replace(/:/g, "");
     const nodes = Object.keys(values).map(value =>
       defineClass(
-        `${name}${separator}${value}${pseudoSeparator}${pseudoClass}${pseudo}`,
+        template(
+          classTemplate,
+          `${name}${separator}${value}${pseudoSeparator}${pseudoClass}${pseudo}`
+        ),
         {
           [`${prop}`]: values[value]
         },
