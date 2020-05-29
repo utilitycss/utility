@@ -20,12 +20,14 @@ module.exports = function({ modules }) {
     modules[module].forEach(rule => {
       // console.log(JSON.stringify(rule));
       const { nodes, selector, media } = rule;
-      rules.push({
-        selector,
-        nodes,
-        media,
-        class: selectorReplace(selector)
-      });
+      if (/^\.[A-Za-z0-9\-\:\_]+$/.test(selector)) {
+        rules.push({
+          selector,
+          nodes,
+          media,
+          class: selectorReplace(selector)
+        });
+      }
     });
     const sectionHtml = sectionTemplate({
       module: moduleName,
