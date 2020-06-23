@@ -6,7 +6,15 @@ module.exports = (rules, breakpoints = {}, options = {}) => {
   return Object.keys(breakpoints).map(bp => {
     const nodes = rules.map(rule => {
       const newRule = rule.clone();
-      newRule.selector = `${rule.selector}${breakPointSeparator}${bp}`;
+      const matchPseudo = rule.selector.match(/:([\w\d_-]+)/);
+      if (matchPseudo) {
+        newRule.selector = `${rule.selector.replace(
+          matchPseudo[0],
+          ""
+        )}${breakPointSeparator}${bp}${matchPseudo[0]}`;
+      } else {
+        newRule.selector = `${rule.selector}${breakPointSeparator}${bp}`;
+      }
       return newRule;
     });
 

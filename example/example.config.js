@@ -42,6 +42,7 @@ const modules = [
     whitelist: ["bd:w", "bd:s", "bd:n"],
     borderStyleValues: ["solid", "dotted"],
     borderWidthValues: ["1px", "2px"],
+    pseudoClasses: { "bd:n": [":hover"] },
     isResponsive: true,
     responsiveWhiteList: ["bd:n"]
   }),
@@ -114,7 +115,8 @@ module.exports = {
   forceInsert: true,
   config: {
     breakPoints,
-    breakPointSeparator: "_"
+    breakPointSeparator: "_",
+    pseudoClassesSeparator: "_"
   },
   modules,
   plugins
