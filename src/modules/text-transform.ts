@@ -2,11 +2,11 @@ import applyRules from "../util/applyRules";
 
 import { GetRules, Meta, Module } from "../types";
 
-export type BoxShadowSupportedTypes = {
+export type TextTransformSupportedTypes = {
   [key in keyof typeof defaultNames]?: string;
 };
 
-export type BoxShadowModuleType = Module<ConfigVariables>;
+export type TextTransformModuleType = Module<ConfigVariables>;
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
@@ -29,7 +29,7 @@ const meta: Meta = {
   module: "text-transform",
 };
 
-const module: BoxShadowModuleType = (config) => (globalConfig) => {
+const module: TextTransformModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,

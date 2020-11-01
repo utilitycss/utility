@@ -71,3 +71,96 @@ export type ApplyRules<T extends any> = (
 export type Module<T extends any> = (
   config?: UtilityConfig<T>
 ) => (globalConfig: GlobalUtilityConfig) => ApplyRulesOutput;
+
+/* Below is the typing fot the configs */
+export {
+  AnimationModuleType,
+  AnimationSupportedTypes,
+} from "./modules/animation";
+export {
+  BackgroundImageModuleType,
+  BackgroundImageSupportedTypes,
+} from "./modules/background-image";
+export { BorderModuleType, BorderSupportedTypes } from "./modules/border";
+export {
+  BoxShadowModuleType,
+  BoxShadowSupportedTypes,
+} from "./modules/box-shadow";
+export {
+  BoxSizingModuleType,
+  BoxSizingSupportedTypes,
+} from "./modules/box-sizing";
+export { ClearModuleType, ClearSupportedTypes } from "./modules/clear";
+export { ColorsModuleType, ColorsSupportedTypes } from "./modules/colors";
+export { CursorModuleType, CursorSupportedTypes } from "./modules/cursor";
+export { DisplayModuleType, DisplaySupportedTypes } from "./modules/display";
+export { FlexBoxModuleType, FlexBoxSupportedTypes } from "./modules/flexbox";
+export { FloatModuleType, FloatSupportedTypes } from "./modules/float";
+export { FontModuleType, FontSupportedTypes } from "./modules/font";
+export { HeightModuleType, HeightSupportedTypes } from "./modules/height";
+export {
+  LetterSpacingModuleType,
+  LetterSpacingSupportedTypes,
+} from "./modules/letter-spacing";
+export {
+  LineHeightModuleType,
+  LineHeightSupportedTypes,
+} from "./modules/line-height";
+export {
+  ListStyleModuleType,
+  ListStyleSupportedTypes,
+} from "./modules/list-style";
+export { OpacityModuleType, OpacitySupportedTypes } from "./modules/opacity";
+export { OutlineModuleType, OutlineSupportedTypes } from "./modules/outline";
+export { OverflowModuleType, OverflowSupportedTypes } from "./modules/overflow";
+export {
+  PointerEventsModuleType,
+  PointerEventsSupportedTypes,
+} from "./modules/pointer-events";
+export { PositionModuleType, PositionSupportedTypes } from "./modules/position";
+export { ResizeModuleType, ResizeSupportedTypes } from "./modules/resize";
+export { SeriesModuleType } from "./modules/series";
+export { SingleModuleType } from "./modules/single";
+export { SpacingModuleType, SpacingSupportedTypes } from "./modules/spacing";
+export {
+  TextAlignModuleType,
+  TextAlignSupportedTypes,
+} from "./modules/text-align";
+export {
+  TextDecorationModuleType,
+  TextDecorationSupportedTypes,
+} from "./modules/text-decoration";
+export {
+  TextOverflowModuleType,
+  TextOverflowSupportedTypes,
+} from "./modules/text-overflow";
+export {
+  TextTransformModuleType,
+  TextTransformSupportedTypes,
+} from "./modules/text-transform";
+export {
+  TransformModuleType,
+  TransformSupportedTypes,
+} from "./modules/transform";
+export {
+  TransitionModuleType,
+  TransitionSupportedTypes,
+} from "./modules/transition";
+export {
+  VerticalAlignModuleType,
+  VerticalAlignSupportedTypes,
+} from "./modules/vertical-align";
+export {
+  VisibilityModuleType,
+  VisibilitySupportedTypes,
+} from "./modules/visibility";
+export {
+  WhiteSpaceModuleType,
+  WhiteSpaceSupportedTypes,
+} from "./modules/white-space";
+export { WidthModuleType, WidthSupportedTypes } from "./modules/width";
+export {
+  UserSelectModuleType,
+  UserSelectSupportedTypes,
+} from "./modules/user-select";
+export { ZIndexModuleType, ZIndexSupportedTypes } from "./modules/z-index";

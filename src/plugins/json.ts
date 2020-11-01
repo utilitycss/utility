@@ -7,7 +7,7 @@ import { GlobalUtilityConfig } from "../types";
 
 export default (config: Pick<GlobalUtilityConfig, "output">) => (
   root: Root
-) => {
+): Root => {
   const { output } = config || {};
   const modules = {};
   traverse(root, (node: ChildNode) => {

@@ -1,12 +1,12 @@
 import applyRules from "../util/applyRules";
 
-import { GetRules, GenericObject, Meta, Module } from "../types";
+import { GetRules, Meta, Module } from "../types";
 
-export type BoxShadowSupportedTypes = {
+export type VerticalAlignSupportedTypes = {
   [key in keyof typeof defaultNames]?: string;
 };
 
-export type BoxShadowModuleType = Module<ConfigVariables>;
+export type VerticalAlignModuleType = Module<ConfigVariables>;
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
@@ -41,7 +41,7 @@ const meta: Meta = {
   module: "vertical-align",
 };
 
-const module: BoxShadowModuleType = (config) => (globalConfig) => {
+const module: VerticalAlignModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
