@@ -12,15 +12,19 @@ interface Input {
   plugins?: any[];
 }
 
-export default ({ modules = [], config = {}, plugins = [] }: Input) => {
+export default function computedStyles({
+  modules = [],
+  config = {},
+  plugins = [],
+}: Input) {
   // Run through the modules and create
   // module specfic nodes
   const nodes = modules.reduce((acc, curr) => {
     return acc.concat(curr(config));
   }, []);
-  // Createt he root node for the styles
+  // Create the root node for the styles
   const rootNodes = postcss.root({
-    nodes
+    nodes,
   });
   // Run all the plugins in the above rootNodes
   const computedStyles = plugins.reduce((nodes, plugin) => {
@@ -29,4 +33,4 @@ export default ({ modules = [], config = {}, plugins = [] }: Input) => {
     return plugin(rootNodes);
   }, rootNodes);
   return computedStyles;
-};
+}
