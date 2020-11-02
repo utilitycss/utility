@@ -2,10 +2,12 @@ import path from "path";
 import _ from "lodash";
 import { promises as fsAsync } from "fs";
 
+import { Module } from "../plugins/docs";
+
 export default async function buildSidebar({
   modules,
 }: {
-  modules: any;
+  modules: Module;
 }): Promise<string> {
   const sidebarTemplate = _.template(
     await fsAsync.readFile(

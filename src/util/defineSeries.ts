@@ -11,7 +11,7 @@ type Options = Pick<
   Pick<UtilityConfig<any>, "pseudoClasses" | "meta">;
 
 type DefineSeries = (
-  name: string,
+  name: string | number,
   prop: string,
   values: GenericObject | string[],
   options?: Options

@@ -5,12 +5,12 @@
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist",
+  "typings": "dist",
   "scripts": {
-    "lint": "eslint src/* --ext .js",
+    "lint": "eslint './src/**/*.{js,ts,tsx}'",
     "build-example": "yarn postcss example/example.css -o example/dist/example.css",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "format": "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "bin": {
     "utility": "src/cli.ts"
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.164",
+    "@types/node": "^14.14.6",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "babel-eslint": "^10.1.0",
@@ -46,9 +47,9 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
+    "*.{ts,tsx,js}": [
+      "prettier --no-config --write",
+      "eslint --fix"
     ],
     "*.css": [
       "prettier --write",

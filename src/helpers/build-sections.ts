@@ -2,14 +2,24 @@ import path from "path";
 import _ from "lodash";
 import { promises as fsAsync } from "fs";
 
-const selectorReplace = (selector) => {
+import { CreatedNode } from "../util/traverse";
+import { Module } from "../plugins/docs";
+
+const selectorReplace = (selector: string) => {
   return selector.replace(".", "").replace(":active", "").replace(":hover", "");
 };
+
+interface Rule {
+  selector: string;
+  nodes: CreatedNode["nodes"];
+  media: string;
+  class: string;
+}
 
 export default async function buildSections({
   modules,
 }: {
-  modules: any;
+  modules: Module;
 }): Promise<string[]> {
   const sectionTemplate = _.template(
     await fsAsync.readFile(
@@ -17,10 +27,10 @@ export default async function buildSections({
       "utf8"
     )
   );
-  const sectionsHtml = [];
+  const sectionsHtml: string[] = [];
   Object.keys(modules).forEach((module) => {
     const moduleName = module[0].toUpperCase() + module.slice(1);
-    const rules = [];
+    const rules: Rule[] = [];
     modules[module].forEach((rule) => {
       // console.log(JSON.stringify(rule));
       const { nodes, selector, media } = rule;

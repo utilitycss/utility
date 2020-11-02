@@ -1,7 +1,9 @@
 import path from "path";
 import { promises as fsAsync } from "fs";
 import _ from "lodash";
-import cssstats from "cssstats";
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const cssstats = require("cssstats");
 
 interface BuildStats {
   atomCss: string;

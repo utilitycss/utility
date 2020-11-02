@@ -4,6 +4,8 @@ import buildSidebar from "./build-sidebar";
 import buildSections from "./build-sections";
 import buildStats from "./build-stats";
 
+import { Module } from "../plugins/docs";
+
 /* Function which build all parts of the document */
 export default async function buildDocPartials({
   packageName,
@@ -11,7 +13,7 @@ export default async function buildDocPartials({
   atomCss,
 }: {
   packageName: string;
-  modules: any;
+  modules: Module;
   atomCss: string;
 }): Promise<{
   headHtml: string;

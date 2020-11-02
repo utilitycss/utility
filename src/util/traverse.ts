@@ -1,10 +1,17 @@
 import { Root, ChildNode, AtRule, Declaration, Rule } from "postcss";
+import { Meta } from "../types";
+type CallBack = (node: CreatedNode) => void;
 
-type CallBack = (node: ChildNode) => void;
+export interface CreatedNode
+  extends Omit<Rule, "type" | "raws" | "nodes" | "parent"> {
+  nodes: Array<{ prop: string; value: string }>;
+  media?: any;
+  meta?: Meta;
+}
 
 const traverseObject = (node: ChildNode, cb: CallBack, media: any) => {
   const { type, raws, parent, nodes, ...rest } = node as Rule;
-  const nodeToPush = Object.assign(
+  const nodeToPush: CreatedNode = Object.assign(
     {},
     rest,
     {
@@ -20,7 +27,7 @@ const traverseObject = (node: ChildNode, cb: CallBack, media: any) => {
       : {}
   );
 
-  cb(nodeToPush as ChildNode);
+  cb(nodeToPush);
 };
 
 const traverseNodes = (nodes: ChildNode[], cb: CallBack, media?: any) => {
@@ -34,7 +41,7 @@ const traverseNodes = (nodes: ChildNode[], cb: CallBack, media?: any) => {
   });
 };
 
-const traverse = (root: Root, cb): void => {
+const traverse = (root: Root, cb: CallBack): void => {
   const { nodes } = root;
   traverseNodes(nodes, cb);
 };

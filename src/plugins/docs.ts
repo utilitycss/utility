@@ -1,13 +1,22 @@
 import path from "path";
 import saveFile from "../helpers/save-file";
+import { Root } from "postcss";
 
 import buildDocPartials from "../helpers/build-doc-partials";
 import buildIndex from "../helpers/build-index";
-import traverse from "../util/traverse";
+import traverse, { CreatedNode } from "../util/traverse";
 
-export default (config) => async (root) => {
+import { GlobalUtilityConfig } from "../types";
+
+export interface Module {
+  [key: string]: Array<CreatedNode>;
+}
+
+export default (
+  config: Pick<GlobalUtilityConfig, "output" | "openFile">
+) => async (root: Root): Promise<Root> => {
   const { output, openFile } = config || {};
-  const modules = {};
+  const modules: Module = {};
 
   traverse(root, (node) => {
     const {

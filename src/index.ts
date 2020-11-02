@@ -18,7 +18,7 @@ const builder = postcss.plugin("utility", (config) => (styles) => {
     config: globalConfig = {},
     forceInsert = false,
   } = config || defaultConfig;
-  const toRemove = [];
+  const toRemove: postcss.AtRule[] = [];
 
   styles.walkAtRules("utility", (rule) => {
     if (rule.name !== AT_RULE_NAME) {

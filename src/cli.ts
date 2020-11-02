@@ -4,9 +4,11 @@ import postcss from "postcss";
 import chalk from "chalk";
 import path from "path";
 import fs from "fs";
+import { promises as fsAsync } from "fs";
 import { builder } from "../";
 
-import packageJson from "../package.json";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const packageJson = require("../package.json");
 
 program.version(packageJson.version).usage("<command> [<args>]");
 
@@ -42,14 +44,17 @@ program
   .usage("[options] [filename]")
   .option("-c, --config [path]", "Path to config file")
   .option("-o, --output [path]", "Output file")
-  .action((fileName, options) => {
+  .action(async (fileName, options) => {
     const input = fileName
-      ? fs.readFileSync(path.resolve(fileName), "utf-8")
-      : fs.readFileSync(path.resolve(__dirname, "../bootstrap.css"), "utf-8");
+      ? await fsAsync.readFile(path.resolve(fileName), "utf-8")
+      : await fsAsync.readFile(
+          path.resolve(__dirname, "../bootstrap.css"),
+          "utf-8"
+        );
 
     const write = options.output
-      ? (data) => fs.writeFileSync(options.output, data)
-      : (data) => process.stdout.write(data);
+      ? async (data: string) => await fsAsync.writeFile(options.output, data)
+      : async (data: string) => process.stdout.write(data);
 
     let config;
     const localConfig = path.resolve("utility.config.js");
@@ -66,8 +71,8 @@ program
     console.log(chalk.blue("Building CSS bundle..."));
     postcss([builder(config)])
       .process(input)
-      .then((result) => {
-        write(result.css);
+      .then(async (result) => {
+        await write(result.css);
         // eslint-disable-next-line no-console
         console.log(chalk.green("Success!"));
       })

@@ -1,3 +1,4 @@
+/* eslint-disable */
 const generateModules = require("../util/generateModules");
 
 const resolveUtility = (config) => (css) => {
@@ -20,3 +21,4 @@ const resolveUtility = (config) => (css) => {
 };
 
 module.exports = resolveUtility;
+/* eslint-enable */

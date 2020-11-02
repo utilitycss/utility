@@ -34,6 +34,7 @@ export interface GlobalUtilityConfig {
   pseudoClassesSeparator: string;
   seriesSeparator: string;
   classTemplate?: string;
+  openFile?: boolean;
 }
 
 export interface GetRulesOutput {
