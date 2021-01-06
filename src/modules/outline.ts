@@ -55,7 +55,7 @@ const meta: Meta = {
   module: "outline",
 };
 
-const module: OutlineModuleType = (config) => (globalConfig) => {
+const cssModule: OutlineModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -65,4 +65,4 @@ const module: OutlineModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

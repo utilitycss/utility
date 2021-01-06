@@ -135,7 +135,7 @@ const meta: Meta = {
   module: "font",
 };
 
-const module: FontModuleType = (config) => (globalConfig) => {
+const cssModule: FontModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -145,4 +145,4 @@ const module: FontModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

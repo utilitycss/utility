@@ -11,7 +11,7 @@ module.exports = {
     "1.625rem",
     "1.75rem",
     "1.875rem",
-    "2rem"
+    "2rem",
   ],
-  isResponsive: true
+  isResponsive: true,
 };

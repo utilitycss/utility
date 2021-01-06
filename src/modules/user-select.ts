@@ -31,7 +31,7 @@ const meta: Meta = {
   module: "user-select",
 };
 
-const module: UserSelectModuleType = (config) => (globalConfig) => {
+const cssModule: UserSelectModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -41,4 +41,4 @@ const module: UserSelectModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

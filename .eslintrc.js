@@ -16,4 +16,13 @@ module.exports = {
     es6: true,
     node: true,
   },
+  overrides: [
+    {
+      files: ["./example/**/*.js"],
+      rules: {
+        // Allow require statement for all JS files
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };

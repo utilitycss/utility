@@ -27,7 +27,7 @@ const meta: Meta = {
   module: "float",
 };
 
-const module: FloatModuleType = (config) => (globalConfig) => {
+const cssModule: FloatModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -37,4 +37,4 @@ const module: FloatModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

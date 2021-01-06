@@ -64,7 +64,7 @@ const meta: Meta = {
   module: "transition",
 };
 
-const module: TransitionModuleType = (config) => (globalConfig) => {
+const cssModule: TransitionModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -74,4 +74,4 @@ const module: TransitionModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

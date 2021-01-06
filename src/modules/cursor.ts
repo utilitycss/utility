@@ -37,7 +37,7 @@ const meta: Meta = {
   module: "cursor",
 };
 
-const module: CursorModuleType = (config) => (globalConfig) => {
+const cssModule: CursorModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -47,4 +47,4 @@ const module: CursorModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

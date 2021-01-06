@@ -25,7 +25,7 @@ const meta: Meta = {
   module: "pointer-events",
 };
 
-const module: PointerEventsModuleType = (config) => (globalConfig) => {
+const cssModule: PointerEventsModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -35,4 +35,4 @@ const module: PointerEventsModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

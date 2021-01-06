@@ -26,7 +26,7 @@ const meta: Meta = {
   module: "z-index",
 };
 
-const module: ZIndexModuleType = (config) => (globalConfig) => {
+const cssModule: ZIndexModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -36,4 +36,4 @@ const module: ZIndexModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

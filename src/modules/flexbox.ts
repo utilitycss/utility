@@ -139,7 +139,7 @@ const meta: Meta = {
   module: "flexbox",
 };
 
-const module: FlexBoxModuleType = (config) => (globalConfig) => {
+const cssModule: FlexBoxModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -149,4 +149,4 @@ const module: FlexBoxModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

@@ -25,7 +25,7 @@ const meta: Meta = {
   module: "box-sizing",
 };
 
-const module: BoxSizingModuleType = (config) => (globalConfig) => {
+const cssModule: BoxSizingModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -35,4 +35,4 @@ const module: BoxSizingModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

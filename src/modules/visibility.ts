@@ -27,7 +27,7 @@ const meta: Meta = {
   module: "visibility",
 };
 
-const module: VisibilityModuleType = (config) => (globalConfig) => {
+const cssModule: VisibilityModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -37,4 +37,4 @@ const module: VisibilityModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

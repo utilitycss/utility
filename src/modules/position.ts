@@ -51,7 +51,7 @@ const meta: Meta = {
   module: "position",
 };
 
-const module: PositionModuleType = (config) => (globalConfig) => {
+const cssModule: PositionModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -61,4 +61,4 @@ const module: PositionModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

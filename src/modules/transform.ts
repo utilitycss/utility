@@ -41,7 +41,7 @@ const meta: Meta = {
   module: "transform",
 };
 
-const module: TransformModuleType = (config) => (globalConfig) => {
+const cssModule: TransformModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -51,4 +51,4 @@ const module: TransformModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

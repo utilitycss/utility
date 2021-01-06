@@ -37,7 +37,7 @@ const meta: Meta = {
   module: "text-align",
 };
 
-const module: TextAlignModuleType = (config) => (globalConfig) => {
+const cssModule: TextAlignModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -47,4 +47,4 @@ const module: TextAlignModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

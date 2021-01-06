@@ -24,7 +24,7 @@ const meta: Meta = {
   module: "line-height",
 };
 
-const module: LineHeightModuleType = (config) => (globalConfig) => {
+const cssModule: LineHeightModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -34,4 +34,4 @@ const module: LineHeightModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

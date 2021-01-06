@@ -62,7 +62,7 @@ const meta: Meta = {
   module: "colors",
 };
 
-const module: ColorsModuleType = (config) => (globalConfig) => {
+const cssModule: ColorsModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -72,4 +72,4 @@ const module: ColorsModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

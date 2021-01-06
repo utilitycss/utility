@@ -83,7 +83,7 @@ const meta: Meta = {
   module: "display",
 };
 
-const module: DisplayModuleType = (config) => (globalConfig) => {
+const cssModule: DisplayModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -93,4 +93,4 @@ const module: DisplayModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

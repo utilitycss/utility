@@ -14,7 +14,7 @@ const meta: Meta = {
   module: "series",
 };
 
-const module: SeriesModuleType = (config) => (globalConfig) => {
+const cssModule: SeriesModuleType = (config) => (globalConfig) => {
   const {
     property,
     className,
@@ -53,4 +53,4 @@ const module: SeriesModuleType = (config) => (globalConfig) => {
   return series;
 };
 
-export default module;
+export default cssModule;

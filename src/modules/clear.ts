@@ -29,7 +29,7 @@ const meta: Meta = {
   module: "clear",
 };
 
-const module: ClearModuleType = (config) => (globalConfig) => {
+const cssModule: ClearModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -39,4 +39,4 @@ const module: ClearModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

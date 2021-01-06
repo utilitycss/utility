@@ -29,7 +29,7 @@ const meta: Meta = {
   module: "text-transform",
 };
 
-const module: TextTransformModuleType = (config) => (globalConfig) => {
+const cssModule: TextTransformModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -39,4 +39,4 @@ const module: TextTransformModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

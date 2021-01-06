@@ -187,7 +187,7 @@ const meta: Meta = {
   module: "border",
 };
 
-const module: BorderModuleType = (config) => (globalConfig) => {
+const cssModule: BorderModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -197,4 +197,4 @@ const module: BorderModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

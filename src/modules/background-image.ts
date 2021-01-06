@@ -134,7 +134,7 @@ const meta: Meta = {
   module: "background-image",
 };
 
-const module: BackgroundImageModuleType = (config) => (globalConfig) => {
+const cssModule: BackgroundImageModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -144,4 +144,4 @@ const module: BackgroundImageModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

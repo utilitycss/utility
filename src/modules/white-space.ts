@@ -31,7 +31,7 @@ const meta: Meta = {
   module: "white-space",
 };
 
-const module: WhiteSpaceModuleType = (config) => (globalConfig) => {
+const cssModule: WhiteSpaceModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -41,4 +41,4 @@ const module: WhiteSpaceModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

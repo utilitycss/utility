@@ -41,7 +41,7 @@ const meta: Meta = {
   module: "vertical-align",
 };
 
-const module: VerticalAlignModuleType = (config) => (globalConfig) => {
+const cssModule: VerticalAlignModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -51,4 +51,4 @@ const module: VerticalAlignModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

@@ -31,7 +31,7 @@ const meta: Meta = {
   module: "box-shadow",
 };
 
-const module: BoxShadowModuleType = (config) => (globalConfig) => {
+const cssModule: BoxShadowModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -41,4 +41,4 @@ const module: BoxShadowModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

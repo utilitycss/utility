@@ -53,7 +53,7 @@ const meta: Meta = {
   module: "spacing",
 };
 
-const module: SpacingModuleType = (config) => (globalConfig) => {
+const cssModule: SpacingModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -63,4 +63,4 @@ const module: SpacingModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

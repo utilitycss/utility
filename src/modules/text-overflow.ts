@@ -28,7 +28,7 @@ const meta: Meta = {
   module: "text-overflow",
 };
 
-const module: TextOverflowModuleType = (config) => (globalConfig) => {
+const cssModule: TextOverflowModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -38,4 +38,4 @@ const module: TextOverflowModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

@@ -34,7 +34,7 @@ const meta: Meta = {
   module: "width",
 };
 
-const module: WidthModuleType = (config) => (globalConfig) => {
+const cssModule: WidthModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -44,4 +44,4 @@ const module: WidthModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

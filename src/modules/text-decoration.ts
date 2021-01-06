@@ -33,7 +33,7 @@ const meta: Meta = {
   module: "text-decoration",
 };
 
-const module: TextDecorationModuleType = (config) => (globalConfig) => {
+const cssModule: TextDecorationModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -43,4 +43,4 @@ const module: TextDecorationModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

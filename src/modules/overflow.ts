@@ -55,7 +55,7 @@ const meta: Meta = {
   module: "overflow",
 };
 
-const module: OverflowModuleType = (config) => (globalConfig) => {
+const cssModule: OverflowModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -65,4 +65,4 @@ const module: OverflowModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

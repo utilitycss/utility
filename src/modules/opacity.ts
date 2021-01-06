@@ -24,7 +24,7 @@ const meta: Meta = {
   module: "opacity",
 };
 
-const module: OpacityModuleType = (config) => (globalConfig) => {
+const cssModule: OpacityModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -34,4 +34,4 @@ const module: OpacityModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

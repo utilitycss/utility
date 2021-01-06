@@ -28,7 +28,7 @@ const meta: Meta = {
   module: "list-style",
 };
 
-const module: ListStyleModuleType = (config) => (globalConfig) => {
+const cssModule: ListStyleModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -38,4 +38,4 @@ const module: ListStyleModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

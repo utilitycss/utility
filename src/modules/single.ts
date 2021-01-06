@@ -14,7 +14,7 @@ const meta: Meta = {
   module: "single",
 };
 
-const module: SingleModuleType = (config) => (globalConfig) => {
+const cssModule: SingleModuleType = (config) => (globalConfig) => {
   const { className, props, isResponsive = false } = config || {};
 
   const { breakPointSeparator = "", breakPoints = {} } = globalConfig || {};
@@ -32,4 +32,4 @@ const module: SingleModuleType = (config) => (globalConfig) => {
   return single;
 };
 
-export default module;
+export default cssModule;

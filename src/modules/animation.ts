@@ -24,7 +24,7 @@ const meta: Meta = {
   module: "animation",
 };
 
-const module: AnimationModuleType = (config) => (globalConfig) => {
+const cssModule: AnimationModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -34,4 +34,4 @@ const module: AnimationModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

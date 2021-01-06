@@ -7,7 +7,7 @@ import deepmerge from "deepmerge";
 import computeStyles from "./util/computeStyles";
 
 const AT_RULE_NAME = "utility";
-const DEFAULT_CONFIG_PATH = "./utility.config.default.ts";
+const DEFAULT_CONFIG_PATH = "./utility.config.default";
 
 const builder = postcss.plugin("utility", (config) => (styles) => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -102,7 +102,7 @@ const builder = postcss.plugin("utility", (config) => (styles) => {
   });
 });
 
-export { builder };
+export default builder;
 
 export * as plugins from "./plugins";
 export * as modules from "./modules";

@@ -29,7 +29,7 @@ const meta: Meta = {
   module: "resize",
 };
 
-const module: ResizeModuleType = (config) => (globalConfig) => {
+const cssModule: ResizeModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -39,4 +39,4 @@ const module: ResizeModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

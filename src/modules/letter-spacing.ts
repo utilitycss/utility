@@ -26,7 +26,7 @@ const meta: Meta = {
   module: "letter-spacing",
 };
 
-const module: LetterSpacingModuleType = (config) => (globalConfig) => {
+const cssModule: LetterSpacingModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -36,4 +36,4 @@ const module: LetterSpacingModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;

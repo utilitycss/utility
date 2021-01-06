@@ -34,7 +34,7 @@ const meta: Meta = {
   module: "height",
 };
 
-const module: HeightModuleType = (config) => (globalConfig) => {
+const cssModule: HeightModuleType = (config) => (globalConfig) => {
   return applyRules({
     config,
     globalConfig,
@@ -44,4 +44,4 @@ const module: HeightModuleType = (config) => (globalConfig) => {
   });
 };
 
-export default module;
+export default cssModule;
