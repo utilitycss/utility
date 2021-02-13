@@ -171,6 +171,11 @@
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-8.2.0.tgz#3eb56d13a1de1d347ecb1957c6860c911704bc44"
   integrity sha512-/Sge3BymXo4lKc31C8OINJgXLaw+7vL1/L1pGiBNpGrBiT8FQiaFpSYV0uhTaG4y78vcMBTMFsWaHDvuD+xGzQ==
 
+"@types/node@^12.7.1", "@types/node@^12.7.2":
+  version "12.20.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.0.tgz#692dfdecd6c97f5380c42dd50f19261f9f604deb"
+  integrity sha512-0/41wHcurotvSOTHQUFkgL702c3pyWR1mToSrrX3pGPvGfpHTv3Ksx0M4UVuU5VJfjVb62Eyr1eKO1tWNUCg2Q==
+
 "@types/node@^14.14.27":
   version "14.14.27"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.27.tgz#c7127f8da0498993e13b1a42faf1303d3110d2f2"
@@ -1183,6 +1188,11 @@ file-entry-cache@^6.0.0:
   integrity sha512-fqoO76jZ3ZnYrXLDRxBR1YvOvc0k844kcOg40bgsPrE25LAb/PDqTY+ho64Xh2c8ZXgIKldchCFHczG2UVRcWA==
   dependencies:
     flat-cache "^3.0.4"
+
+file-saver@^2.0.2:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.5.tgz#d61cfe2ce059f414d899e9dd6d4107ee25670c38"
+  integrity sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -2458,6 +2468,15 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
+prettydiff@^101.2.6:
+  version "101.2.6"
+  resolved "https://registry.yarnpkg.com/prettydiff/-/prettydiff-101.2.6.tgz#b6ffbb618f0ad55887c2c1b02a336ba31a83d243"
+  integrity sha512-/fJ33pQ8MPI7+IB8fo/lOMR58CE/4GYNZRtjcQiPYmGNMo1HS9KmaybYdtEnfmx5EOSe/ch3Sg2fJ8YkNKb/XQ==
+  dependencies:
+    "@types/node" "^12.7.2"
+    file-saver "^2.0.2"
+    sparser "^1.4.11"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -2733,6 +2752,13 @@ source-map@^0.6.0, source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+
+sparser@^1.4.11:
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/sparser/-/sparser-1.4.12.tgz#d591f088c2658a57b138390110d71db0f0053cb0"
+  integrity sha512-qxDcacCuwHbvsf803PpZuETRI1pU8NAmLbyzZqFHPW7QjPK9pnCoX9ZPPbOMyiti6EOocfYzqzDPWj4fICXNzw==
+  dependencies:
+    "@types/node" "^12.7.1"
 
 spdx-correct@^3.0.0:
   version "3.1.1"
