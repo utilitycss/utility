@@ -55,8 +55,7 @@
       "eslint --fix"
     ],
     "*.css": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
