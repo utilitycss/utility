@@ -21,7 +21,9 @@ export default async function saveFile({
     process.exit(0);
   }
   if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath);
+    fs.mkdirSync(dirPath, {
+      recursive: true,
+    });
   }
   await fsAsync.writeFile(filePath, content);
   console.log(chalk.blue(`Document was created : ${filePath}`));

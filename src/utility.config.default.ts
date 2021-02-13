@@ -1,10 +1,5 @@
-import {
-  plugins as availablePlugins,
-  util,
-  modules as availableModules,
-} from "./index";
+import { util, modules as availableModules } from "./index";
 
-const { prefix, docs } = availablePlugins;
 const { defineClass } = util;
 const {
   single,
@@ -116,8 +111,6 @@ const modules = [
   textTransform(),
 ];
 
-const plugins = [prefix({ prefix: "x-" }), docs({ output: "docs.html" })];
-
 export default {
   config: {
     breakPointSeparator: "-",
@@ -126,6 +119,6 @@ export default {
     breakPoints,
   },
   modules,
-  plugins,
+  plugins: [],
   forceInsert: false,
 };

@@ -11,7 +11,7 @@ const DEFAULT_CONFIG_PATH = "./utility.config.default";
 
 import { PluginConfig } from "./types";
 
-function utilityPlugin(config: PluginConfig) {
+function utilityPlugin(config?: PluginConfig) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const defaultConfig = require(DEFAULT_CONFIG_PATH).default;
   const {

@@ -31,7 +31,6 @@ export default (
 
   if (output) {
     const { dir: dirPath } = path.parse(output);
-
     const packageName = "Utility";
 
     const {
