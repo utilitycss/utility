@@ -127,4 +127,5 @@ export default {
   },
   modules,
   plugins,
+  forceInsert: false,
 };

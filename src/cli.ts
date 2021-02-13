@@ -5,7 +5,7 @@ import chalk from "chalk";
 import path from "path";
 import fs from "fs";
 import { promises as fsAsync } from "fs";
-import builder from "./";
+import builder from "./index";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packageJson = require("../package.json");

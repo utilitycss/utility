@@ -1,11 +1,11 @@
-import postcss from "postcss";
+import postcss, { Rule, AtRule } from "postcss";
 import { GlobalUtilityConfig } from "../types";
 
 type Responsive = (
-  rules: postcss.Rule[],
+  rules: Rule[],
   breakpoints?: GlobalUtilityConfig["breakPoints"],
   options?: Pick<GlobalUtilityConfig, "breakPointSeparator">
-) => postcss.AtRule[];
+) => AtRule[];
 
 const responsive: Responsive = (rules, breakpoints = {}, options) => {
   const { breakPointSeparator = "" } = options || {};

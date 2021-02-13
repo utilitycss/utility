@@ -2,8 +2,7 @@ import { Root, ChildNode, AtRule, Declaration, Rule } from "postcss";
 import { Meta } from "../types";
 type CallBack = (node: CreatedNode) => void;
 
-export interface CreatedNode
-  extends Omit<Rule, "type" | "raws" | "nodes" | "parent"> {
+export interface CreatedNode extends Pick<Rule, "selector"> {
   nodes: Array<{ prop: string; value: string }>;
   media?: any;
   meta?: Meta;

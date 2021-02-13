@@ -165,3 +165,10 @@ export {
   UserSelectSupportedTypes,
 } from "./modules/user-select";
 export { ZIndexModuleType, ZIndexSupportedTypes } from "./modules/z-index";
+
+export interface PluginConfig {
+  config: GlobalUtilityConfig;
+  forceInsert?: boolean;
+  modules: Module<any>[];
+  plugins: any[];
+}

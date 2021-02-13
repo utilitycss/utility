@@ -3,7 +3,7 @@
     "module": "CommonJS",
     "esModuleInterop": true,
     "target": "ES5",
-    "lib": ["es2017"],
+    "lib": ["es2017", "esnext"],
     "allowJs": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
@@ -15,5 +15,6 @@
       "*": ["node_modules/*", "src/*"]
     }
   },
+  "sourceRoot": "src",
   "include": ["src/**/*"]
 }

@@ -16,9 +16,9 @@ export default function computedStyles({
   modules = [],
   config = {},
   plugins = [],
-}: Input) {
+}: Input): any {
   // Run through the modules and create
-  // module specfic nodes
+  // module specific nodes
   const nodes = modules.reduce((acc, curr) => {
     return acc.concat(curr(config));
   }, []);
