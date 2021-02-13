@@ -1,25 +1,28 @@
-<div class="uk-visible@m" style="position: fixed; top: 80px; bottom: 0; box-sizing: border-box; width: 240px !important; padding: 40px 40px 60px 40px; border-right: 1px #e5e5e5 solid; overflow: auto">
+<div
+  class="uk-visible@m"
+  style="
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 240px !important;
+    padding: 40px 40px 60px 40px;
+    border-right: 1px #e5e5e5 solid;
+    overflow: auto;
+  "
+>
   <h3>Overview</h3>
   <ul class="uk-nav uk-nav-default">
     <li class="uk-nav-header">
-      <li>
-        <a href="#Stats">
-          Stats
-        </a>
-      </li>
+      <a href="#Stats"> Stats </a>
     </li>
   </ul>
   <h3>Documentation</h3>
   <ul class="uk-nav uk-nav-default">
+    Atoms <% _.forEach(links, function(link) { %>
     <li class="uk-nav-header">
-      Atoms
-      <% _.forEach(links, function(link) { %>
-        <li>
-          <a href="#<%= link %>">
-            <%- link %>
-          </a>
-        </li>
-        <% }); %>
+      <a href="#<%= link %>"> <%- link %> </a>
     </li>
+    <% }); %>
   </ul>
 </div>

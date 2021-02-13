@@ -169,6 +169,6 @@ export { ZIndexModuleType, ZIndexSupportedTypes } from "./modules/z-index";
 export interface PluginConfig {
   config: GlobalUtilityConfig;
   forceInsert?: boolean;
-  modules: Module<any>[];
+  modules: any[];
   plugins: any[];
 }
