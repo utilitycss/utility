@@ -13,7 +13,7 @@ import { PluginConfig } from "./types";
 
 function utilityPlugin(config: PluginConfig) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const defaultConfig = require(DEFAULT_CONFIG_PATH);
+  const defaultConfig = require(DEFAULT_CONFIG_PATH).default;
   const {
     plugins = [],
     modules = [],
@@ -61,6 +61,7 @@ function utilityPlugin(config: PluginConfig) {
           const moduleConfigPath = moduleConfigFile
             ? path.join(sourceDirname, moduleConfigFile)
             : "";
+
           /**
            * Exit if the module name or
            * the provided module name is not supported
@@ -73,7 +74,7 @@ function utilityPlugin(config: PluginConfig) {
             process.exit(-1);
           }
           // eslint-disable-next-line @typescript-eslint/no-var-requires
-          const moduleFunction = require(modulePath);
+          const moduleFunction = require(modulePath).default;
           /**
            * Deep merge the config if user has provided custom
            * config file
