@@ -9,15 +9,18 @@ const prettydiff = require("prettydiff");
 
 import utility, { plugins as availablePlugins } from "../../src/index";
 import defaultConfig from "../../src/utility.config.default";
-const { docs } = availablePlugins;
+const { docs, json } = availablePlugins;
 const plugins = [
   docs({
     output: path.join(__dirname, "./dist/docs.html"),
   }),
+  docs({
+    output: path.join(__dirname, "./dist/modules.json"),
+  }),
 ];
 
-describe("Default with docs", () => {
-  it("should transform css with docs", async () => {
+describe("Default with json", () => {
+  it("should transform css and module json", async () => {
     /** Path to the input css file */
     const cssFilePath = path.join(__dirname, "./main.css");
     /** Dummy output file */
@@ -33,6 +36,11 @@ describe("Default with docs", () => {
     /** Read the expected HTML file from fixtures */
     const expectedHTML = await fsAsync.readFile(
       path.join(__dirname, "./fixtures/expected-docs.html"),
+      "utf-8"
+    );
+    /** Read the expected JSON file from fixtures */
+    const expectedJSON = await fsAsync.readFile(
+      path.join(__dirname, "./fixtures/expected-modules.json"),
       "utf-8"
     );
 
@@ -65,17 +73,31 @@ describe("Default with docs", () => {
       "utf-8"
     );
 
-    /** Get the diff  */
+    const generateJSON = await fsAsync.readFile(
+      path.join(__dirname, "./dist/modules.json"),
+      "utf-8"
+    );
+
+    /** Get the diff of HTML  */
     const htmlDiffOutput = prettydiff({
       source: expectedHTML,
       mode: "diff",
       diff: generateHTML,
       lang: "html",
     });
+    /** Get the diff of JSON  */
+    const jsonDiffOutput = prettydiff({
+      source: expectedJSON,
+      mode: "diff",
+      diff: generateJSON,
+      lang: "json",
+    });
     /** Check the transformed file with the expected file */
     assert.strictEqual(generatedCss, expectedCss);
 
     /** Check if the length of diff is zero */
     assert.strictEqual(htmlDiffOutput.length, 0);
+    /** Check if the length of diff is zero */
+    assert.strictEqual(jsonDiffOutput.length, 0);
   });
 });
