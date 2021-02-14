@@ -5,6 +5,8 @@ import * as assert from "assert";
 import postcss from "postcss";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
+const assertDiff = require("assert-diff");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const prettydiff = require("prettydiff");
 
 import utility, { plugins as availablePlugins } from "../../src/index";
@@ -14,7 +16,7 @@ const plugins = [
   docs({
     output: path.join(__dirname, "./dist/docs.html"),
   }),
-  docs({
+  json({
     output: path.join(__dirname, "./dist/modules.json"),
   }),
 ];
@@ -39,9 +41,11 @@ describe("Default with json", () => {
       "utf-8"
     );
     /** Read the expected JSON file from fixtures */
-    const expectedJSON = await fsAsync.readFile(
-      path.join(__dirname, "./fixtures/expected-modules.json"),
-      "utf-8"
+    const expectedJSON = JSON.parse(
+      await fsAsync.readFile(
+        path.join(__dirname, "./fixtures/expected-modules.json"),
+        "utf-8"
+      )
     );
 
     //* Read the input css file */
@@ -73,9 +77,11 @@ describe("Default with json", () => {
       "utf-8"
     );
 
-    const generateJSON = await fsAsync.readFile(
-      path.join(__dirname, "./dist/modules.json"),
-      "utf-8"
+    const generateJSON = JSON.parse(
+      await fsAsync.readFile(
+        path.join(__dirname, "./dist/modules.json"),
+        "utf-8"
+      )
     );
 
     /** Get the diff of HTML  */
@@ -85,19 +91,13 @@ describe("Default with json", () => {
       diff: generateHTML,
       lang: "html",
     });
-    /** Get the diff of JSON  */
-    const jsonDiffOutput = prettydiff({
-      source: expectedJSON,
-      mode: "diff",
-      diff: generateJSON,
-      lang: "json",
-    });
+
     /** Check the transformed file with the expected file */
     assert.strictEqual(generatedCss, expectedCss);
 
     /** Check if the length of diff is zero */
     assert.strictEqual(htmlDiffOutput.length, 0);
     /** Check if the length of diff is zero */
-    assert.strictEqual(jsonDiffOutput.length, 0);
+    assertDiff.deepEqual(expectedJSON, generateJSON);
   });
 });
