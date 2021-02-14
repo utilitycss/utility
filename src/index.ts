@@ -56,11 +56,13 @@ function utilityPlugin(config?: PluginConfig) {
            */
           let moduleConfig = {};
           const modulePath = moduleName
-            ? path.join(__dirname, `./modules/${moduleName}.js`)
+            ? require.resolve(path.join(__dirname, `./modules/${moduleName}`))
             : "";
           const moduleConfigPath = moduleConfigFile
             ? path.join(sourceDirname, moduleConfigFile)
             : "";
+
+          console.log(modulePath, moduleName, path.resolve(modulePath));
 
           /**
            * Exit if the module name or
