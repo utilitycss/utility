@@ -9,6 +9,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",
+    "declaration": true,
     "baseUrl": "./src",
     "resolveJsonModule": true,
     "types": ["node", "mocha"],
