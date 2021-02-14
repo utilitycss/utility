@@ -13,9 +13,6 @@ import utility, { plugins as availablePlugins } from "../../src/index";
 import defaultConfig from "../../src/utility.config.default";
 const { docs, json } = availablePlugins;
 const plugins = [
-  docs({
-    output: path.join(__dirname, "./dist/docs.html"),
-  }),
   json({
     output: path.join(__dirname, "./dist/modules.json"),
   }),
@@ -35,11 +32,6 @@ describe("Default with json", () => {
           parser: "css",
         })
       );
-    /** Read the expected HTML file from fixtures */
-    const expectedHTML = await fsAsync.readFile(
-      path.join(__dirname, "./fixtures/expected-docs.html"),
-      "utf-8"
-    );
     /** Read the expected JSON file from fixtures */
     const expectedJSON = JSON.parse(
       await fsAsync.readFile(
@@ -72,11 +64,6 @@ describe("Default with json", () => {
         })
       );
 
-    const generateHTML = await fsAsync.readFile(
-      path.join(__dirname, "./dist/docs.html"),
-      "utf-8"
-    );
-
     const generateJSON = JSON.parse(
       await fsAsync.readFile(
         path.join(__dirname, "./dist/modules.json"),
@@ -84,19 +71,8 @@ describe("Default with json", () => {
       )
     );
 
-    /** Get the diff of HTML  */
-    const htmlDiffOutput = prettydiff({
-      source: expectedHTML,
-      mode: "diff",
-      diff: generateHTML,
-      lang: "html",
-    });
-
     /** Check the transformed file with the expected file */
     assert.strictEqual(generatedCss, expectedCss);
-
-    /** Check if the length of diff is zero */
-    assert.strictEqual(htmlDiffOutput.length, 0);
     /** Check if the length of diff is zero */
     assertDiff.deepEqual(expectedJSON, generateJSON);
   });

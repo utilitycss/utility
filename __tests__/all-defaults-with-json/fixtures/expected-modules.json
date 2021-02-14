@@ -4,217 +4,153 @@
     "nodes": [
       {
         "selector": ".f0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1rem" }]
       },
       {
         "selector": ".f1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "2rem" }]
       },
       {
         "selector": ".f2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "3rem" }]
       },
       {
         "selector": ".f3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "4rem" }]
       },
       {
         "selector": ".f0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".f1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".f2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".f3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".f0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".f1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".f2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".f3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".f0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".f1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".f2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".f3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".lh0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "1" }]
       },
       {
         "selector": ".lh1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "2" }]
       },
       {
         "selector": ".lh2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "3" }]
       },
       {
         "selector": ".lh3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "4" }]
       },
       {
         "selector": ".lh0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "1" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".lh1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "2" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".lh2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "3" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".lh3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "4" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".lh0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "1" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".lh1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "2" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".lh2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "3" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".lh3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "4" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".lh0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "1" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".lh1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "2" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".lh2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "3" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".lh3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "line-height", "value": "4" }],
         "media": "screen and (min-width: 60em)"
       }
@@ -225,8 +161,6 @@
     "nodes": [
       {
         "selector": ".error",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           { "prop": "color", "value": "red" },
           { "prop": "font-weight", "value": "bold" }
@@ -234,8 +168,6 @@
       },
       {
         "selector": ".error-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           { "prop": "color", "value": "red" },
           { "prop": "font-weight", "value": "bold" }
@@ -244,8 +176,6 @@
       },
       {
         "selector": ".error-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           { "prop": "color", "value": "red" },
           { "prop": "font-weight", "value": "bold" }
@@ -254,8 +184,6 @@
       },
       {
         "selector": ".error-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           { "prop": "color", "value": "red" },
           { "prop": "font-weight", "value": "bold" }
@@ -267,1218 +195,831 @@
   "spacing": {
     "meta": { "module": "spacing", "id": "m" },
     "nodes": [
-      {
-        "selector": ".m0",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "margin", "value": "1rem" }]
-      },
-      {
-        "selector": ".m1",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "margin", "value": "2rem" }]
-      },
-      {
-        "selector": ".m2",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "margin", "value": "3rem" }]
-      },
-      {
-        "selector": ".m3",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "margin", "value": "4rem" }]
-      },
-      {
-        "selector": ".ma",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "margin", "value": "auto" }]
-      },
+      { "selector": ".m0", "nodes": [{ "prop": "margin", "value": "1rem" }] },
+      { "selector": ".m1", "nodes": [{ "prop": "margin", "value": "2rem" }] },
+      { "selector": ".m2", "nodes": [{ "prop": "margin", "value": "3rem" }] },
+      { "selector": ".m3", "nodes": [{ "prop": "margin", "value": "4rem" }] },
+      { "selector": ".ma", "nodes": [{ "prop": "margin", "value": "auto" }] },
       {
         "selector": ".mt0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "1rem" }]
       },
       {
         "selector": ".mt1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "2rem" }]
       },
       {
         "selector": ".mt2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "3rem" }]
       },
       {
         "selector": ".mt3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "4rem" }]
       },
       {
         "selector": ".mta",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "auto" }]
       },
       {
         "selector": ".mr0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "1rem" }]
       },
       {
         "selector": ".mr1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "2rem" }]
       },
       {
         "selector": ".mr2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "3rem" }]
       },
       {
         "selector": ".mr3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "4rem" }]
       },
       {
         "selector": ".mra",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "auto" }]
       },
       {
         "selector": ".mb0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "1rem" }]
       },
       {
         "selector": ".mb1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "2rem" }]
       },
       {
         "selector": ".mb2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "3rem" }]
       },
       {
         "selector": ".mb3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "4rem" }]
       },
       {
         "selector": ".mba",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "auto" }]
       },
       {
         "selector": ".ml0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "1rem" }]
       },
       {
         "selector": ".ml1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "2rem" }]
       },
       {
         "selector": ".ml2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "3rem" }]
       },
       {
         "selector": ".ml3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "4rem" }]
       },
       {
         "selector": ".mla",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "auto" }]
       },
-      {
-        "selector": ".p0",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "padding", "value": "1rem" }]
-      },
-      {
-        "selector": ".p1",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "padding", "value": "2rem" }]
-      },
-      {
-        "selector": ".p2",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "padding", "value": "3rem" }]
-      },
-      {
-        "selector": ".p3",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "padding", "value": "4rem" }]
-      },
+      { "selector": ".p0", "nodes": [{ "prop": "padding", "value": "1rem" }] },
+      { "selector": ".p1", "nodes": [{ "prop": "padding", "value": "2rem" }] },
+      { "selector": ".p2", "nodes": [{ "prop": "padding", "value": "3rem" }] },
+      { "selector": ".p3", "nodes": [{ "prop": "padding", "value": "4rem" }] },
       {
         "selector": ".pt0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "1rem" }]
       },
       {
         "selector": ".pt1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "2rem" }]
       },
       {
         "selector": ".pt2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "3rem" }]
       },
       {
         "selector": ".pt3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "4rem" }]
       },
       {
         "selector": ".pr0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "1rem" }]
       },
       {
         "selector": ".pr1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "2rem" }]
       },
       {
         "selector": ".pr2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "3rem" }]
       },
       {
         "selector": ".pr3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "4rem" }]
       },
       {
         "selector": ".pb0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "1rem" }]
       },
       {
         "selector": ".pb1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "2rem" }]
       },
       {
         "selector": ".pb2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "3rem" }]
       },
       {
         "selector": ".pb3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "4rem" }]
       },
       {
         "selector": ".pl0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "1rem" }]
       },
       {
         "selector": ".pl1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "2rem" }]
       },
       {
         "selector": ".pl2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "3rem" }]
       },
       {
         "selector": ".pl3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "4rem" }]
       },
       {
         "selector": ".m0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".m1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".m2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".m3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".ma-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mt0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mt1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mt2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mt3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mta-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mr0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mr1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mr2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mr3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mra-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mb0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mb1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mb2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mb3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mba-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".ml0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".ml1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".ml2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".ml3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mla-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".p0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".p1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".p2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".p3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pt0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pt1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pt2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pt3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pr0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pr1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pr2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pr3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pb0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pb1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pb2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pb3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pl0-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "1rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pl1-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "2rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pl2-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "3rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".pl3-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "4rem" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".m0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".m1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".m2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".m3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".ma-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mt0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mt1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mt2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mt3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mta-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mr0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mr1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mr2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mr3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mra-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mb0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mb1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mb2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mb3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mba-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".ml0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".ml1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".ml2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".ml3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mla-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".p0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".p1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".p2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".p3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pt0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pt1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pt2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pt3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pr0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pr1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pr2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pr3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pb0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pb1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pb2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pb3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pl0-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "1rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pl1-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "2rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pl2-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "3rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".pl3-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "4rem" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".m0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".m1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".m2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".m3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".ma-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mt0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mt1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mt2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mt3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mta-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-top", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mr0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mr1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mr2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mr3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mra-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-right", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mb0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mb1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mb2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mb3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mba-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-bottom", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".ml0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".ml1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".ml2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".ml3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mla-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "margin-left", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".p0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".p1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".p2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".p3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pt0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pt1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pt2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pt3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-top", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pr0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pr1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pr2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pr3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-right", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pb0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pb1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pb2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pb3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-bottom", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pl0-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "1rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pl1-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "2rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pl2-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "3rem" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".pl3-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "padding-left", "value": "4rem" }],
         "media": "screen and (min-width: 60em)"
       }
@@ -1487,12 +1028,7 @@
   "custom module": {
     "meta": { "module": "custom module" },
     "nodes": [
-      {
-        "selector": ".custom",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "foo", "value": "bar" }]
-      }
+      { "selector": ".custom", "nodes": [{ "prop": "foo", "value": "bar" }] }
     ]
   },
   "position": {
@@ -1500,240 +1036,99 @@
     "nodes": [
       {
         "selector": ".poss",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "position", "value": "static" }]
       },
       {
         "selector": ".posa",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "position", "value": "absolute" }]
       },
       {
         "selector": ".posr",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "position", "value": "relative" }]
       },
       {
         "selector": ".posf",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "position", "value": "fixed" }]
       },
       {
         "selector": ".posstky",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "position", "value": "sticky" }]
       },
-      {
-        "selector": ".ta",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "top", "value": "auto" }]
-      },
-      {
-        "selector": ".ra",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "right", "value": "auto" }]
-      },
-      {
-        "selector": ".ba",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "bottom", "value": "auto" }]
-      },
-      {
-        "selector": ".la",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "left", "value": "auto" }]
-      }
+      { "selector": ".ta", "nodes": [{ "prop": "top", "value": "auto" }] },
+      { "selector": ".ra", "nodes": [{ "prop": "right", "value": "auto" }] },
+      { "selector": ".ba", "nodes": [{ "prop": "bottom", "value": "auto" }] },
+      { "selector": ".la", "nodes": [{ "prop": "left", "value": "auto" }] }
     ]
   },
   "z-index": {
     "meta": { "module": "z-index", "id": "z" },
     "nodes": [
-      {
-        "selector": ".z0",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "0" }]
-      },
-      {
-        "selector": ".z1",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "1" }]
-      },
-      {
-        "selector": ".z2",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "2" }]
-      },
-      {
-        "selector": ".z3",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "3" }]
-      },
-      {
-        "selector": ".z4",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "4" }]
-      },
-      {
-        "selector": ".z5",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "5" }]
-      },
-      {
-        "selector": ".z999",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "999" }]
-      },
+      { "selector": ".z0", "nodes": [{ "prop": "z-index", "value": "0" }] },
+      { "selector": ".z1", "nodes": [{ "prop": "z-index", "value": "1" }] },
+      { "selector": ".z2", "nodes": [{ "prop": "z-index", "value": "2" }] },
+      { "selector": ".z3", "nodes": [{ "prop": "z-index", "value": "3" }] },
+      { "selector": ".z4", "nodes": [{ "prop": "z-index", "value": "4" }] },
+      { "selector": ".z5", "nodes": [{ "prop": "z-index", "value": "5" }] },
+      { "selector": ".z999", "nodes": [{ "prop": "z-index", "value": "999" }] },
       {
         "selector": ".z9999",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "z-index", "value": "9999" }]
       },
       {
         "selector": ".zmax",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "z-index", "value": "2147483647" }]
       },
       {
         "selector": ".zinitial",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "z-index", "value": "initial" }]
       },
       {
         "selector": ".zinherit",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "z-index", "value": "inherit" }]
       },
       {
         "selector": ".zunset",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "z-index", "value": "unset" }]
       },
-      {
-        "selector": ".za",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "z-index", "value": "auto" }]
-      }
+      { "selector": ".za", "nodes": [{ "prop": "z-index", "value": "auto" }] }
     ]
   },
   "float": {
     "meta": { "module": "float", "id": "fl:n" },
     "nodes": [
-      {
-        "selector": ".fln",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "float", "value": "none" }]
-      },
-      {
-        "selector": ".fll",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "float", "value": "left" }]
-      },
-      {
-        "selector": ".flr",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "float", "value": "right" }]
-      }
+      { "selector": ".fln", "nodes": [{ "prop": "float", "value": "none" }] },
+      { "selector": ".fll", "nodes": [{ "prop": "float", "value": "left" }] },
+      { "selector": ".flr", "nodes": [{ "prop": "float", "value": "right" }] }
     ]
   },
   "clear": {
     "meta": { "module": "clear", "id": "cl:n" },
     "nodes": [
-      {
-        "selector": ".cln",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "clear", "value": "none" }]
-      },
-      {
-        "selector": ".cll",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "clear", "value": "left" }]
-      },
-      {
-        "selector": ".clr",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "clear", "value": "right" }]
-      },
-      {
-        "selector": ".clb",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "clear", "value": "both" }]
-      }
+      { "selector": ".cln", "nodes": [{ "prop": "clear", "value": "none" }] },
+      { "selector": ".cll", "nodes": [{ "prop": "clear", "value": "left" }] },
+      { "selector": ".clr", "nodes": [{ "prop": "clear", "value": "right" }] },
+      { "selector": ".clb", "nodes": [{ "prop": "clear", "value": "both" }] }
     ]
   },
   "display": {
     "meta": { "module": "display", "id": "d:n" },
     "nodes": [
-      {
-        "selector": ".dn",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "display", "value": "none" }]
-      },
-      {
-        "selector": ".db",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "display", "value": "block" }]
-      },
-      {
-        "selector": ".df",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "display", "value": "flex" }]
-      },
+      { "selector": ".dn", "nodes": [{ "prop": "display", "value": "none" }] },
+      { "selector": ".db", "nodes": [{ "prop": "display", "value": "block" }] },
+      { "selector": ".df", "nodes": [{ "prop": "display", "value": "flex" }] },
       {
         "selector": ".dif",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "display", "value": "inline-flex" }]
       },
       {
         "selector": ".di",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "display", "value": "inline" }]
       },
       {
         "selector": ".dib",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "display", "value": "inline-block" }]
       },
-      {
-        "selector": ".dtb",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "display", "value": "table" }]
-      }
+      { "selector": ".dtb", "nodes": [{ "prop": "display", "value": "table" }] }
     ]
   },
   "visibility": {
@@ -1741,20 +1136,14 @@
     "nodes": [
       {
         "selector": ".vv",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "visibility", "value": "visible" }]
       },
       {
         "selector": ".vh",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "visibility", "value": "hidden" }]
       },
       {
         "selector": ".vc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "visibility", "value": "collapse" }]
       }
     ]
@@ -1764,104 +1153,70 @@
     "nodes": [
       {
         "selector": ".ovv",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow", "value": "visible" }]
       },
       {
         "selector": ".ovh",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow", "value": "hidden" }]
       },
       {
         "selector": ".ovs",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow", "value": "scroll" }]
       },
       {
         "selector": ".ova",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow", "value": "auto" }]
       },
       {
         "selector": ".ovxv",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-x", "value": "visible" }]
       },
       {
         "selector": ".ovxh",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-x", "value": "hidden" }]
       },
       {
         "selector": ".ovxs",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-x", "value": "scroll" }]
       },
       {
         "selector": ".ovxa",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-x", "value": "auto" }]
       },
       {
         "selector": ".ovyv",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-y", "value": "visible" }]
       },
       {
         "selector": ".ovyh",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-y", "value": "hidden" }]
       },
       {
         "selector": ".ovys",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-y", "value": "scroll" }]
       },
       {
         "selector": ".ovya",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-y", "value": "auto" }]
       },
       {
         "selector": ".ovsa",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-style", "value": "auto" }]
       },
       {
         "selector": ".ovss",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-style", "value": "scrollbar" }]
       },
       {
         "selector": ".ovsp",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-style", "value": "panner" }]
       },
       {
         "selector": ".ovsm",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-style", "value": "move" }]
       },
       {
         "selector": ".ovsmq",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "overflow-style", "value": "marquee" }]
       }
     ]
@@ -1869,28 +1224,14 @@
   "resize": {
     "meta": { "module": "resize", "id": "rsz:n" },
     "nodes": [
-      {
-        "selector": ".rszn",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "resize", "value": "none" }]
-      },
-      {
-        "selector": ".rszb",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "resize", "value": "both" }]
-      },
+      { "selector": ".rszn", "nodes": [{ "prop": "resize", "value": "none" }] },
+      { "selector": ".rszb", "nodes": [{ "prop": "resize", "value": "both" }] },
       {
         "selector": ".rszh",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "resize", "value": "horizontal" }]
       },
       {
         "selector": ".rszv",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "resize", "value": "vertical" }]
       }
     ]
@@ -1898,54 +1239,29 @@
   "cursor": {
     "meta": { "module": "cursor", "id": "cur:a" },
     "nodes": [
-      {
-        "selector": ".cura",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "cursor", "value": "auto" }]
-      },
+      { "selector": ".cura", "nodes": [{ "prop": "cursor", "value": "auto" }] },
       {
         "selector": ".curd",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "cursor", "value": "default" }]
       },
       {
         "selector": ".curc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "cursor", "value": "crosshair" }]
       },
       {
         "selector": ".curha",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "cursor", "value": "hand" }]
       },
       {
         "selector": ".curhe",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "cursor", "value": "help" }]
       },
-      {
-        "selector": ".curm",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "cursor", "value": "move" }]
-      },
+      { "selector": ".curm", "nodes": [{ "prop": "cursor", "value": "move" }] },
       {
         "selector": ".curp",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "cursor", "value": "pointer" }]
       },
-      {
-        "selector": ".curt",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "cursor", "value": "text" }]
-      }
+      { "selector": ".curt", "nodes": [{ "prop": "cursor", "value": "text" }] }
     ]
   },
   "box-sizing": {
@@ -1953,14 +1269,10 @@
     "nodes": [
       {
         "selector": ".bxzcb",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "box-sizing", "value": "content-box" }]
       },
       {
         "selector": ".bxzbb",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "box-sizing", "value": "border-box" }]
       }
     ]
@@ -1968,192 +1280,121 @@
   "width": {
     "meta": { "module": "width", "id": "w" },
     "nodes": [
-      {
-        "selector": ".w25",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "width", "value": "25%" }]
-      },
-      {
-        "selector": ".w50",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "width", "value": "50%" }]
-      },
-      {
-        "selector": ".w75",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "width", "value": "75%" }]
-      },
-      {
-        "selector": ".w100",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "width", "value": "100%" }]
-      },
-      {
-        "selector": ".wa",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "width", "value": "auto" }]
-      },
+      { "selector": ".w25", "nodes": [{ "prop": "width", "value": "25%" }] },
+      { "selector": ".w50", "nodes": [{ "prop": "width", "value": "50%" }] },
+      { "selector": ".w75", "nodes": [{ "prop": "width", "value": "75%" }] },
+      { "selector": ".w100", "nodes": [{ "prop": "width", "value": "100%" }] },
+      { "selector": ".wa", "nodes": [{ "prop": "width", "value": "auto" }] },
       {
         "selector": ".maw100",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "100%" }]
       },
       {
         "selector": ".mawn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "none" }]
       },
       {
         "selector": ".w25-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "25%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".w50-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "50%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".w75-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "75%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".w100-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "100%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".wa-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".maw100-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "100%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mawn-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "none" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".w25-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "25%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".w50-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "50%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".w75-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "75%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".w100-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "100%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".wa-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".maw100-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "100%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mawn-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "none" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".w25-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "25%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".w50-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "50%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".w75-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "75%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".w100-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "100%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".wa-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "width", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".maw100-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "100%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mawn-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-width", "value": "none" }],
         "media": "screen and (min-width: 60em)"
       }
@@ -2162,192 +1403,121 @@
   "height": {
     "meta": { "module": "height", "id": "h" },
     "nodes": [
-      {
-        "selector": ".h25",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "height", "value": "25%" }]
-      },
-      {
-        "selector": ".h50",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "height", "value": "50%" }]
-      },
-      {
-        "selector": ".h75",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "height", "value": "75%" }]
-      },
-      {
-        "selector": ".h100",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "height", "value": "100%" }]
-      },
-      {
-        "selector": ".wa",
-        "lastEach": 7,
-        "indexes": {},
-        "nodes": [{ "prop": "height", "value": "auto" }]
-      },
+      { "selector": ".h25", "nodes": [{ "prop": "height", "value": "25%" }] },
+      { "selector": ".h50", "nodes": [{ "prop": "height", "value": "50%" }] },
+      { "selector": ".h75", "nodes": [{ "prop": "height", "value": "75%" }] },
+      { "selector": ".h100", "nodes": [{ "prop": "height", "value": "100%" }] },
+      { "selector": ".wa", "nodes": [{ "prop": "height", "value": "auto" }] },
       {
         "selector": ".mah100",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "100%" }]
       },
       {
         "selector": ".mahn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "none" }]
       },
       {
         "selector": ".h25-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "25%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".h50-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "50%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".h75-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "75%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".h100-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "100%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".wa-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "auto" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mah100-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "100%" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".mahn-ns",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "none" }],
         "media": "screen and (min-width: 30em)"
       },
       {
         "selector": ".h25-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "25%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".h50-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "50%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".h75-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "75%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".h100-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "100%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".wa-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "auto" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mah100-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "100%" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".mahn-m",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "none" }],
         "media": "screen and (min-width: 30em) and (max-width: 60em)"
       },
       {
         "selector": ".h25-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "25%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".h50-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "50%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".h75-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "75%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".h100-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "100%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".wa-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "height", "value": "auto" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mah100-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "100%" }],
         "media": "screen and (min-width: 60em)"
       },
       {
         "selector": ".mahn-l",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "max-height", "value": "none" }],
         "media": "screen and (min-width: 60em)"
       }
@@ -2358,128 +1528,86 @@
     "nodes": [
       {
         "selector": ".fwn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-weight", "value": "normal" }]
       },
       {
         "selector": ".fwb",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-weight", "value": "bold" }]
       },
       {
         "selector": ".fwbr",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-weight", "value": "bolder" }]
       },
       {
         "selector": ".fwlr",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-weight", "value": "lighter" }]
       },
       {
         "selector": ".fsn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-style", "value": "normal" }]
       },
       {
         "selector": ".fsi",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-style", "value": "italic" }]
       },
       {
         "selector": ".fso",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-style", "value": "oblique" }]
       },
       {
         "selector": ".fvn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-variant", "value": "normal" }]
       },
       {
         "selector": ".fvsc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-variant", "value": "small-caps" }]
       },
       {
         "selector": ".f0",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1rem" }]
       },
       {
         "selector": ".f1",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1.25rem" }]
       },
       {
         "selector": ".f2",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "1.5rem" }]
       },
       {
         "selector": ".f3",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "2rem" }]
       },
       {
         "selector": ".f4",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size", "value": "3rem" }]
       },
       {
         "selector": ".fzan",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-size-adjust", "value": "none" }]
       },
       {
         "selector": ".ffs",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-family", "value": "serif" }]
       },
       {
         "selector": ".ffss",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-family", "value": "sans-serif" }]
       },
       {
         "selector": ".ffc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-family", "value": "cursive" }]
       },
       {
         "selector": ".fff",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-family", "value": "fantasy" }]
       },
       {
         "selector": ".ffm",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-family", "value": "monospace" }]
       },
       {
         "selector": ".ffa",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           {
             "prop": "font-family",
@@ -2489,8 +1617,6 @@
       },
       {
         "selector": ".fft",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           {
             "prop": "font-family",
@@ -2500,88 +1626,60 @@
       },
       {
         "selector": ".ffv",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [
           { "prop": "font-family", "value": "Verdana, Geneva, sans-serif" }
         ]
       },
       {
         "selector": ".fefn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-effect", "value": "none" }]
       },
       {
         "selector": ".fefeg",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-effect", "value": "engrave" }]
       },
       {
         "selector": ".fefeb",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-effect", "value": "emboss" }]
       },
       {
         "selector": ".fefo",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-effect", "value": "outline" }]
       },
       {
         "selector": ".fstn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "normal" }]
       },
       {
         "selector": ".fstuc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "ultra-condensed" }]
       },
       {
         "selector": ".fstec",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "extra-condensed" }]
       },
       {
         "selector": ".fstc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "condensed" }]
       },
       {
         "selector": ".fstsc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "semi-condensed" }]
       },
       {
         "selector": ".fstse",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "semi-expanded" }]
       },
       {
         "selector": ".fste",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "expanded" }]
       },
       {
         "selector": ".fstee",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "extra-expanded" }]
       },
       {
         "selector": ".fstue",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "font-stretch", "value": "ultra-expanded" }]
       }
     ]
@@ -2591,50 +1689,34 @@
     "nodes": [
       {
         "selector": ".vasup",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "super" }]
       },
       {
         "selector": ".vat",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "top" }]
       },
       {
         "selector": ".vatt",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "text-top" }]
       },
       {
         "selector": ".vam",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "middle" }]
       },
       {
         "selector": ".vabl",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "baseline" }]
       },
       {
         "selector": ".vab",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "bottom" }]
       },
       {
         "selector": ".vatb",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "text-bottom" }]
       },
       {
         "selector": ".vasub",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "vertical-align", "value": "sub" }]
       }
     ]
@@ -2644,50 +1726,34 @@
     "nodes": [
       {
         "selector": ".tal",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align", "value": "left" }]
       },
       {
         "selector": ".tac",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align", "value": "center" }]
       },
       {
         "selector": ".tar",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align", "value": "right" }]
       },
       {
         "selector": ".taj",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align", "value": "justify" }]
       },
       {
         "selector": ".tala",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align-last", "value": "auto" }]
       },
       {
         "selector": ".tall",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align-last", "value": "left" }]
       },
       {
         "selector": ".talc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align-last", "value": "center" }]
       },
       {
         "selector": ".talr",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-align-last", "value": "right" }]
       }
     ]
@@ -2697,26 +1763,18 @@
     "nodes": [
       {
         "selector": ".tdn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-decoration", "value": "none" }]
       },
       {
         "selector": ".tdu",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-decoration", "value": "underline" }]
       },
       {
         "selector": ".tdo",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-decoration", "value": "overline" }]
       },
       {
         "selector": ".tdl",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-decoration", "value": "line-through" }]
       }
     ]
@@ -2726,26 +1784,18 @@
     "nodes": [
       {
         "selector": ".ttn",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-transform", "value": "none" }]
       },
       {
         "selector": ".ttc",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-transform", "value": "capitalize" }]
       },
       {
         "selector": ".ttu",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-transform", "value": "uppercase" }]
       },
       {
         "selector": ".ttl",
-        "lastEach": 7,
-        "indexes": {},
         "nodes": [{ "prop": "text-transform", "value": "lowercase" }]
       }
     ]
