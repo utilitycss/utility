@@ -3,7 +3,7 @@ export type GenericObject = {
   [key in GenericObjectKeys]: string | number;
 };
 
-export type PseudoClass = ":hover" | ":focus";
+export type PseudoClass = ":hover" | ":focus" | ":active";
 
 export type UtilityConfig<T extends any> = T & {
   names?: GenericObject;
