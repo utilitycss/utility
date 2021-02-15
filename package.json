@@ -1,38 +1,54 @@
 {
   "name": "@utilitycss/utility",
-  "version": "0.6.1",
+  "version": "1.0.0",
   "description": "Generator for Utility CSS frameworks",
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist",
+  "typings": "dist",
   "scripts": {
-    "lint": "eslint src/* --ext .js",
+    "prebuild": "rm -rf dist && copyfiles -u 1 ./src/**/*.html ./src/**/*.css ./dist/",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint './src/**/*.{js,ts,tsx}'",
     "build-example": "yarn postcss example/example.css -o example/dist/example.css",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "format": "git ls-files --directory . | egrep '\\.js$'| xargs prettier --write --print-width 80 --tab-width 2 --trailing-comma all --single-quote"
+    "test": "mocha --require=ts-node/register __tests__/**/*.test.ts"
   },
   "bin": {
-    "utility": "src/cli.js"
+    "utility": "dist/cli.ts"
   },
   "dependencies": {
-    "commander": "4.1.0",
-    "cssstats": "^3.4.0",
+    "@types/mocha": "^8.2.0",
+    "commander": "7.0.0",
+    "cssstats": "^4.0.0",
     "deepmerge": "^4.2.2",
-    "lodash": "^4.17.15",
-    "opn": "^6.0.0",
-    "postcss": "7.0.26"
+    "lodash": "^4.17.20",
+    "mocha": "^8.3.0",
+    "postcss": "8.2.6"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "chalk": "^3.0.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.0.0",
-    "lint-staged": "^9.5.0",
-    "postcss-cli": "^6.1.3",
-    "prettier": "^1.19.1"
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.27",
+    "@types/prettier": "^2.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "assert": "^2.0.0",
+    "assert-diff": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.4",
+    "open": "^7.4.0",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.2.1",
+    "prettydiff": "^101.2.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
   },
   "husky": {
     "hooks": {
@@ -40,13 +56,12 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
+    "*.{ts,tsx,js}": [
+      "prettier --no-config --write",
+      "eslint --fix"
     ],
     "*.css": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }

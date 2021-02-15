@@ -1,6 +1,7 @@
+/* eslint-disable */
 const generateModules = require("../util/generateModules");
 
-const resolveUtility = config => css => {
+const resolveUtility = (config) => (css) => {
   const { plugins = [] } = config || {};
 
   const modules = generateModules(config);
@@ -9,7 +10,7 @@ const resolveUtility = config => css => {
   }, modules);
 
   // use @import utility insertion point
-  css.walkAtRules("utility", atRule => {
+  css.walkAtRules("utility", (atRule) => {
     atRule.before(classes);
     atRule.remove();
   });
@@ -20,3 +21,4 @@ const resolveUtility = config => css => {
 };
 
 module.exports = resolveUtility;
+/* eslint-enable */

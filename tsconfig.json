@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "ES5",
+    "lib": ["es2017", "esnext"],
+    "allowJs": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": true,
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "types": ["node", "mocha"],
+    "paths": {
+      "*": ["node_modules/*", "src/*"]
+    }
+  },
+  "sourceRoot": "src",
+  "include": ["src/**/*"]
+}
