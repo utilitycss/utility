@@ -14,6 +14,7 @@ export { default as height } from "./height";
 export { default as letterSpacing } from "./letter-spacing";
 export { default as lineHeight } from "./line-height";
 export { default as listStyle } from "./list-style";
+export { default as objectFit } from "./object-fit";
 export { default as opacity } from "./opacity";
 export { default as outline } from "./outline";
 export { default as overflow } from "./overflow";

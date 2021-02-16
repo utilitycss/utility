@@ -21,6 +21,7 @@ const defaultNames = {
   "d:ib": "dib",
   "d:li": "dli",
   "d:ri": "dri",
+  "d:c": "dc",
   "d:cp": "dcp",
   "d:tb": "dtb",
   "d:itb": "ditb",
@@ -42,8 +43,10 @@ const defaultNames = {
 const getRules: GetRules<ConfigVariables> = (names) => ({
   "d:n": { name: names["d:n"], key: "display", value: "none" },
   "d:b": { name: names["d:b"], key: "display", value: "block" },
+  "d:c": { name: names["d:c"], key: "display", value: "contents" },
   "d:f": { name: names["d:f"], key: "display", value: "flex" },
   "d:g": { name: names["d:g"], key: "display", value: "grid" },
+  "d:ig": { name: names["d:g"], key: "display", value: "inline-grid" },
   "d:if": { name: names["d:if"], key: "display", value: "inline-flex" },
   "d:i": { name: names["d:i"], key: "display", value: "inline" },
   "d:ib": { name: names["d:ib"], key: "display", value: "inline-block" },
