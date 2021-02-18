@@ -1,6 +1,6 @@
 {
   "name": "@utilitycss/utility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generator for Utility CSS frameworks",
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",
@@ -18,15 +18,17 @@
     "utility": "dist/cli.ts"
   },
   "dependencies": {
-    "@types/mocha": "^8.2.0",
     "commander": "7.0.0",
     "cssstats": "^4.0.0",
     "deepmerge": "^4.2.2",
+    "open": "^7.4.0",
+    "chalk": "^4.1.0",
     "lodash": "^4.17.20",
     "mocha": "^8.3.0",
     "postcss": "8.2.6"
   },
   "devDependencies": {
+    "@types/mocha": "^8.2.0",
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.27",
     "@types/prettier": "^2.2.1",
@@ -35,7 +37,6 @@
     "assert": "^2.0.0",
     "assert-diff": "^3.0.2",
     "babel-eslint": "^10.1.0",
-    "chalk": "^4.1.0",
     "copyfiles": "^2.4.1",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
@@ -43,7 +44,6 @@
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.4",
-    "open": "^7.4.0",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
     "prettydiff": "^101.2.6",
