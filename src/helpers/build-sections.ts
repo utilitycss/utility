@@ -32,7 +32,6 @@ export default async function buildSections({
     const moduleName = module[0].toUpperCase() + module.slice(1);
     const rules: Rule[] = [];
     modules[module].forEach((rule) => {
-      // console.log(JSON.stringify(rule));
       const { nodes, selector, media } = rule;
       if (/^\.[A-Za-z0-9\-\:\_]+$/.test(selector)) {
         rules.push({

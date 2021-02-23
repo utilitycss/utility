@@ -62,8 +62,6 @@ function utilityPlugin(config?: PluginConfig) {
             ? path.join(sourceDirname, moduleConfigFile)
             : "";
 
-          console.log(modulePath, moduleName, path.resolve(modulePath));
-
           /**
            * Exit if the module name or
            * the provided module name is not supported
