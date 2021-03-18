@@ -14,7 +14,7 @@ export interface ConfigVariables {
   minWidthValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   w: "w",
   "w:a": "wa",
   maw: "maw",

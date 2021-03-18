@@ -11,7 +11,7 @@ export type OverflowModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "ov:v": "ovv",
   "ov:h": "ovh",
   "ov:s": "ovs",

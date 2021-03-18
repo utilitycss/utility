@@ -13,7 +13,7 @@ export interface ConfigVariables {
   orderValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   "fx:r": "fx:r",
   "fx:a": "fxa",
   "fx:n": "fxn",

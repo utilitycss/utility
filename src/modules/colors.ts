@@ -14,7 +14,7 @@ export interface ConfigVariables {
   borderColorValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   c: "c",
   bgc: "bgc",
   bdc: "bdc",

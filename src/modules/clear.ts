@@ -11,7 +11,7 @@ export type ClearModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "cl:n": "cln",
   "cl:l": "cll",
   "cl:r": "clr",

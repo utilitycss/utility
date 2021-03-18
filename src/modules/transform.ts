@@ -13,7 +13,7 @@ export interface ConfigVariables {
   transformOriginValues?: GenericObject | string;
 }
 
-const defaultNames = {
+export const defaultNames = {
   trf: "trf",
   "trf:n": "trfn",
   trfo: "trfo",

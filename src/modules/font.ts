@@ -15,7 +15,7 @@ export interface ConfigVariables {
   fontFamilyValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   fw: "fw",
   "fw:n": "fwn",
   "fw:b": "fwb",

@@ -13,7 +13,7 @@ export interface ConfigVariables {
   paddingValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   m: "m",
   "m:a": "ma",
   mt: "mt",

@@ -33,7 +33,7 @@ export interface ConfigVariables {
   borderSpacingValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   bd: "bd",
   "bd:n": "bdn",
   "bd:w": "bdw",

@@ -11,7 +11,7 @@ export type BoxSizingModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "bxz:cb": "bxzcb",
   "bxz:bb": "bxzbb",
 };

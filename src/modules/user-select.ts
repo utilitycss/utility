@@ -11,7 +11,7 @@ export type UserSelectModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "us:n": "us:n",
   "us:au": "us:au",
   "us:t": "us:t",

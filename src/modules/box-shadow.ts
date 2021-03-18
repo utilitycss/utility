@@ -12,7 +12,7 @@ export interface ConfigVariables {
   boxShadowValues?: GenericObject | string[];
 }
 
-const defaultNames = { "bxsh:n": "bxsh:n", bxsh: "bxsh" };
+export const defaultNames = { "bxsh:n": "bxsh:n", bxsh: "bxsh" };
 
 const getRules: GetRules<ConfigVariables> = (names, cfg) => ({
   "bxsh:n": {

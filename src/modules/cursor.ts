@@ -11,7 +11,7 @@ export type CursorModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "cur:a": "cura",
   "cur:d": "curd",
   "cur:c": "curc",

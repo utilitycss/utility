@@ -12,7 +12,7 @@ export interface ConfigVariables {
   textOverflowValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   "tx:o": "txo",
 };
 

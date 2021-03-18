@@ -11,7 +11,7 @@ export type DisplayModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "d:n": "dn",
   "d:b": "db",
   "d:f": "df",

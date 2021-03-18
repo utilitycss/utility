@@ -12,7 +12,7 @@ export interface ConfigVariables {
   listStyleValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   "li:sy": "lisy",
 };
 

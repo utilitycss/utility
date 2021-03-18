@@ -15,7 +15,7 @@ export interface ConfigVariables {
   backgroundPositionYValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   bgi: "bgi",
   "bgi:n": "bgin",
   "bgr:n": "bgrn",

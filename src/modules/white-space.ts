@@ -11,7 +11,7 @@ export type WhiteSpaceModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "whs:n": "whsn",
   "whs:p": "whsp",
   "whs:nw": "whsnw",

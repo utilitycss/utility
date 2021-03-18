@@ -11,7 +11,7 @@ export type TextAlignModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "ta:l": "tal",
   "ta:c": "tac",
   "ta:r": "tar",

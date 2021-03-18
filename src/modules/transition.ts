@@ -16,7 +16,7 @@ export interface ConfigVariables {
   transitionTimingFunctionValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   trs: "trs",
   trsde: "trsde",
   trsdu: "trsdu",

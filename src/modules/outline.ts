@@ -15,7 +15,7 @@ export interface ConfigVariables {
   outlineColorValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   ol: "ol",
   "ol:n": "oln",
   olo: "olo",

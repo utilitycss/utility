@@ -14,7 +14,7 @@ export interface ConfigVariables {
   minHeightValues?: GenericObject | string[];
 }
 
-const defaultNames = {
+export const defaultNames = {
   h: "h",
   "h:a": "wa",
   mah: "mah",

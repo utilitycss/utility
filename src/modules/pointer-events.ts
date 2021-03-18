@@ -11,7 +11,7 @@ export type PointerEventsModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "pe:n": "pe:n",
   "pe:a": "pe:a",
 };

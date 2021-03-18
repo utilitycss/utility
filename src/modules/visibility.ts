@@ -11,7 +11,7 @@ export type VisibilityModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "v:v": "vv",
   "v:h": "vh",
   "v:c": "vc",

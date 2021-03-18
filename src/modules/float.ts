@@ -11,7 +11,7 @@ export type FloatModuleType = Module<ConfigVariables>;
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ConfigVariables {}
 
-const defaultNames = {
+export const defaultNames = {
   "fl:n": "fln",
   "fl:l": "fll",
   "fl:r": "flr",

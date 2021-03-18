@@ -15,7 +15,7 @@ export interface ConfigVariables {
   leftValues?: GenericObject | string;
 }
 
-const defaultNames = {
+export const defaultNames = {
   "pos:s": "poss",
   "pos:a": "posa",
   "pos:r": "posr",

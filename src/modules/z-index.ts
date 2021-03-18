@@ -12,7 +12,7 @@ export interface ConfigVariables {
   values?: GenericObject | string;
 }
 
-const defaultNames = {
+export const defaultNames = {
   z: "z",
   "z:a": "za",
 };
