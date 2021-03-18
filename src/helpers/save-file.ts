@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const debug = require("debug")("utility:save-file");
+
 import fs from "fs";
 import { promises as fsAsync } from "fs";
 import open from "open";
@@ -18,7 +21,7 @@ export default async function saveFile({
 }: SaveFile): Promise<void> {
   if (content === undefined) {
     console.error(chalk.red("The content of the file should not be empty"));
-    process.exit(0);
+    process.exit(1);
   }
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, {
@@ -26,7 +29,7 @@ export default async function saveFile({
     });
   }
   await fsAsync.writeFile(filePath, content);
-  console.log(chalk.blue(`Document was created : ${filePath}`));
+  debug(`Document was created : ${filePath}`);
   if (openFile) {
     open(filePath, { app: ["google-chrome", "--incognito"] });
   }

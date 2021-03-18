@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const debug = require("debug")("utility");
+
 import fs from "fs";
 import chalk from "chalk";
 import path from "path";
@@ -68,9 +71,7 @@ function utilityPlugin(config?: PluginConfig) {
            */
           if (moduleName && !fs.existsSync(modulePath)) {
             // eslint-disable-next-line no-console
-            console.log(
-              chalk.red(`Module => ${moduleName} : is not supported`)
-            );
+            debug(`Module => ${moduleName} : is not supported`);
             process.exit(-1);
           }
           // eslint-disable-next-line @typescript-eslint/no-var-requires

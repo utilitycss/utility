@@ -1,4 +1,8 @@
 #!/usr/bin/env ts-node
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const debug = require("debug")("utility:cli");
+
 import program from "commander";
 import postcss from "postcss";
 import chalk from "chalk";
@@ -35,8 +39,7 @@ program
       "utf8"
     );
     fs.writeFileSync(configFile, output);
-    // eslint-disable-next-line no-console
-    console.log(chalk.green(`Generated config file: ${configFile}`));
+    debug(`Generated config file: ${configFile}`);
   });
 
 program
@@ -68,13 +71,13 @@ program
     }
 
     // eslint-disable-next-line no-console
-    console.log(chalk.blue("Building CSS bundle..."));
+    debug("Building CSS bundle...");
     postcss([builder(config)])
       .process(input)
       .then(async (result) => {
         await write(result.css);
         // eslint-disable-next-line no-console
-        console.log(chalk.green("Success!"));
+        debug("Success!");
       })
       // eslint-disable-next-line no-console
       .catch((e) => console.error(chalk.red(e)));
