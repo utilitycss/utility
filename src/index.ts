@@ -72,7 +72,7 @@ function utilityPlugin(config?: PluginConfig) {
           if (moduleName && !fs.existsSync(modulePath)) {
             // eslint-disable-next-line no-console
             debug(`Module => ${moduleName} : is not supported`);
-            process.exit(1);
+            process.exit(-1);
           }
           // eslint-disable-next-line @typescript-eslint/no-var-requires
           const moduleFunction = require(modulePath).default;
