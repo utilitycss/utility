@@ -1,6 +1,6 @@
 import applyRules from "../util/applyRules";
 
-import { GetRules, GenericObject, Meta, Module } from "../types";
+import { GetRules, Meta, Module } from "../types";
 
 export type ClearSupportedTypes = {
   [key in keyof typeof defaultNames]?: string;

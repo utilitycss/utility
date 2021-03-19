@@ -178,3 +178,8 @@ export interface PluginConfig {
   modules: any[];
   plugins: any[];
 }
+
+export interface BuilderConfigVariable {
+  name: string;
+  variable: string;
+}

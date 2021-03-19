@@ -1,6 +1,12 @@
 import applyRules from "../util/applyRules";
 
-import { GetRules, GenericObject, Meta, Module } from "../types";
+import {
+  GetRules,
+  GenericObject,
+  Meta,
+  Module,
+  BuilderConfigVariable,
+} from "../types";
 
 export type HeightSupportedTypes = {
   [key in keyof typeof defaultNames]?: string;
@@ -13,6 +19,21 @@ export interface ConfigVariables {
   maxHeightValues?: GenericObject | string[];
   minHeightValues?: GenericObject | string[];
 }
+
+export const configVariables: BuilderConfigVariable[] = [
+  {
+    name: "h",
+    variable: "heightValues",
+  },
+  {
+    name: "mah",
+    variable: "maxHeightValues",
+  },
+  {
+    name: "mih",
+    variable: "minHeightValues",
+  },
+];
 
 export const defaultNames = {
   h: "h",
