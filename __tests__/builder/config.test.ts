@@ -1,10 +1,9 @@
 import * as assert from "assert";
-import configBuilder from "../../dist/builder/config";
 
 import { promises as fsAsync } from "fs";
 import path from "path";
 
-import { clear, height } from "../../dist/modules/sampleConfig";
+import { clear, height } from "../../src/modules/sampleConfig";
 
 describe("Config builder", () => {
   it("should build clear module config", async () => {
