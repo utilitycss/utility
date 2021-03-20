@@ -4,18 +4,11 @@ import configBuilder from "../../dist/builder/config";
 import { promises as fsAsync } from "fs";
 import path from "path";
 
-import { defaultNames as clearDefaultNames } from "../../dist/modules/clear";
-import {
-  defaultNames as heightDefaultNames,
-  configVariables as heightConfigVariables,
-} from "../../dist/modules/height";
+import { clear, height } from "../../dist/modules/sampleConfig";
 
 describe("Config builder", () => {
   it("should build clear module config", async () => {
-    const output = configBuilder({
-      moduleName: "clear",
-      names: clearDefaultNames,
-    });
+    const output = clear();
 
     const expected = await fsAsync.readFile(
       path.join(__dirname, "./fixtures/clear.ts"),
@@ -26,12 +19,8 @@ describe("Config builder", () => {
     assert.strictEqual(expected, output);
   });
 
-  it.only("should build clear module config", async () => {
-    const output = configBuilder({
-      moduleName: "height",
-      names: heightDefaultNames,
-      configVariables: heightConfigVariables,
-    });
+  it("should build clear module config", async () => {
+    const output = height();
 
     const expected = await fsAsync.readFile(
       path.join(__dirname, "./fixtures/height.ts"),

@@ -183,3 +183,5 @@ export interface BuilderConfigVariable {
   name: string;
   variable: string;
 }
+
+export type BuildHelperFunction = () => string;
