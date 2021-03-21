@@ -48,6 +48,34 @@ const configBuild: ConfigBuild = ({
 
   const configName = camelCase(`${moduleName}-config`);
 
+  function arrayPrint(values: string[]): string {
+    return `[
+      ${values
+        .map(
+          (key) => `
+          /** ${(emmetConfig as ObjectType)[key]} **/
+          "${key}",`
+        )
+        .join("")}
+    ]`;
+  }
+
+  function objectPrint(values: { [key: string]: any }): string {
+    return `{
+      ${Object.keys(values)
+        .map((key) => {
+          return `
+  /** ${(emmetConfig as ObjectType)[key]} **/
+              "${key}": ${
+            Array.isArray(values[key])
+              ? stringify(values[key])
+              : `"${values[key]}"`
+          },`;
+        })
+        .join("")}
+    }`;
+  }
+
   return prettier.format(
     `
 /**
@@ -58,16 +86,11 @@ const configBuild: ConfigBuild = ({
 const ${configName} = {
     /** 
      * Supported CSS definitions
+     * 
+     * Define identifiers for each declaration based on your preference.
+     * Defaults to https://docs.emmet.io/cheat-sheet/
      * **/
-    names: {
-    ${Object.keys(mainConfig.names)
-      .map((key) => {
-        return `
-/** ${(emmetConfig as ObjectType)[key]} **/
-            "${key}": "${mainConfig.names[key]}",`;
-      })
-      .join("")}
-    },
+    names: ${objectPrint(mainConfig.names)},
     ${configVariables
       .map(
         ({ name, variable }) => `
@@ -84,10 +107,9 @@ const ${configName} = {
     /** 
      * List of definitions to include.
      * Remove items from this list if you do not 
-     * want it to be
-     *  included in the output
+     * want it to be included in the output
      * **/
-    whitelist: ${stringify(mainConfig.whitelist)},
+    whitelist: ${arrayPrint(mainConfig.whitelist)},
     /** 
      * List of definitions to exclude.
      * If the number of exclusions is very minimal 
@@ -102,16 +124,16 @@ const ${configName} = {
     /** 
      * List of responsive definitions to include 
      * Remove items from this list if you do not 
-     * want it to be
-     *  included in the output
+     * want it to be included in the output
      * **/
-    responsiveWhiteList: ${stringify(mainConfig.responsiveWhiteList)},
+    responsiveWhiteList: ${arrayPrint(mainConfig.responsiveWhiteList)},
     /** 
      * List of responsive definitions to exclude.
      * If the number of exclusions is very minimal 
      * use this config instead of "responsiveWhiteList"
      * **/
     responsiveBlackList: ${stringify(mainConfig.responsiveBlackList)},
+    pseudoClasses: ${objectPrint(mainConfig.pseudoClasses)}
 }
 
 module.exports = ${configName};

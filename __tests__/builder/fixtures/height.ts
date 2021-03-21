@@ -6,6 +6,9 @@
 const heightConfig = {
   /**
    * Supported CSS definitions
+   *
+   * Define identifiers for each declaration based on your preference.
+   * Defaults to https://docs.emmet.io/cheat-sheet/
    * **/
   names: {
     /** height:; **/
@@ -47,10 +50,20 @@ const heightConfig = {
   /**
    * List of definitions to include.
    * Remove items from this list if you do not
-   * want it to be
-   *  included in the output
+   * want it to be included in the output
    * **/
-  whitelist: ["h", "h:a", "mah", "mah:n", "mih"],
+  whitelist: [
+    /** height:; **/
+    "h",
+    /** height:auto; **/
+    "h:a",
+    /** max-height:; **/
+    "mah",
+    /** max-height:none; **/
+    "mah:n",
+    /** min-height:; **/
+    "mih",
+  ],
   /**
    * List of definitions to exclude.
    * If the number of exclusions is very minimal
@@ -65,16 +78,38 @@ const heightConfig = {
   /**
    * List of responsive definitions to include
    * Remove items from this list if you do not
-   * want it to be
-   *  included in the output
+   * want it to be included in the output
    * **/
-  responsiveWhiteList: ["h", "h:a", "mah", "mah:n", "mih"],
+  responsiveWhiteList: [
+    /** height:; **/
+    "h",
+    /** height:auto; **/
+    "h:a",
+    /** max-height:; **/
+    "mah",
+    /** max-height:none; **/
+    "mah:n",
+    /** min-height:; **/
+    "mih",
+  ],
   /**
    * List of responsive definitions to exclude.
    * If the number of exclusions is very minimal
    * use this config instead of "responsiveWhiteList"
    * **/
   responsiveBlackList: [],
+  pseudoClasses: {
+    /** height:; **/
+    h: [":hover", ":focus", ":active"],
+    /** height:auto; **/
+    "h:a": [":hover", ":focus", ":active"],
+    /** max-height:; **/
+    mah: [":hover", ":focus", ":active"],
+    /** max-height:none; **/
+    "mah:n": [":hover", ":focus", ":active"],
+    /** min-height:; **/
+    mih: [":hover", ":focus", ":active"],
+  },
 };
 
 module.exports = heightConfig;

@@ -6,6 +6,9 @@
 const clearConfig = {
   /**
    * Supported CSS definitions
+   *
+   * Define identifiers for each declaration based on your preference.
+   * Defaults to https://docs.emmet.io/cheat-sheet/
    * **/
   names: {
     /** clear:none; **/
@@ -21,10 +24,18 @@ const clearConfig = {
   /**
    * List of definitions to include.
    * Remove items from this list if you do not
-   * want it to be
-   *  included in the output
+   * want it to be included in the output
    * **/
-  whitelist: ["cl:n", "cl:l", "cl:r", "cl:b"],
+  whitelist: [
+    /** clear:none; **/
+    "cl:n",
+    /** clear:left; **/
+    "cl:l",
+    /** clear:right; **/
+    "cl:r",
+    /** clear:both; **/
+    "cl:b",
+  ],
   /**
    * List of definitions to exclude.
    * If the number of exclusions is very minimal
@@ -39,16 +50,34 @@ const clearConfig = {
   /**
    * List of responsive definitions to include
    * Remove items from this list if you do not
-   * want it to be
-   *  included in the output
+   * want it to be included in the output
    * **/
-  responsiveWhiteList: ["cl:n", "cl:l", "cl:r", "cl:b"],
+  responsiveWhiteList: [
+    /** clear:none; **/
+    "cl:n",
+    /** clear:left; **/
+    "cl:l",
+    /** clear:right; **/
+    "cl:r",
+    /** clear:both; **/
+    "cl:b",
+  ],
   /**
    * List of responsive definitions to exclude.
    * If the number of exclusions is very minimal
    * use this config instead of "responsiveWhiteList"
    * **/
   responsiveBlackList: [],
+  pseudoClasses: {
+    /** clear:none; **/
+    "cl:n": [":hover", ":focus", ":active"],
+    /** clear:left; **/
+    "cl:l": [":hover", ":focus", ":active"],
+    /** clear:right; **/
+    "cl:r": [":hover", ":focus", ":active"],
+    /** clear:both; **/
+    "cl:b": [":hover", ":focus", ":active"],
+  },
 };
 
 module.exports = clearConfig;
