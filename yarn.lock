@@ -266,6 +266,11 @@
   resolved "https://registry.yarnpkg.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
 
+"@utilitycss/electron-doc@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@utilitycss/electron-doc/-/electron-doc-0.0.2.tgz#08d3277207c1d13eed1927e13177cbd7a8aa5404"
+  integrity sha512-d4V12zQyS6O+JTrp+5QFMWWiU4NSuPX7R/1wBMMUInLK7+r7Z0D/FidVN5eDXy6cKvAhkcZ91julQXaAYw+4HA==
+
 acorn-jsx@^5.2.0, acorn-jsx@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"
