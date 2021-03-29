@@ -1,9 +1,8 @@
 import path from "path";
+import { promises as fsAsync } from "fs";
 import saveFile from "../helpers/save-file";
 import { Root } from "postcss";
 
-import buildDocPartials from "../helpers/build-doc-partials";
-import buildIndex from "../helpers/build-index";
 import traverse, { CreatedNode } from "../util/traverse";
 
 import { GlobalUtilityConfig } from "../types";
@@ -31,31 +30,19 @@ export default (
 
   if (output) {
     const { dir: dirPath } = path.parse(output);
-    const packageName = "Utility";
 
-    const {
-      headHtml,
-      navHtml,
-      sidebarHtml,
-      sectionsHtml,
-      statsHtml,
-    } = await buildDocPartials({
-      packageName,
-      modules,
-      atomCss: root.toString(),
-    });
-
-    const indexHtml = await buildIndex({
-      packageName,
-      headHtml,
-      navHtml,
-      sidebarHtml,
-      sectionsHtml,
-      statsHtml,
-    });
+    const newHtml = await fsAsync
+      .readFile(
+        path.join(
+          path.dirname(require.resolve("@utilitycss/electron-doc")),
+          "index.html"
+        ),
+        "utf-8"
+      )
+      .then((html) => html.replace(/\$resultData/, JSON.stringify(modules)));
 
     await saveFile({
-      content: indexHtml,
+      content: newHtml,
       filePath: output,
       dirPath,
       openFile,

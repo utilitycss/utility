@@ -118,4 +118,5 @@ export const postcss = true;
 
 export * as plugins from "./plugins";
 export * as modules from "./modules";
+export * as sampleConfigs from "./modules/sampleConfig";
 export { default as util } from "./util";
