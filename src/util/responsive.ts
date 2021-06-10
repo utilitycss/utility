@@ -1,6 +1,8 @@
 import postcss, { Rule, AtRule } from "postcss";
 import { GlobalUtilityConfig } from "../types";
 
+const globalRE = /(:global\(.*\))\s*(.*)/;
+
 type Responsive = (
   rules: Rule[],
   breakpoints?: GlobalUtilityConfig["breakPoints"],
@@ -14,7 +16,7 @@ const responsive: Responsive = (rules, breakpoints = {}, options) => {
     const nodes = rules.map((rule) => {
       const newRule = rule.clone();
       const matchPseudo = rule.selector.match(/:([\w\d_-]+)/);
-      if (matchPseudo) {
+      if (matchPseudo && !globalRE.test(rule.selector)) {
         newRule.selector = `${rule.selector.replace(
           matchPseudo[0],
           ""

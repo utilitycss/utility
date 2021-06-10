@@ -1,15 +1,26 @@
 {
   "box-shadow": {
-    "meta": { "module": "box-shadow", "id": "bxsh:n" },
+    "meta": {
+      "module": "box-shadow",
+      "id": "bxsh:n"
+    },
     "nodes": [
       {
         "selector": ".boxShadowNone",
-        "nodes": [{ "prop": "box-shadow", "value": "none" }]
+        "nodes": [
+          {
+            "prop": "box-shadow",
+            "value": "none"
+          }
+        ]
       },
       {
         "selector": ".boxShadowxs",
         "nodes": [
-          { "prop": "box-shadow", "value": "0 0 0 1px rgba(0, 0, 0, 0.05)" }
+          {
+            "prop": "box-shadow",
+            "value": "0 0 0 1px rgba(0, 0, 0, 0.05)"
+          }
         ]
       },
       {
@@ -24,471 +35,1068 @@
     ]
   },
   "border": {
-    "meta": { "module": "border", "id": "bd:n" },
+    "meta": {
+      "module": "border",
+      "id": "bd:n"
+    },
     "nodes": [
       {
         "selector": ".borderNone",
-        "nodes": [{ "prop": "border", "value": "none" }]
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ]
       },
       {
         "selector": ".borderNone_hover:hover",
-        "nodes": [{ "prop": "border", "value": "none" }]
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ]
       },
       {
         "selector": ".borderWidth0",
-        "nodes": [{ "prop": "border-width", "value": "1px" }]
+        "nodes": [
+          {
+            "prop": "border-width",
+            "value": "1px"
+          }
+        ]
       },
       {
         "selector": ".borderWidth1",
-        "nodes": [{ "prop": "border-width", "value": "2px" }]
+        "nodes": [
+          {
+            "prop": "border-width",
+            "value": "2px"
+          }
+        ]
       },
       {
         "selector": ".borderStyle0",
-        "nodes": [{ "prop": "border-style", "value": "solid" }]
+        "nodes": [
+          {
+            "prop": "border-style",
+            "value": "solid"
+          }
+        ]
       },
       {
         "selector": ".borderStyle1",
-        "nodes": [{ "prop": "border-style", "value": "dotted" }]
+        "nodes": [
+          {
+            "prop": "border-style",
+            "value": "dotted"
+          }
+        ]
       },
       {
         "selector": ".borderNone_s",
-        "nodes": [{ "prop": "border", "value": "none" }],
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".borderNone_hover_s:hover",
-        "nodes": [{ "prop": "border", "value": "none" }],
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".borderNone_m",
-        "nodes": [{ "prop": "border", "value": "none" }],
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".borderNone_hover_m:hover",
-        "nodes": [{ "prop": "border", "value": "none" }],
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".borderNone_l",
-        "nodes": [{ "prop": "border", "value": "none" }],
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".borderNone_hover_l:hover",
-        "nodes": [{ "prop": "border", "value": "none" }],
+        "nodes": [
+          {
+            "prop": "border",
+            "value": "none"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       }
     ]
   },
   "font": {
-    "meta": { "module": "font", "id": "fw:b" },
+    "meta": {
+      "module": "font",
+      "id": "fw:b"
+    },
     "nodes": [
       {
         "selector": ".fwb",
-        "nodes": [{ "prop": "font-weight", "value": "bold" }]
+        "nodes": [
+          {
+            "prop": "font-weight",
+            "value": "bold"
+          }
+        ]
       },
       {
         "selector": ".f0",
-        "nodes": [{ "prop": "font-size", "value": "0.875rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "0.875rem"
+          }
+        ]
       },
       {
         "selector": ".f1",
-        "nodes": [{ "prop": "font-size", "value": "1rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1rem"
+          }
+        ]
       },
       {
         "selector": ".f2",
-        "nodes": [{ "prop": "font-size", "value": "1.125rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.125rem"
+          }
+        ]
       },
       {
         "selector": ".f3",
-        "nodes": [{ "prop": "font-size", "value": "1.25rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.25rem"
+          }
+        ]
       },
       {
         "selector": ".f4",
-        "nodes": [{ "prop": "font-size", "value": "1.375rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.375rem"
+          }
+        ]
       },
       {
         "selector": ".f5",
-        "nodes": [{ "prop": "font-size", "value": "1.5rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.5rem"
+          }
+        ]
       },
       {
         "selector": ".f6",
-        "nodes": [{ "prop": "font-size", "value": "1.625rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.625rem"
+          }
+        ]
       },
       {
         "selector": ".f7",
-        "nodes": [{ "prop": "font-size", "value": "1.75rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.75rem"
+          }
+        ]
       },
       {
         "selector": ".f8",
-        "nodes": [{ "prop": "font-size", "value": "1.875rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.875rem"
+          }
+        ]
       },
       {
         "selector": ".f9",
-        "nodes": [{ "prop": "font-size", "value": "2rem" }]
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "2rem"
+          }
+        ]
       },
       {
         "selector": ".fwb_s",
-        "nodes": [{ "prop": "font-weight", "value": "bold" }],
+        "nodes": [
+          {
+            "prop": "font-weight",
+            "value": "bold"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f0_s",
-        "nodes": [{ "prop": "font-size", "value": "0.875rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "0.875rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f1_s",
-        "nodes": [{ "prop": "font-size", "value": "1rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f2_s",
-        "nodes": [{ "prop": "font-size", "value": "1.125rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.125rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f3_s",
-        "nodes": [{ "prop": "font-size", "value": "1.25rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.25rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f4_s",
-        "nodes": [{ "prop": "font-size", "value": "1.375rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.375rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f5_s",
-        "nodes": [{ "prop": "font-size", "value": "1.5rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.5rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f6_s",
-        "nodes": [{ "prop": "font-size", "value": "1.625rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.625rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f7_s",
-        "nodes": [{ "prop": "font-size", "value": "1.75rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.75rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f8_s",
-        "nodes": [{ "prop": "font-size", "value": "1.875rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.875rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".f9_s",
-        "nodes": [{ "prop": "font-size", "value": "2rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "2rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".fwb_m",
-        "nodes": [{ "prop": "font-weight", "value": "bold" }],
+        "nodes": [
+          {
+            "prop": "font-weight",
+            "value": "bold"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f0_m",
-        "nodes": [{ "prop": "font-size", "value": "0.875rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "0.875rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f1_m",
-        "nodes": [{ "prop": "font-size", "value": "1rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f2_m",
-        "nodes": [{ "prop": "font-size", "value": "1.125rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.125rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f3_m",
-        "nodes": [{ "prop": "font-size", "value": "1.25rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.25rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f4_m",
-        "nodes": [{ "prop": "font-size", "value": "1.375rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.375rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f5_m",
-        "nodes": [{ "prop": "font-size", "value": "1.5rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.5rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f6_m",
-        "nodes": [{ "prop": "font-size", "value": "1.625rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.625rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f7_m",
-        "nodes": [{ "prop": "font-size", "value": "1.75rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.75rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f8_m",
-        "nodes": [{ "prop": "font-size", "value": "1.875rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.875rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".f9_m",
-        "nodes": [{ "prop": "font-size", "value": "2rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "2rem"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".fwb_l",
-        "nodes": [{ "prop": "font-weight", "value": "bold" }],
+        "nodes": [
+          {
+            "prop": "font-weight",
+            "value": "bold"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f0_l",
-        "nodes": [{ "prop": "font-size", "value": "0.875rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "0.875rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f1_l",
-        "nodes": [{ "prop": "font-size", "value": "1rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f2_l",
-        "nodes": [{ "prop": "font-size", "value": "1.125rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.125rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f3_l",
-        "nodes": [{ "prop": "font-size", "value": "1.25rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.25rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f4_l",
-        "nodes": [{ "prop": "font-size", "value": "1.375rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.375rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f5_l",
-        "nodes": [{ "prop": "font-size", "value": "1.5rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.5rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f6_l",
-        "nodes": [{ "prop": "font-size", "value": "1.625rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.625rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f7_l",
-        "nodes": [{ "prop": "font-size", "value": "1.75rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.75rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f8_l",
-        "nodes": [{ "prop": "font-size", "value": "1.875rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "1.875rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".f9_l",
-        "nodes": [{ "prop": "font-size", "value": "2rem" }],
+        "nodes": [
+          {
+            "prop": "font-size",
+            "value": "2rem"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       }
     ]
   },
   "colors": {
-    "meta": { "module": "colors", "id": "c" },
+    "meta": {
+      "module": "colors",
+      "id": "c"
+    },
     "nodes": [
       {
         "selector": ".corange",
-        "nodes": [{ "prop": "color", "value": "#ff6900" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ff6900"
+          }
+        ]
       },
       {
         "selector": ".cblack",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ]
       },
       {
         "selector": ".cwhite",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ]
       },
       {
         "selector": ".cgrey",
-        "nodes": [{ "prop": "color", "value": "#777777" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#777777"
+          }
+        ]
       },
       {
         "selector": ".cgrey2",
-        "nodes": [{ "prop": "color", "value": "#a5a5a5" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#a5a5a5"
+          }
+        ]
       },
       {
         "selector": ".cgrey3",
-        "nodes": [{ "prop": "color", "value": "#dddddd" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#dddddd"
+          }
+        ]
       },
       {
         "selector": ".cred",
-        "nodes": [{ "prop": "color", "value": "#ce3535" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ce3535"
+          }
+        ]
       },
       {
         "selector": ".cgreen",
-        "nodes": [{ "prop": "color", "value": "#0f7e4a" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#0f7e4a"
+          }
+        ]
       },
       {
         "selector": ".cblue",
-        "nodes": [{ "prop": "color", "value": "#0062b4" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#0062b4"
+          }
+        ]
       },
       {
         "selector": ".corange_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#ff6900" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ff6900"
+          }
+        ]
       },
       {
         "selector": ".cblack_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ]
       },
       {
         "selector": ".cwhite_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ]
       },
       {
         "selector": ".cgrey_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#777777" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#777777"
+          }
+        ]
       },
       {
         "selector": ".cgrey2_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#a5a5a5" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#a5a5a5"
+          }
+        ]
       },
       {
         "selector": ".cgrey3_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#dddddd" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#dddddd"
+          }
+        ]
       },
       {
         "selector": ".cred_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#ce3535" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ce3535"
+          }
+        ]
       },
       {
         "selector": ".cgreen_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#0f7e4a" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#0f7e4a"
+          }
+        ]
       },
       {
         "selector": ".cblue_hover:hover",
-        "nodes": [{ "prop": "color", "value": "#0062b4" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#0062b4"
+          }
+        ]
       },
       {
         "selector": ".bgcwhite",
-        "nodes": [{ "prop": "background-color", "value": "#f3f3f3" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#f3f3f3"
+          }
+        ]
       },
       {
         "selector": ".bgcpink",
-        "nodes": [{ "prop": "background-color", "value": "#fde5e5" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#fde5e5"
+          }
+        ]
       },
       {
         "selector": ".bgcgreen",
-        "nodes": [{ "prop": "background-color", "value": "#e0f3ea" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#e0f3ea"
+          }
+        ]
       },
       {
         "selector": ".bgcyellow",
-        "nodes": [{ "prop": "background-color", "value": "#fffdc0" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#fffdc0"
+          }
+        ]
       },
       {
         "selector": ".bgcwhite_hover:hover",
-        "nodes": [{ "prop": "background-color", "value": "#f3f3f3" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#f3f3f3"
+          }
+        ]
       },
       {
         "selector": ".bgcpink_hover:hover",
-        "nodes": [{ "prop": "background-color", "value": "#fde5e5" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#fde5e5"
+          }
+        ]
       },
       {
         "selector": ".bgcgreen_hover:hover",
-        "nodes": [{ "prop": "background-color", "value": "#e0f3ea" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#e0f3ea"
+          }
+        ]
       },
       {
         "selector": ".bgcyellow_hover:hover",
-        "nodes": [{ "prop": "background-color", "value": "#fffdc0" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#fffdc0"
+          }
+        ]
       },
       {
         "selector": ".bgcwhite_active:active",
-        "nodes": [{ "prop": "background-color", "value": "#f3f3f3" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#f3f3f3"
+          }
+        ]
       },
       {
         "selector": ".bgcpink_active:active",
-        "nodes": [{ "prop": "background-color", "value": "#fde5e5" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#fde5e5"
+          }
+        ]
       },
       {
         "selector": ".bgcgreen_active:active",
-        "nodes": [{ "prop": "background-color", "value": "#e0f3ea" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#e0f3ea"
+          }
+        ]
       },
       {
         "selector": ".bgcyellow_active:active",
-        "nodes": [{ "prop": "background-color", "value": "#fffdc0" }]
+        "nodes": [
+          {
+            "prop": "background-color",
+            "value": "#fffdc0"
+          }
+        ]
       },
       {
         "selector": ".bdcorange",
-        "nodes": [{ "prop": "border-color", "value": "#ff6900" }]
+        "nodes": [
+          {
+            "prop": "border-color",
+            "value": "#ff6900"
+          }
+        ]
       },
       {
         "selector": ".bdcblack",
-        "nodes": [{ "prop": "border-color", "value": "#1a1a1a" }]
+        "nodes": [
+          {
+            "prop": "border-color",
+            "value": "#1a1a1a"
+          }
+        ]
       },
       {
         "selector": ".bdcwhite",
-        "nodes": [{ "prop": "border-color", "value": "#ffffff" }]
+        "nodes": [
+          {
+            "prop": "border-color",
+            "value": "#ffffff"
+          }
+        ]
       },
       {
         "selector": ".bdcgrey",
-        "nodes": [{ "prop": "border-color", "value": "#a5a5a5" }]
+        "nodes": [
+          {
+            "prop": "border-color",
+            "value": "#a5a5a5"
+          }
+        ]
       },
       {
         "selector": ".bdcgreen",
-        "nodes": [{ "prop": "border-color", "value": "#0f7e4a" }]
+        "nodes": [
+          {
+            "prop": "border-color",
+            "value": "#0f7e4a"
+          }
+        ]
       },
       {
         "selector": ".bdcred",
-        "nodes": [{ "prop": "border-color", "value": "#ce3535" }]
+        "nodes": [
+          {
+            "prop": "border-color",
+            "value": "#ce3535"
+          }
+        ]
+      },
+      {
+        "selector": ":global(.FOO) .cblack",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ]
+      },
+      {
+        "selector": ":global(.FOO) .cwhite",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ]
+      },
+      {
+        "selector": ":global(.FOO) .cblack_s",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
+        "media": "screen and (min-width: 48rem)"
+      },
+      {
+        "selector": ":global(.FOO) .cwhite_s",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
+        "media": "screen and (min-width: 48rem)"
+      },
+      {
+        "selector": ":global(.FOO) .cblack_m",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
+        "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
+      },
+      {
+        "selector": ":global(.FOO) .cwhite_m",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
+        "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
+      },
+      {
+        "selector": ":global(.FOO) .cblack_l",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
+        "media": "screen and (min-width: 80rem)"
+      },
+      {
+        "selector": ":global(.FOO) .cwhite_l",
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
+        "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".dark .cblack",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ]
       },
       {
         "selector": ".dark .cwhite",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }]
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ]
       },
       {
         "selector": ".dark .cblack_s",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".dark .cwhite_s",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
         "media": "screen and (min-width: 48rem)"
       },
       {
         "selector": ".dark .cblack_m",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".dark .cwhite_m",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
         "media": "screen and (min-width: 48rem) and (max-width: 80rem)"
       },
       {
         "selector": ".dark .cblack_l",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".dark .cwhite_l",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
         "media": "screen and (min-width: 80rem)"
       },
       {
         "selector": ".cblack",
-        "nodes": [{ "prop": "color", "value": "#ffffff" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#ffffff"
+          }
+        ],
         "media": "foo"
       },
       {
         "selector": ".cwhite",
-        "nodes": [{ "prop": "color", "value": "#1a1a1a" }],
+        "nodes": [
+          {
+            "prop": "color",
+            "value": "#1a1a1a"
+          }
+        ],
         "media": "foo"
       }
     ]

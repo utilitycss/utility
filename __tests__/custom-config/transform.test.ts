@@ -11,6 +11,7 @@ const prettydiff = require("prettydiff");
 
 import utility from "../../src/index";
 import config from "./config";
+import saveFile from "../../src/helpers/save-file";
 
 describe("Custom config", () => {
   it("should transform css for custom options", async () => {

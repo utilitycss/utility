@@ -17,7 +17,6 @@ const configPlugins = [
   }),
   docs({
     output: path.join(__dirname, "/dist/docs.html"),
-    openFile: true,
   }),
 ];
 
