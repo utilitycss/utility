@@ -295,6 +295,36 @@
 .bdcred {
   border-color: #ce3535;
 }
+:global(.FOO) .cblack {
+  color: #ffffff;
+}
+:global(.FOO) .cwhite {
+  color: #1a1a1a;
+}
+@media screen and (min-width: 48rem) {
+  :global(.FOO) .cblack_s {
+    color: #ffffff;
+  }
+  :global(.FOO) .cwhite_s {
+    color: #1a1a1a;
+  }
+}
+@media screen and (min-width: 48rem) and (max-width: 80rem) {
+  :global(.FOO) .cblack_m {
+    color: #ffffff;
+  }
+  :global(.FOO) .cwhite_m {
+    color: #1a1a1a;
+  }
+}
+@media screen and (min-width: 80rem) {
+  :global(.FOO) .cblack_l {
+    color: #ffffff;
+  }
+  :global(.FOO) .cwhite_l {
+    color: #1a1a1a;
+  }
+}
 .dark .cblack {
   color: #ffffff;
 }

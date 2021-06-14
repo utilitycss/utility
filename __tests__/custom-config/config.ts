@@ -17,7 +17,6 @@ const configPlugins = [
   }),
   docs({
     output: path.join(__dirname, "/dist/docs.html"),
-    openFile: true,
   }),
 ];
 
@@ -65,6 +64,14 @@ const configModules = [
   }),
   colors({
     nestedRules: {
+      ":global(.FOO) {}": {
+        whitelist: ["c"],
+        isResponsive: true,
+        colorValues: {
+          black: "#ffffff",
+          white: "#1a1a1a",
+        },
+      },
       ".dark {}": {
         whitelist: ["c"],
         isResponsive: true,

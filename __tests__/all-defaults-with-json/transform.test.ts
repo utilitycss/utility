@@ -1,5 +1,5 @@
 import path from "path";
-import { promises as fsAsync } from "fs";
+import fs, { promises as fsAsync } from "fs";
 import prettier from "prettier";
 import * as assert from "assert";
 import postcss from "postcss";
@@ -17,6 +17,15 @@ const plugins = [
     output: path.join(__dirname, "./dist/modules.json"),
   }),
 ];
+
+const waitForFile = (path: string) =>
+  new Promise<void>(async (resolve) => {
+    while (!fs.existsSync(path)) {
+      await new Promise((a) => setTimeout(a, 50));
+    }
+    await new Promise((a) => setTimeout(a, 0));
+    resolve();
+  });
 
 describe("Default with json", () => {
   it("should transform css and module json", async () => {
@@ -63,6 +72,8 @@ describe("Default with json", () => {
           parser: "css",
         })
       );
+
+    await waitForFile(path.join(__dirname, "./dist/modules.json"));
 
     const generateJSON = JSON.parse(
       await fsAsync.readFile(

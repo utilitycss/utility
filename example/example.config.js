@@ -64,6 +64,14 @@ const modules = [
   }),
   colors({
     nestedRules: {
+      ":global(.FOO) {}": {
+        whitelist: ["c"],
+        isResponsive: true,
+        colorValues: {
+          black: "#ffffff",
+          white: "#1a1a1a",
+        },
+      },
       ".dark {}": {
         whitelist: ["c"],
         isResponsive: true,
