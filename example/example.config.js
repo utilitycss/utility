@@ -41,9 +41,24 @@ const modules = [
     whitelist: ["bd:w", "bd:s", "bd:n"],
     borderStyleValues: ["solid", "dotted"],
     borderWidthValues: ["1px", "2px"],
-    pseudoClasses: { "bd:n": [":hover"] },
     isResponsive: true,
     responsiveWhiteList: ["bd:n"],
+    nestedRules: {
+      "@media (hover: hover) and (pointer: fine)": {
+        names: {
+          "bd:w": "borderWidth",
+          "bd:s": "borderStyle",
+          "bd:n": "borderNone",
+        },
+        whitelist: ["bd:w", "bd:s", "bd:n"],
+        borderStyleValues: ["solid", "dotted"],
+        borderWidthValues: ["1px", "2px"],
+        pseudoClasses: { "bd:n": [":hover"] },
+        isResponsive: true,
+        responsiveWhiteList: ["bd:n"],
+        modifiersOnly: true,
+      },
+    },
   }),
   font({
     names: { fz: "f" },
