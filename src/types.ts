@@ -19,6 +19,7 @@ export type UtilityConfig<T extends any> = T & {
       }
     | PseudoClass[];
   nestedRules?: any;
+  modifiersOnly?: boolean;
   className?: string;
   property?: string;
   props?: GenericObject;

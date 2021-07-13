@@ -8,7 +8,7 @@ type Options = Pick<
   GlobalUtilityConfig,
   "seriesSeparator" | "pseudoClassesSeparator" | "classTemplate"
 > &
-  Pick<UtilityConfig<any>, "pseudoClasses" | "meta">;
+  Partial<Pick<UtilityConfig<any>, "pseudoClasses" | "meta" | "modifiersOnly">>;
 
 type DefineSeries = (
   name: string | number,
@@ -27,11 +27,13 @@ const defineSeries: DefineSeries = (
     seriesSeparator = "",
     pseudoClassesSeparator = "",
     pseudoClasses = [],
+    modifiersOnly = false,
     meta = {},
     classTemplate = "{}",
   } = options;
 
-  return [""].concat(pseudoClasses).reduce((prev, pseudo) => {
+  const startingArray = modifiersOnly ? [] : [""];
+  return startingArray.concat(pseudoClasses).reduce((prev, pseudo) => {
     const pseudoSeparator = pseudo !== "" ? pseudoClassesSeparator : "";
     const separator = name !== "" ? seriesSeparator : "";
     const pseudoClass = pseudo.replace(/:/g, "");
