@@ -25,6 +25,7 @@ const applyRules: ApplyRules<{}> = ({
     responsiveBlackList = [],
     pseudoClasses = {},
     nestedRules,
+    modifiersOnly = false,
   } = config || {};
 
   const {
@@ -61,12 +62,12 @@ const applyRules: ApplyRules<{}> = ({
           pseudoClassesSeparator,
           meta: { ...meta, id: curr },
           classTemplate,
+          modifiersOnly,
         })
       );
     } else if (typeof value === "string" || typeof value === "number") {
-      // FIX ME: WHAT IS this for?
-      // eslint-disable-next-line
-      const singles = [""].concat(modifiers).reduce((prev, pseudo) => {
+      const startingArray = modifiersOnly ? [] : [""];
+      const singles = startingArray.concat(modifiers).reduce((prev, pseudo) => {
         const separator = pseudo !== "" ? pseudoClassesSeparator : "";
         const pseudoClass = pseudo.replace(/:/g, "");
 
