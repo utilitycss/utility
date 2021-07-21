@@ -33,5 +33,6 @@ export { default as verticalAlign } from "./vertical-align";
 export { default as visibility } from "./visibility";
 export { default as whiteSpace } from "./white-space";
 export { default as width } from "./width";
+export { default as wordBreak } from "./word-break";
 export { default as useSelect } from "./user-select";
 export { default as zIndex } from "./z-index";
