@@ -2,13 +2,11 @@ import path from "path";
 import { promises as fsAsync } from "fs";
 import _ from "lodash";
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const cssstats = require("cssstats");
-
 interface BuildStats {
   atomCss: string;
 }
 
+/* Temporarily disabled due to cssstats's dependency to postcss-safe-parser, that causes issues in node 18 */
 export default async function buildStats({
   atomCss,
 }: BuildStats): Promise<string> {
@@ -26,7 +24,7 @@ export default async function buildStats({
     } = {} as any,
     declarations: { total: totalDecls, unique: uniqueDecls } = {} as any,
     mediaQueries: { total: totalMedia } = {} as any,
-  } = cssstats(atomCss) as any;
+  } = {} as any;
 
   const statsTemplate = _.template(
     await fsAsync.readFile(
