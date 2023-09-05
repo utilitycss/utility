@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/utilitycss/utility.svg?branch=master)](https://travis-ci.com/utilitycss/atomic)
+[![Node.js CI](https://github.com/utilitycss/utility/actions/workflows/test.yml/badge.svg)](https://github.com/utilitycss/utility/actions/workflows/test.yml)
 
 # UtilityCSS
 
