@@ -6,7 +6,7 @@ interface BuildStats {
   atomCss: string;
 }
 
-/* Temporarily disabled due to cssstats's dependency to postcss-safe-parser, that causes issues in node 18 */
+/* FIXME: Temporarily disabled due to cssstats's dependency to postcss-safe-parser, that causes issues in node 18 */
 export default async function buildStats({
   atomCss,
 }: BuildStats): Promise<string> {
