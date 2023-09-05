@@ -1,6 +1,6 @@
 {
   "name": "@utilitycss/utility",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Generator for Utility CSS frameworks",
   "author": "Andrea Moretti (@axyz) <axyzxp@gmail.com>",
   "repository": "utilitycss/utility",
@@ -19,18 +19,17 @@
   },
   "dependencies": {
     "commander": "7.0.0",
-    "cssstats": "^4.0.0",
     "deepmerge": "^4.2.2",
     "open": "^7.4.0",
     "chalk": "^4.1.0",
     "lodash": "^4.17.20",
     "mocha": "^8.3.0",
-    "postcss": "8.2.6"
+    "postcss": "8.4.29"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.0",
     "@types/lodash": "^4.14.168",
-    "@types/node": "^14.14.27",
+    "@types/node": "^18.17.14",
     "@types/prettier": "^2.2.1",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
@@ -47,8 +46,8 @@
     "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
     "prettydiff": "^101.2.6",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.5"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.2.5"
   },
   "husky": {
     "hooks": {
