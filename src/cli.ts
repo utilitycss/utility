@@ -74,13 +74,13 @@ program
     debug("Building CSS bundle...");
     postcss([builder(config)])
       .process(input)
-      .then(async (result) => {
+      .then(async (result: any) => {
         await write(result.css);
         // eslint-disable-next-line no-console
         debug("Success!");
       })
       // eslint-disable-next-line no-console
-      .catch((e) => console.error(chalk.red(e)));
+      .catch((e: Error) => console.error(chalk.red(e)));
   });
 
 program.command("*", null, { noHelp: true }).action(() => {
