@@ -11,6 +11,9 @@ export type FlexBoxModuleType = Module<ConfigVariables>;
 export interface ConfigVariables {
   flexBasisValues?: GenericObject | string[];
   orderValues?: GenericObject | string[];
+  gapValues?: GenericObject | string[];
+  rowGapValues?: GenericObject | string[];
+  columnGapValues?: GenericObject | string[];
 }
 
 const defaultNames = {
@@ -54,6 +57,9 @@ const defaultNames = {
   "ac:sb": "acsb",
   "ac:se": "acse",
   ord: "ord",
+  gap: "gap",
+  rgap: "rgap",
+  cgap: "cgap",
 };
 
 const getRules: GetRules<ConfigVariables> = (names, cfg) => ({
@@ -133,6 +139,9 @@ const getRules: GetRules<ConfigVariables> = (names, cfg) => ({
     value: "space-evenly",
   },
   ord: { name: names["ord"], key: "order", value: cfg.orderValues },
+  gap: { name: names["gap"], key: "gap", value: cfg.gapValues },
+  rgap: { name: names["rgap"], key: "row-gap", value: cfg.rowGapValues },
+  cgap: { name: names["cgap"], key: "column-gap", value: cfg.columnGapValues },
 });
 
 const meta: Meta = {
